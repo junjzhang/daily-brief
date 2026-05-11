@@ -1,0 +1,23 @@
+name: Build Brief
+on:
+  push:
+    paths: ['content.json']
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build brief HTML
+        run: python scripts/build.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "daily-brief[bot]"
+          git config user.email "daily-brief[bot]@users.noreply.github.com"
+          git add archive/ seen.json
+          git diff --cached --quiet || (git commit -m "brief: $(python -c 'import json; print(json.load(open("content.json"))["date"])')" && git push)

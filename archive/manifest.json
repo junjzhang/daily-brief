@@ -1,1 +1,11 @@
-[{"date": "2026-05-11", "title": "PyTorch DevLogs 每日简报 — 2026-05-11", "file": "2026-05-11.html"}]
+{
+  "site": {
+    "title": "Daily Brief",
+    "description": "LLM-powered daily digest",
+    "lang": "zh-CN",
+    "sources": ["PyTorch DevLogs"]
+  },
+  "briefs": [
+    {"date": "2026-05-11", "file": "2026-05-11.html", "new_count": 5, "sources": ["PyTorch DevLogs"]}
+  ]
+}

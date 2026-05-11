@@ -1,29 +1,95 @@
-You maintain a daily brief site. The repo is already cloned in your working directory.
+You produce a daily content.json for a brief site. The repo is already cloned.
 
-## Task
+## Step 1: Setup
 
-1. Read `sources.yaml` to get the site config and list of sources.
+```bash
+TODAY=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+```
 
-2. For each source, use WebFetch to scrape its URL. Extract all entries: title, date, link, category, summary.
+Read `sources.yaml` for the site config and source list.
+Read `seen.json` for the set of already-covered article URLs.
 
-3. For articles published in the last 7 days, fetch full articles via WebFetch. Extract 3-5 key technical takeaways per article.
+## Step 2: Scrape Sources
 
-4. Determine today's date: `TZ=Asia/Shanghai date +%Y-%m-%d`
+For each source in sources.yaml, use WebFetch on its URL. Extract entries based on the `type` hint:
 
-5. Generate `archive/{date}.html` — a self-contained HTML brief with inline CSS. Requirements:
-   - Title from `site.title` in sources.yaml + today's date
-   - Section "本周新文章": detailed cards with title, category badge, date, key takeaways (bullets), original link
-   - Section "近期概览": compact list of older articles (title + date + one-line summary)
-   - Style: dark theme (#0d1117 bg), modern, mobile-friendly, good typography
-   - UI text language matches `site.lang` in sources.yaml
-   - Back link to `../index.html`
-   - Category badges with distinct colors
+- **blog-index**: HTML page with links to articles. Extract each article's title, date, URL, category, and summary.
+- **github-releases**: GitHub releases page. Extract release tag/title, date, URL, and body summary.
+- **changelog**: Single page with dated sections. Extract each version's title, date, and summary.
+- **rss**: RSS/Atom feed. Extract each item's title, link, pubDate, and description.
 
-6. Read `archive/manifest.json`, add/replace today's entry `{"date": "YYYY-MM-DD", "title": "...", "file": "YYYY-MM-DD.html"}`, write back.
+Normalize every entry to: `{source, url, title, date, category, summary}`
 
-7. Git add, commit with message `brief: YYYY-MM-DD`, push to origin main.
+## Step 3: Identify New Articles
+
+For each entry, check if its URL exists in seen.json:
+- **NOT in seen.json** → this is a NEW article
+- **IN seen.json** → this is an OLD article
+
+## Step 4: Generate Insights (NEW articles only)
+
+For each NEW article:
+1. WebFetch the full article URL to get detailed content
+2. Generate three insights guided by the source's `focus` field (if present):
+   - **Problem**: What core problem does this article address?
+   - **Approach**: What method or technique is used?
+   - **Takeaway**: What is the key result or conclusion?
+3. Keep insights concise (1-2 sentences each)
+
+For OLD articles: set `insights` to `null`. Do NOT fetch full content.
+
+If WebFetch fails for a new article, set `insights` to `{"error": "fetch failed"}`.
+
+## Step 5: Output content.json
+
+Write `content.json` with this exact structure:
+
+```json
+{
+  "date": "YYYY-MM-DD",
+  "site": {
+    "title": "<from sources.yaml site.title>",
+    "description": "<from sources.yaml site.description>",
+    "lang": "<from sources.yaml site.lang>"
+  },
+  "entries": [
+    {
+      "source": "Source Name",
+      "url": "https://...",
+      "title": "Article Title",
+      "date": "YYYY-MM-DD",
+      "category": "Category",
+      "summary": "One-line summary for compact list display",
+      "insights": {
+        "problem": "...",
+        "approach": "...",
+        "takeaway": "..."
+      }
+    },
+    {
+      "source": "Source Name",
+      "url": "https://...",
+      "title": "Old Article",
+      "date": "YYYY-MM-DD",
+      "category": "Category",
+      "summary": "One-line summary",
+      "insights": null
+    }
+  ]
+}
+```
+
+## Step 6: Push
+
+```bash
+git add content.json
+git commit -m "content: $TODAY"
+git push origin main
+```
 
 ## Rules
-- If WebFetch fails for an article, skip it and note in the brief
-- HTML must be self-contained (inline CSS, no external dependencies)
-- Technical terms stay in original language, UI text follows site.lang
+
+- Only push content.json. Do NOT modify seen.json, manifest.json, archive/, or any other file.
+- UI text (summaries, insights) follows `site.lang` from sources.yaml. Technical terms stay in English.
+- If a source fetch fails entirely, include zero entries for that source (omit it from entries array).
+- Ensure content.json is valid JSON.

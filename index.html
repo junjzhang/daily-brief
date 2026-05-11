@@ -11,28 +11,38 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,san
 h1{font-size:1.8rem;margin-bottom:.5rem}
 p.sub{color:var(--muted);margin-bottom:2rem}
 .list{width:100%;max-width:720px}
-.list a{display:block;padding:.75rem 1rem;margin-bottom:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--accent);text-decoration:none;transition:border-color .2s}
+.list a{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1rem;margin-bottom:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;transition:border-color .2s;gap:.8rem}
 .list a:hover{border-color:var(--accent)}
-.list a .date{color:var(--muted);font-size:.85rem;float:right}
+.list .date{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.list .new-badge{font-size:.72rem;padding:2px 8px;border-radius:10px;background:rgba(63,185,80,.15);color:var(--green);white-space:nowrap}
+.list .no-new{font-size:.72rem;padding:2px 8px;border-radius:10px;background:var(--surface);color:var(--muted);border:1px solid var(--border);white-space:nowrap}
+.list .meta{display:flex;align-items:center;gap:.5rem}
 .empty{color:var(--muted);text-align:center;margin-top:3rem}
 </style>
 </head>
 <body>
-<h1>PyTorch DevLogs Daily Brief</h1>
-<p class="sub">Auto-generated daily briefs of <a href="https://docs.pytorch.org/devlogs/" style="color:var(--accent)">pytorch.org/devlogs</a></p>
+<h1 id="title">Daily Brief</h1>
+<p class="sub" id="desc"></p>
 <div class="list" id="briefs"></div>
-<p class="empty" id="empty" style="display:none">No briefs yet. Check back tomorrow.</p>
+<p class="empty" id="empty" style="display:none">尚无简报，请等待明天的自动生成。</p>
 <script>
 fetch('archive/manifest.json')
   .then(r=>r.json())
-  .then(entries=>{
-    if(!entries.length){document.getElementById('empty').style.display='block';return}
+  .then(data=>{
+    const site=data.site||{};
+    if(site.title){document.getElementById('title').textContent=site.title;document.title=site.title}
+    if(site.description)document.getElementById('desc').textContent=site.description;
+    const briefs=data.briefs||[];
+    if(!briefs.length){document.getElementById('empty').style.display='block';return}
     const list=document.getElementById('briefs');
-    entries.sort((a,b)=>b.date.localeCompare(a.date));
-    entries.forEach(e=>{
+    briefs.sort((a,b)=>b.date.localeCompare(a.date));
+    briefs.forEach(b=>{
       const a=document.createElement('a');
-      a.href='archive/'+e.file;
-      a.innerHTML=e.title+'<span class="date">'+e.date+'</span>';
+      a.href='archive/'+b.file;
+      const badge=b.new_count>0
+        ?'<span class="new-badge">'+b.new_count+' 篇新文章</span>'
+        :'<span class="no-new">无新内容</span>';
+      a.innerHTML='<span>'+b.date+'</span><span class="meta">'+badge+'<span class="date">'+(b.sources||[]).join(' · ')+'</span></span>';
       list.appendChild(a);
     });
   })

@@ -1,0 +1,11 @@
+[workspace]
+authors = ["junjie zhang <junj.jay.zhang@gmail.com>"]
+channels = ["conda-forge"]
+name = "daily-brief"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+pytest = ">=9.0.3,<10"

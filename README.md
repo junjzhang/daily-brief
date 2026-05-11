@@ -2,15 +2,22 @@
 
 LLM-powered daily digest deployed to GitHub Pages — powered by [Claude Code Routines](https://claude.ai/code/routines).
 
-Fork this repo, edit `sources.yaml`, create a routine, and get a daily auto-updating brief site.
+Fork this repo, edit `sources.yaml`, create a routine, done.
 
 ## How it works
 
-1. A Claude Code Routine runs daily on a cron schedule
-2. It reads `sources.yaml` to know what to scrape
-3. For each source, it fetches the page, extracts entries, and summarizes new content
-4. It generates an HTML brief in `archive/`, updates `manifest.json`, and pushes to the repo
-5. GitHub Pages serves the site — `index.html` reads the manifest and lists all briefs
+```
+Claude Code Routine (daily cron)
+  → reads sources.yaml + seen.json
+  → scrapes each source, generates insights for new articles
+  → outputs content.json, pushes to repo
+
+GitHub Action (triggered by content.json change)
+  → runs scripts/build.py
+  → renders archive/{date}.html from template.html
+  → updates seen.json + manifest.json
+  → pushes, GitHub Pages deploys
+```
 
 ## Setup
 
@@ -21,19 +28,25 @@ Fork this repo, edit `sources.yaml`, create a routine, and get a daily auto-upda
 ```yaml
 site:
   title: "My Daily Brief"
-  lang: zh-CN           # or en, ja, etc.
+  description: "What I'm following"
+  lang: zh-CN
 
 sources:
   - name: PyTorch DevLogs
     url: https://docs.pytorch.org/devlogs/
-    type: blog-index     # page with links to articles
+    type: blog-index
     focus: "key technical progress"
 
-  - name: Rust Blog
-    url: https://blog.rust-lang.org/
-    type: blog-index
-    focus: "language features and toolchain changes"
+  - name: Rust Releases
+    url: https://github.com/rust-lang/rust/releases
+    type: github-releases
+
+  - name: Tailwind CSS
+    url: https://tailwindcss.com/changelog
+    type: changelog
 ```
+
+Supported `type` values: `blog-index`, `github-releases`, `changelog`, `rss`
 
 ### 3. Enable GitHub Pages
 
@@ -41,23 +54,36 @@ Settings → Pages → Source: Deploy from branch `main`, directory `/`.
 
 ### 4. Create a Claude Code Routine
 
-Go to [claude.ai/code/routines](https://claude.ai/code/routines) and create a routine with:
+Go to [claude.ai/code/routines](https://claude.ai/code/routines):
 
-- **Schedule**: `0 1 * * *` (daily at 9am Asia/Shanghai, adjust for your timezone)
 - **Repo**: your fork's URL
-- **Prompt**: see `ROUTINE_PROMPT.md`
+- **Schedule**: `0 1 * * *` (9am Asia/Shanghai — adjust for your timezone)
+- **Prompt**: copy the contents of `ROUTINE_PROMPT.md`
 
 ## Structure
 
 ```
-├── index.html              # landing page, reads manifest.json
-├── sources.yaml            # configure your information sources
-├── archive/
-│   ├── manifest.json       # index of all briefs [{date, title, file}]
-│   ├── 2026-05-11.html     # daily brief
-│   └── ...
-└── ROUTINE_PROMPT.md        # the prompt to use for your routine
+├── index.html              # landing page (reads manifest.json)
+├── sources.yaml            # your information sources (edit this)
+├── template.html           # HTML/CSS template (customize look here)
+├── seen.json               # dedup index (auto-managed)
+├── content.json            # LLM output (auto-managed)
+├── scripts/
+│   └── build.py            # renders HTML from content.json
+├── .github/workflows/
+│   └── build.yml           # action: content.json → build → deploy
+├── ROUTINE_PROMPT.md        # prompt for the routine
+└── archive/
+    ├── manifest.json       # brief index
+    └── {date}.html         # daily briefs
 ```
+
+## Customization
+
+- **Sources**: edit `sources.yaml`
+- **Appearance**: edit `template.html` (CSS variables, layout)
+- **Language**: set `site.lang` in `sources.yaml`
+- **Insight focus**: set `focus` per source to guide what the LLM highlights
 
 ## License
 

@@ -1,5 +1,6 @@
 site:
   title: "Daily Brief"
+  description: "LLM-powered daily digest"
   lang: zh-CN
 
 sources:
