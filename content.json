@@ -7,110 +7,68 @@
   },
   "entries": [
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
-      "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
       "date": "2026-05-06",
-      "category": "distributed",
-      "summary": "通过 torch.compile 加速 TorchTitan RL 训练，实现 6 倍性能提升",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
-      "title": "Printing and Inspecting Tensors Inside torch.compile",
-      "date": "2026-05-06",
-      "category": "dynamo",
-      "summary": "介绍在 torch.compile 编译过程中打印和调试张量的方法",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
-      "title": "Dynamo Isolate Recompiles for torch.compile",
-      "date": "2026-05-04",
-      "category": "dynamo",
-      "summary": "Dynamo 隔离重编译机制，减少不必要的全量重编译",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes",
-      "title": "CPython notes",
-      "date": "2026-05-03",
-      "category": "cpp",
-      "summary": "PyTorch 与 CPython 交互的技术细节笔记",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog",
-      "title": "mergedog: shepherding approved PRs into pytorch/pytorch",
-      "date": "2026-05-03",
-      "category": "ci",
-      "summary": "mergedog 自动化工具：监管已批准的 PR 合入 pytorch/pytorch 主库",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work",
-      "title": "How Does the Dispatcher Work?",
-      "date": "2026-04-16",
-      "category": "dispatcher",
-      "summary": "深入解析 PyTorch dispatcher 的工作原理与 dispatch key 机制",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity",
-      "title": "Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't",
-      "date": "2026-03-25",
-      "category": "dynamic_shapes",
-      "summary": "修复非支持动态形状的性能回退，使其与静态形状性能对齐",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export",
-      "title": "Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces",
-      "date": "2026-02-27",
-      "category": "dynamic_shapes",
-      "summary": "降低大量非支持符号的 torch.export 追踪的编译时间开销",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked",
-      "title": "Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch",
-      "date": "2026-01-20",
-      "category": "dynamic_shapes",
-      "summary": "从有 guard 到无 guard：PyTorch 形状系统从 backed 到 unbacked 的演进",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes",
-      "title": "Slaying Framework Data-Dependent Errors Dragon",
-      "date": "2025-10-29",
-      "category": "dynamic_shapes",
-      "summary": "彻底消灭框架数据依赖错误：85% 的用户反馈问题已解决，完整图捕获不再受阻",
+      "category": "产品更新",
+      "summary": "Anthropic 与 SpaceX 达成算力合作，将 Claude Code 五小时速率限制翻倍，API 速率上限提升超一个数量级。",
       "insights": {
-        "problem": "框架数据依赖错误（DDE）长期阻碍动态形状下的完整图捕获，用户需手动添加 `torch._check` 约束才能绕过错误。",
-        "approach": "彻底移除 `guard_size_oblivious` 机制，处理超过 270 个代码分支，使 reshape、slice、contiguity 等操作在无法 guard 时采用保守语义而非报错。",
-        "takeaway": "GitHub DDE 报告从 35+ 降至 5，关闭 30+ 相关 issue，用户无需 `torch._check` 即可导出完全通用的无约束图，复杂模型导出提速约两周。"
+        "problem": "用户长期面临 Claude Code 和 API 的速率限制，严重制约大规模使用场景。",
+        "approach": "与 SpaceX 签约，获取 Colossus 1 数据中心超过 300 MW 新算力（22 万张 NVIDIA GPU），Claude Code 五小时速率限制翻倍并取消高峰时段限制。",
+        "takeaway": "API 输入速率上限（Tier 1）从 30K 提升至 500K tokens/分钟，Claude Code Pro/Max 用户体验大幅改善。"
       }
     },
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes",
-      "title": "Guard-Free Dynamic Shapes",
-      "date": "2025-07-08",
-      "category": "dynamic_shapes",
-      "summary": "动态形状无守卫图导出：通过显式非支持语义将框架数据依赖错误减少 55%",
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "title": "Agents for financial services",
+      "date": "2026-05-05",
+      "category": "新功能",
+      "summary": "Anthropic 发布 10 个金融行业即用型 Agent 模板，覆盖投研、KYC、月末关账等核心场景。",
       "insights": {
-        "problem": "导出带动态形状的模型时，数据依赖错误（DDE）是主要障碍——`torch.compile` 无法在无法 guard 的尺寸上安全分支，导致用户需添加大量 `torch._check` 约束。",
-        "approach": "引入显式非支持语义（explicit unbacked semantics），通过 `guard_or_false`/`guard_or_true` 定义禁止 guard 时的保守分支行为，覆盖 contiguous、reshape、expand、slice 等常用操作。",
-        "takeaway": "框架 DDE 减少 55%，`guard_size_oblivious` 使用减少 60%，复杂模型所需的 `torch._check` 调用从 31 次降为零。"
+        "problem": "金融机构将 AI 落地到关键业务流程的技术门槛高，从零构建 agent 通常需要数月时间。",
+        "approach": "推出 10 个预构建参考架构，每个模板集成 skills（领域知识）、connectors（实时数据）和 subagents（专项子任务），可作为 Claude Cowork/Claude Code plugin 或 Managed Agents cookbook 部署。",
+        "takeaway": "新增 Dun & Bradstreet、Fiscal AI 等 8 家数据合作伙伴，金融团队可在数天内完成 AI 工作流部署，而非数月。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "title": "Building a new enterprise AI services company with Blackstone, H&F, and Goldman Sachs",
+      "date": "2026-05-04",
+      "category": "商业合作",
+      "summary": "Anthropic 联合 Blackstone、Hellman & Friedman 和 Goldman Sachs 成立企业 AI 服务公司，聚焦中型企业的 Claude 落地部署。",
+      "insights": {
+        "problem": "中型企业缺乏将 Claude 融入核心运营所需的专业工程资源和行业经验。",
+        "approach": "新公司将 Anthropic Applied AI 工程师与合伙方工程团队组合，协助客户识别高价值场景、构建定制化方案并提供长期支持。",
+        "takeaway": "借助头部金融机构的企业客户网络，这一联合模式有望成为 AI 咨询行业的规模化范本。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "title": "Claude for Creative Work",
+      "date": "2026-04-28",
+      "category": "新功能",
+      "summary": "Anthropic 推出面向创意行业的 Claude 集成，与 Adobe、Blender、Autodesk、Ableton 等工具深度打通。",
+      "insights": {
+        "problem": "创意专业人士使用 AI 时需在多个孤立工具间频繁切换，工作流割裂且效率低下。",
+        "approach": "发布与 Adobe Creative Cloud、Blender、Autodesk Fusion、Ableton 等平台的深度连接器，让 Claude 可通过自然语言直接操作专业软件的参数和对象。",
+        "takeaway": "用户可用自然语言在 Autodesk Fusion 中创建 3D 模型、实时控制 Blender 场景，并与 Rhode Island School of Design 等高校建立了创意计算教育合作。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "title": "Introducing Claude Opus 4.7",
+      "date": "2026-04-16",
+      "category": "新模型",
+      "summary": "Claude Opus 4.7 发布，在高难度软件工程任务上全面超越前代，配备更强视觉和 1M token 超长上下文且无附加费用。",
+      "insights": {
+        "problem": "最难的编程任务和专业视觉任务仍需密集人工监督，难以完全托付给 AI 独立完成并自验证结果。",
+        "approach": "采用全新 tokenizer 提升推理能力和图像分辨率处理，内置网络安全高风险请求自动检测与拦截，提供无附加费的 1M token 上下文窗口。",
+        "takeaway": "Opus 4.7 定价与 Opus 4.6 相同（$5/$25 per M tokens），已上线 Amazon Bedrock、Google Vertex AI 和 Microsoft Foundry。"
       }
     }
   ]
