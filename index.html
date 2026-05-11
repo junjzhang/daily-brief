@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Brief</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--surface:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:2rem 1rem}
+h1{font-size:1.8rem;margin-bottom:.5rem}
+p.sub{color:var(--muted);margin-bottom:2rem}
+.list{width:100%;max-width:720px}
+.list a{display:block;padding:.75rem 1rem;margin-bottom:.5rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--accent);text-decoration:none;transition:border-color .2s}
+.list a:hover{border-color:var(--accent)}
+.list a .date{color:var(--muted);font-size:.85rem;float:right}
+.empty{color:var(--muted);text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+<h1>PyTorch DevLogs Daily Brief</h1>
+<p class="sub">Auto-generated daily briefs of <a href="https://docs.pytorch.org/devlogs/" style="color:var(--accent)">pytorch.org/devlogs</a></p>
+<div class="list" id="briefs"></div>
+<p class="empty" id="empty" style="display:none">No briefs yet. Check back tomorrow.</p>
+<script>
+fetch('archive/manifest.json')
+  .then(r=>r.json())
+  .then(entries=>{
+    if(!entries.length){document.getElementById('empty').style.display='block';return}
+    const list=document.getElementById('briefs');
+    entries.sort((a,b)=>b.date.localeCompare(a.date));
+    entries.forEach(e=>{
+      const a=document.createElement('a');
+      a.href='archive/'+e.file;
+      a.innerHTML=e.title+'<span class="date">'+e.date+'</span>';
+      list.appendChild(a);
+    });
+  })
+  .catch(()=>{document.getElementById('empty').style.display='block'});
+</script>
+</body>
+</html>
