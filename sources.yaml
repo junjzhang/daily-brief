@@ -1,0 +1,9 @@
+site:
+  title: "Daily Brief"
+  lang: zh-CN
+
+sources:
+  - name: PyTorch DevLogs
+    url: https://docs.pytorch.org/devlogs/
+    type: blog-index
+    focus: "关键技术进展、性能优化、新工具和 API 变化"
