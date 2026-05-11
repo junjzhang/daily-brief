@@ -64,5 +64,35 @@
     "source": "PyTorch DevLogs",
     "first_seen": "2026-05-11",
     "date": "2025-07-08"
+  },
+  "https://www.anthropic.com/news/higher-limits-spacex": {
+    "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-05-06"
+  },
+  "https://www.anthropic.com/news/finance-agents": {
+    "title": "Agents for financial services",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-05-05"
+  },
+  "https://www.anthropic.com/news/enterprise-ai-services-company": {
+    "title": "Building a new enterprise AI services company with Blackstone, H&F, and Goldman Sachs",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-05-04"
+  },
+  "https://www.anthropic.com/news/claude-for-creative-work": {
+    "title": "Claude for Creative Work",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-04-28"
+  },
+  "https://www.anthropic.com/news/claude-opus-4-7": {
+    "title": "Introducing Claude Opus 4.7",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-04-16"
   }
 }
