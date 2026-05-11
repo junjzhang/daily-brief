@@ -59,6 +59,26 @@ def render_insight_row(tag, label, text, color):
     )
 
 
+COPY_ICON = '<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg>'
+
+
+def build_copy_context(entry):
+    lines = [entry["title"]]
+    lines.append(f"Source: {entry.get('source', '')}")
+    if entry.get("date"):
+        lines.append(f"Date: {entry['date']}")
+    lines.append(f"URL: {entry['url']}")
+    ins = entry.get("insights")
+    if ins and not ins.get("error"):
+        lines.append("")
+        lines.append(f"Problem: {ins.get('problem', '')}")
+        lines.append(f"Approach: {ins.get('approach', '')}")
+        lines.append(f"Takeaway: {ins.get('takeaway', '')}")
+    elif entry.get("summary"):
+        lines.append(f"\nSummary: {entry['summary']}")
+    return "\n".join(lines)
+
+
 def render_card(entry, source_idx):
     e = escape
     cat = entry.get("category", "")
@@ -73,14 +93,17 @@ def render_card(entry, source_idx):
         insights_html += render_insight_row("takeaway", "Takeaway", ins.get("takeaway", ""), "takeaway")
         insights_html += '</div>'
     elif ins and ins.get("error"):
-        insights_html = f'<div class="insights"><div class="insight-row"><span class="insight-text" style="color:var(--muted)">内容获取失败，无法生成 insights</span></div></div>'
+        insights_html = '<div class="insights"><div class="insight-row"><span class="insight-text" style="color:var(--muted)">内容获取失败，无法生成 insights</span></div></div>'
+
+    ctx = e(build_copy_context(entry)).replace("&#x27;", "'").replace("&quot;", '"')
+    copy_btn = f'<button class="copy-btn" onclick="copyCtx(this)" data-ctx="{ctx}">{COPY_ICON} Copy</button>'
 
     return (
         f'<div class="card">'
         f'<div class="card-head"><span class="card-title">{e(entry["title"])}</span>{badge}</div>'
         f'<div class="card-meta">{e(entry.get("date", ""))}</div>'
         f'{insights_html}'
-        f'<a class="card-link" href="{e(entry["url"])}">阅读原文 →</a>'
+        f'<div class="card-foot"><a class="card-link" href="{e(entry["url"])}">阅读原文 →</a>{copy_btn}</div>'
         f'</div>'
     )
 

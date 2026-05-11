@@ -31,7 +31,11 @@ a:hover{text-decoration:underline}
 .card-title{font-size:1.05rem;font-weight:600;color:var(--text)}
 .badge{font-size:.7rem;font-weight:500;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0}
 .card-meta{font-size:.8rem;color:var(--muted);margin-bottom:.75rem}
-.card-link{display:inline-block;margin-top:.75rem;font-size:.85rem;color:var(--accent)}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.card-link{font-size:.85rem;color:var(--accent)}
+.copy-btn{background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;padding:4px 10px;font-size:.75rem;display:flex;align-items:center;gap:4px;transition:all .2s}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent)}
+.copy-btn.copied{border-color:var(--accent);color:var(--accent)}
 
 .insights{margin-top:.85rem;padding:.85rem 1rem;background:var(--surface2);border-radius:8px;border-left:3px solid var(--accent)}
 .insight-row{display:flex;gap:.5rem;margin-bottom:.45rem;font-size:.88rem}
@@ -72,5 +76,16 @@ a:hover{text-decoration:underline}
   由 Claude Code Routine 自动生成 · 数据来源 {{FOOTER_SOURCES}}
 </div>
 
+<script>
+function copyCtx(btn){
+  const text=btn.getAttribute('data-ctx');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.classList.add('copied');
+    const orig=btn.innerHTML;
+    btn.innerHTML='<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Copied';
+    setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied')},1500);
+  });
+}
+</script>
 </body>
 </html>
