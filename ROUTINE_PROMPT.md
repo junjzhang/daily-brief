@@ -13,7 +13,7 @@ Read `seen.json` for the set of already-covered article URLs.
 
 For each source in sources.yaml, use WebFetch on its URL. Extract entries based on the `type` hint:
 
-- **blog-index**: HTML page with links to articles. Extract ALL articles on the page (not just the most recent ones). Get each article's title, date, URL, category, and summary.
+- **blog-index**: HTML page with links to articles. Extract ALL articles on the page. If the page has category sections with "all posts" or similar sub-page links, follow each sub-page link via additional WebFetch calls to collect every article across all categories. Do not rely on the index page alone if it truncates or only shows recent posts.
 - **github-releases**: GitHub releases page. Extract release tag/title, date, URL, and body summary.
 - **changelog**: Single page with dated sections. Extract each version's title, date, and summary.
 - **rss**: RSS/Atom feed. Extract each item's title, link, pubDate, and description.

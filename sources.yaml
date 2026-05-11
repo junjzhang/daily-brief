@@ -4,35 +4,10 @@ site:
   lang: zh-CN
 
 sources:
-  - name: "PyTorch: Distributed"
-    url: https://docs.pytorch.org/devlogs/distributed
+  - name: PyTorch DevLogs
+    url: https://docs.pytorch.org/devlogs/
     type: blog-index
-    focus: "分布式训练、torch.compile 在分布式场景的优化"
-
-  - name: "PyTorch: Dynamo"
-    url: https://docs.pytorch.org/devlogs/dynamo
-    type: blog-index
-    focus: "torch.compile 编译器、graph capture、recompilation"
-
-  - name: "PyTorch: C++"
-    url: https://docs.pytorch.org/devlogs/cpp
-    type: blog-index
-    focus: "C++ 扩展、CPython API、性能优化"
-
-  - name: "PyTorch: CI"
-    url: https://docs.pytorch.org/devlogs/ci
-    type: blog-index
-    focus: "CI/CD 工具链、自动化测试和合入流程"
-
-  - name: "PyTorch: Dispatcher"
-    url: https://docs.pytorch.org/devlogs/dispatcher
-    type: blog-index
-    focus: "PyTorch dispatcher 架构和 dispatch key 机制"
-
-  - name: "PyTorch: Dynamic Shapes"
-    url: https://docs.pytorch.org/devlogs/dynamic_shapes
-    type: blog-index
-    focus: "动态形状、unbacked symbols、torch.export"
+    focus: "关键技术进展、性能优化、新工具和 API 变化"
 
   - name: Anthropic Blog
     url: https://www.anthropic.com/news
