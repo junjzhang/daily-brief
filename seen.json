@@ -52,5 +52,17 @@
     "source": "PyTorch DevLogs",
     "first_seen": "2026-05-11",
     "date": "2026-01-20"
+  },
+  "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes": {
+    "title": "Slaying Framework Data-Dependent Errors Dragon",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-05-11",
+    "date": "2025-10-29"
+  },
+  "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes": {
+    "title": "Guard-Free Dynamic Shapes",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-05-11",
+    "date": "2025-07-08"
   }
 }
