@@ -3,25 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PyTorch DevLogs 每日简报 — 2026-05-11</title>
+<title>Daily Brief 每日简报 — 2026-05-11</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff;--green:#3fb950;--orange:#d29922;--purple:#bc8cff;--red:#f85149;--cyan:#39d2c0}
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:0}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
-.header{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1e2e 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;text-align:center}
+.header{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1e2e 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;text-align:center;position:relative}
 .header h1{font-size:1.6rem;font-weight:600;margin-bottom:.4rem}
 .header .date{color:var(--muted);font-size:.95rem}
 .header .back{position:absolute;left:1.5rem;top:1.5rem;color:var(--muted);font-size:.85rem}
-.header{position:relative}
 
 .container{max-width:800px;margin:0 auto;padding:1.5rem}
 
+.stats{text-align:center;padding:.6rem 1rem;margin-bottom:1.5rem;font-size:.9rem;font-weight:500;color:var(--accent);background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.15);border-radius:8px}
+.stats-empty{color:var(--muted);background:var(--surface);border-color:var(--border)}
+
 .section{margin-bottom:2.5rem}
 .section-title{font-size:1.15rem;font-weight:600;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
-.section-title .icon{font-size:1.1rem}
 .count{background:var(--surface);color:var(--muted);font-size:.75rem;padding:2px 8px;border-radius:10px;margin-left:.5rem}
 
 .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem;transition:border-color .2s}
@@ -29,17 +30,14 @@ a:hover{text-decoration:underline}
 .card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem;flex-wrap:wrap}
 .card-title{font-size:1.05rem;font-weight:600;color:var(--text)}
 .badge{font-size:.7rem;font-weight:500;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0}
-.badge-distributed{background:rgba(56,169,80,.15);color:var(--green)}
-.badge-dynamo{background:rgba(188,140,255,.15);color:var(--purple)}
-.badge-cpp{background:rgba(210,153,34,.15);color:var(--orange)}
-.badge-ci{background:rgba(57,210,192,.15);color:var(--cyan)}
-.badge-dispatcher{background:rgba(248,81,73,.15);color:var(--red)}
-.badge-dynamic_shapes{background:rgba(88,166,255,.15);color:var(--accent)}
 .card-meta{font-size:.8rem;color:var(--muted);margin-bottom:.75rem}
-.card ul{margin:0;padding-left:1.25rem}
-.card li{font-size:.9rem;margin-bottom:.4rem;color:#c9d1d9}
-.card li strong{color:var(--text);font-weight:600}
 .card-link{display:inline-block;margin-top:.75rem;font-size:.85rem;color:var(--accent)}
+
+.insights{margin-top:.85rem;padding:.85rem 1rem;background:var(--surface2);border-radius:8px;border-left:3px solid var(--accent)}
+.insight-row{display:flex;gap:.5rem;margin-bottom:.45rem;font-size:.88rem}
+.insight-row:last-child{margin-bottom:0}
+.insight-tag{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.insight-text{color:#c9d1d9}
 
 .compact{list-style:none;padding:0}
 .compact li{padding:.6rem .85rem;margin-bottom:.35rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem}
@@ -60,118 +58,18 @@ a:hover{text-decoration:underline}
 <body>
 
 <div class="header">
-  <a href="../index.html" class="back">&larr; 所有简报</a>
-  <h1>PyTorch DevLogs 每日简报</h1>
-  <div class="date">2026-05-11 &middot; 自动生成</div>
+  <a href="../index.html" class="back">← 所有简报</a>
+  <h1>Daily Brief 每日简报</h1>
+  <div class="date">2026-05-11 · 自动生成</div>
 </div>
 
 <div class="container">
-
-<div class="section">
-  <div class="section-title">本周新文章 <span class="count">5 篇</span></div>
-
-  <div class="card">
-    <div class="card-head">
-      <span class="card-title">torch.compile for TorchTitan RL: 6x Faster Unified RL Training</span>
-      <span class="badge badge-distributed">Distributed</span>
-    </div>
-    <div class="card-meta">2026-05-06</div>
-    <ul>
-      <li><strong>6x 端到端加速</strong>（446s → 70s），Qwen3 0.6B on GSM8K；generator 单项加速 48x（CUDAGraphs + fullgraph compilation）</li>
-      <li><strong>统一模型定义</strong>：训练和推理共享同一份编译产物，编译启动时间从 84s 降至 48s</li>
-      <li><strong>Fullgraph CUDAGraphs</strong>：vLLM 编译时间从 50s 降至 15s，通过更好的算子融合</li>
-      <li>Batching + torch.compile 使训练阶段获得 <strong>9x 加速</strong>（157s → 17.1s），优化了变长序列 packing</li>
-    </ul>
-    <a class="card-link" href="https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl">阅读原文 &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-head">
-      <span class="card-title">Printing and Inspecting Tensors Inside torch.compile</span>
-      <span class="badge badge-dynamo">Dynamo</span>
-    </div>
-    <div class="card-meta">2026-05-06</div>
-    <ul>
-      <li>提供<strong>无 graph break 的调试工具集</strong>：torch._higher_order_ops.print、@leaf_function、gradient hooks</li>
-      <li>支持 <strong>DTensor 分布式检查</strong>，自动 rank 过滤和前缀标记</li>
-      <li>install_debug_prints 实现<strong>模块级自动插桩</strong>，一行代码覆盖所有 forward activation</li>
-      <li>debug_grad_log 支持<strong>反向传播梯度监控</strong>，零编译开销</li>
-    </ul>
-    <a class="card-link" href="https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2">阅读原文 &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-head">
-      <span class="card-title">Dynamo Isolate Recompiles for torch.compile</span>
-      <span class="badge badge-dynamo">Dynamo</span>
-    </div>
-    <div class="card-meta">2026-05-04</div>
-    <ul>
-      <li>新参数 <strong>isolate_recompiles=True</strong>：为每个 torch.compile() 调用分配独立 cache bucket，避免重编译配额冲突</li>
-      <li>从<strong>单一扁平链表改为 keyed map</strong>：isolated 调用获得独立 bucket ID，非 isolated 共享 bucket -1，向后兼容</li>
-      <li>同一函数可安全使用<strong>不同编译配置</strong>（如 dynamic=True vs False），互不干扰</li>
-      <li>支持<strong>per-compile recompile_limit</strong> 精细调控，dispatch 密集场景可设更高预算</li>
-    </ul>
-    <a class="card-link" href="https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles">阅读原文 &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-head">
-      <span class="card-title">CPython notes</span>
-      <span class="badge badge-cpp">C++</span>
-    </div>
-    <div class="card-meta">2026-05-03</div>
-    <ul>
-      <li>使用 <strong>THPObjectPtr / py::object</strong> 做 RAII 内存管理，避免 raw CPython API 手动引用计数</li>
-      <li>CPython 无异常机制，需<strong>显式 NULL 检查</strong>并逐层传播错误状态</li>
-      <li>选择 ABI-stable 慢路径 vs 直接 struct 访问快路径，取决于是否需要 interposition points</li>
-      <li>C++ bug 后果严重（segfault / memory corruption），<strong>优先新增条件分支而非重构热路径</strong></li>
-    </ul>
-    <a class="card-link" href="https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes">阅读原文 &rarr;</a>
-  </div>
-
-  <div class="card">
-    <div class="card-head">
-      <span class="card-title">mergedog: shepherding approved PRs into pytorch/pytorch</span>
-      <span class="badge badge-ci">CI</span>
-    </div>
-    <div class="card-meta">2026-05-03</div>
-    <ul>
-      <li>用 <strong>Claude 自动分诊 CI 失败</strong>：区分基础设施抖动 vs 真实代码问题，自动修复或交由人工</li>
-      <li><strong>信任边界安全模型</strong>：LLM 只能操作已经人工 review 过的 commit，不直接执行不可信外部代码</li>
-      <li><strong>幂等工作流设计</strong>：持久化状态支持随时 kill/relaunch，通过 mergedog.mux 多路复用并行处理多个 PR</li>
-      <li>自动化三大核心流程：workflow approval、CI 结果监控、简单失败修复</li>
-    </ul>
-    <a class="card-link" href="https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog">阅读原文 &rarr;</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">近期概览 <span class="count">4 篇</span></div>
-  <ul class="compact">
-    <li>
-      <a class="c-title" href="https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work">How Does the Dispatcher Work?</a>
-      <span class="c-meta"><span class="badge badge-dispatcher">Dispatcher</span> 2026-04-16</span>
-    </li>
-    <li>
-      <a class="c-title" href="https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity">Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't</a>
-      <span class="c-meta"><span class="badge badge-dynamic_shapes">Dynamic Shapes</span> 2026-03-25</span>
-    </li>
-    <li>
-      <a class="c-title" href="https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export">Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces</a>
-      <span class="c-meta"><span class="badge badge-dynamic_shapes">Dynamic Shapes</span> 2026-02-27</span>
-    </li>
-    <li>
-      <a class="c-title" href="https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked">Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch</a>
-      <span class="c-meta"><span class="badge badge-dynamic_shapes">Dynamic Shapes</span> 2026-01-20</span>
-    </li>
-  </ul>
-</div>
-
+  <div class="stats stats-empty">今日无新内容</div>
+  
 </div>
 
 <div class="footer">
-  由 Claude Code Routine 自动生成 &middot; 数据来源 <a href="https://docs.pytorch.org/devlogs/">pytorch.org/devlogs</a>
+  由 Claude Code Routine 自动生成 · 数据来源 
 </div>
 
 </body>
