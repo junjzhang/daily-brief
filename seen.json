@@ -94,5 +94,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-11",
     "date": "2026-04-16"
+  },
+  "https://www.anthropic.com/news/claude-design-anthropic-labs": {
+    "title": "Introducing Claude Design by Anthropic Labs",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-11",
+    "date": "2026-04-17"
   }
 }
