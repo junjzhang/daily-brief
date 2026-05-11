@@ -5,5 +5,113 @@
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
-  "entries": []
+  "entries": [
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
+      "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
+      "date": "2026-05-06",
+      "category": "distributed",
+      "summary": "通过 torch.compile 加速 TorchTitan RL 训练，实现 6 倍性能提升",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
+      "title": "Printing and Inspecting Tensors Inside torch.compile",
+      "date": "2026-05-06",
+      "category": "dynamo",
+      "summary": "介绍在 torch.compile 编译过程中打印和调试张量的方法",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
+      "title": "Dynamo Isolate Recompiles for torch.compile",
+      "date": "2026-05-04",
+      "category": "dynamo",
+      "summary": "Dynamo 隔离重编译机制，减少不必要的全量重编译",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes",
+      "title": "CPython notes",
+      "date": "2026-05-03",
+      "category": "cpp",
+      "summary": "PyTorch 与 CPython 交互的技术细节笔记",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog",
+      "title": "mergedog: shepherding approved PRs into pytorch/pytorch",
+      "date": "2026-05-03",
+      "category": "ci",
+      "summary": "mergedog 自动化工具：监管已批准的 PR 合入 pytorch/pytorch 主库",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work",
+      "title": "How Does the Dispatcher Work?",
+      "date": "2026-04-16",
+      "category": "dispatcher",
+      "summary": "深入解析 PyTorch dispatcher 的工作原理与 dispatch key 机制",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity",
+      "title": "Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't",
+      "date": "2026-03-25",
+      "category": "dynamic_shapes",
+      "summary": "修复非支持动态形状的性能回退，使其与静态形状性能对齐",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export",
+      "title": "Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces",
+      "date": "2026-02-27",
+      "category": "dynamic_shapes",
+      "summary": "降低大量非支持符号的 torch.export 追踪的编译时间开销",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked",
+      "title": "Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch",
+      "date": "2026-01-20",
+      "category": "dynamic_shapes",
+      "summary": "从有 guard 到无 guard：PyTorch 形状系统从 backed 到 unbacked 的演进",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes",
+      "title": "Slaying Framework Data-Dependent Errors Dragon",
+      "date": "2025-10-29",
+      "category": "dynamic_shapes",
+      "summary": "彻底消灭框架数据依赖错误：85% 的用户反馈问题已解决，完整图捕获不再受阻",
+      "insights": {
+        "problem": "框架数据依赖错误（DDE）长期阻碍动态形状下的完整图捕获，用户需手动添加 `torch._check` 约束才能绕过错误。",
+        "approach": "彻底移除 `guard_size_oblivious` 机制，处理超过 270 个代码分支，使 reshape、slice、contiguity 等操作在无法 guard 时采用保守语义而非报错。",
+        "takeaway": "GitHub DDE 报告从 35+ 降至 5，关闭 30+ 相关 issue，用户无需 `torch._check` 即可导出完全通用的无约束图，复杂模型导出提速约两周。"
+      }
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes",
+      "title": "Guard-Free Dynamic Shapes",
+      "date": "2025-07-08",
+      "category": "dynamic_shapes",
+      "summary": "动态形状无守卫图导出：通过显式非支持语义将框架数据依赖错误减少 55%",
+      "insights": {
+        "problem": "导出带动态形状的模型时，数据依赖错误（DDE）是主要障碍——`torch.compile` 无法在无法 guard 的尺寸上安全分支，导致用户需添加大量 `torch._check` 约束。",
+        "approach": "引入显式非支持语义（explicit unbacked semantics），通过 `guard_or_false`/`guard_or_true` 定义禁止 guard 时的保守分支行为，覆盖 contiguous、reshape、expand、slice 等常用操作。",
+        "takeaway": "框架 DDE 减少 55%，`guard_size_oblivious` 使用减少 60%，复杂模型所需的 `torch._check` 调用从 31 次降为零。"
+      }
+    }
+  ]
 }
