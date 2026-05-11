@@ -8,3 +8,8 @@ sources:
     url: https://docs.pytorch.org/devlogs/
     type: blog-index
     focus: "关键技术进展、性能优化、新工具和 API 变化"
+
+  - name: Anthropic Blog
+    url: https://www.anthropic.com/news
+    type: blog-index
+    focus: "Claude 新能力、安全研究、产品更新"
