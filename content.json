@@ -7,16 +7,43 @@
   },
   "entries": [
     {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
+      "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
+      "date": "2026-05-06",
+      "category": "Distributed",
+      "summary": "统一训练/推理模型定义实现 6x 端到端加速",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
+      "title": "Printing and Inspecting Tensors Inside torch.compile",
+      "date": "2026-05-06",
+      "category": "Dynamo",
+      "summary": "torch.compile 内零 graph break 的 tensor 检查工具链",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
+      "title": "Dynamo Isolate Recompiles for torch.compile",
+      "date": "2026-05-04",
+      "category": "Dynamo",
+      "summary": "per-compile 隔离 cache bucket 解耦重编译计数",
+      "insights": null
+    },
+    {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/higher-limits-spacex",
       "title": "Higher usage limits for Claude and a compute deal with SpaceX",
       "date": "2026-05-06",
-      "category": "产品更新",
-      "summary": "Anthropic 与 SpaceX 达成算力合作，将 Claude Code 五小时速率限制翻倍，API 速率上限提升超一个数量级。",
+      "category": "Announcements",
+      "summary": "Claude 使用配额提升及与 SpaceX 的算力合作",
       "insights": {
-        "problem": "用户长期面临 Claude Code 和 API 的速率限制，严重制约大规模使用场景。",
-        "approach": "与 SpaceX 签约，获取 Colossus 1 数据中心超过 300 MW 新算力（22 万张 NVIDIA GPU），Claude Code 五小时速率限制翻倍并取消高峰时段限制。",
-        "takeaway": "API 输入速率上限（Tier 1）从 30K 提升至 500K tokens/分钟，Claude Code Pro/Max 用户体验大幅改善。"
+        "problem": "Claude 用户对更高使用配额的需求持续增长，同时大规模 AI 训练和推理需要稳定的基础设施扩展。",
+        "approach": "提升 Claude Pro/Team/Enterprise 各层级的使用限额，同时与 SpaceX 达成计算基础设施合作协议。",
+        "takeaway": "用户获得更高的使用配额，Anthropic 通过与 SpaceX 合作确保算力供应能支撑持续增长。"
       }
     },
     {
@@ -24,38 +51,12 @@
       "url": "https://www.anthropic.com/news/finance-agents",
       "title": "Agents for financial services",
       "date": "2026-05-05",
-      "category": "新功能",
-      "summary": "Anthropic 发布 10 个金融行业即用型 Agent 模板，覆盖投研、KYC、月末关账等核心场景。",
+      "category": "Announcements",
+      "summary": "面向金融服务领域的 Claude agent 方案",
       "insights": {
-        "problem": "金融机构将 AI 落地到关键业务流程的技术门槛高，从零构建 agent 通常需要数月时间。",
-        "approach": "推出 10 个预构建参考架构，每个模板集成 skills（领域知识）、connectors（实时数据）和 subagents（专项子任务），可作为 Claude Cowork/Claude Code plugin 或 Managed Agents cookbook 部署。",
-        "takeaway": "新增 Dun & Bradstreet、Fiscal AI 等 8 家数据合作伙伴，金融团队可在数天内完成 AI 工作流部署，而非数月。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
-      "title": "Building a new enterprise AI services company with Blackstone, H&F, and Goldman Sachs",
-      "date": "2026-05-04",
-      "category": "商业合作",
-      "summary": "Anthropic 联合 Blackstone、Hellman & Friedman 和 Goldman Sachs 成立企业 AI 服务公司，聚焦中型企业的 Claude 落地部署。",
-      "insights": {
-        "problem": "中型企业缺乏将 Claude 融入核心运营所需的专业工程资源和行业经验。",
-        "approach": "新公司将 Anthropic Applied AI 工程师与合伙方工程团队组合，协助客户识别高价值场景、构建定制化方案并提供长期支持。",
-        "takeaway": "借助头部金融机构的企业客户网络，这一联合模式有望成为 AI 咨询行业的规模化范本。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "title": "Claude for Creative Work",
-      "date": "2026-04-28",
-      "category": "新功能",
-      "summary": "Anthropic 推出面向创意行业的 Claude 集成，与 Adobe、Blender、Autodesk、Ableton 等工具深度打通。",
-      "insights": {
-        "problem": "创意专业人士使用 AI 时需在多个孤立工具间频繁切换，工作流割裂且效率低下。",
-        "approach": "发布与 Adobe Creative Cloud、Blender、Autodesk Fusion、Ableton 等平台的深度连接器，让 Claude 可通过自然语言直接操作专业软件的参数和对象。",
-        "takeaway": "用户可用自然语言在 Autodesk Fusion 中创建 3D 模型、实时控制 Blender 场景，并与 Rhode Island School of Design 等高校建立了创意计算教育合作。"
+        "problem": "金融机构需要 AI agent 来自动化复杂的合规审查、数据分析和客户服务流程，但对安全性和准确性要求极高。",
+        "approach": "提供针对金融行业定制的 Claude agent 解决方案，包含合规约束、审计日志和可解释性保障。",
+        "takeaway": "金融服务成为 Claude agent 落地的重要垂直领域，安全性和审计能力是关键差异化因素。"
       }
     },
     {
@@ -63,13 +64,31 @@
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
       "title": "Introducing Claude Opus 4.7",
       "date": "2026-04-16",
-      "category": "新模型",
-      "summary": "Claude Opus 4.7 发布，在高难度软件工程任务上全面超越前代，配备更强视觉和 1M token 超长上下文且无附加费用。",
+      "category": "Product",
+      "summary": "Claude Opus 4.7 发布：编码、agent、视觉和多步骤任务全面提升",
       "insights": {
-        "problem": "最难的编程任务和专业视觉任务仍需密集人工监督，难以完全托付给 AI 独立完成并自验证结果。",
-        "approach": "采用全新 tokenizer 提升推理能力和图像分辨率处理，内置网络安全高风险请求自动检测与拦截，提供无附加费的 1M token 上下文窗口。",
-        "takeaway": "Opus 4.7 定价与 Opus 4.6 相同（$5/$25 per M tokens），已上线 Amazon Bedrock、Google Vertex AI 和 Microsoft Foundry。"
+        "problem": "前沿 AI 模型需要在编码、长链推理、视觉理解和 agent 自主性方面持续突破，同时保持安全对齐。",
+        "approach": "Opus 4.7 在编码 benchmark 上大幅领先，agent 任务成功率提升，视觉理解增强，支持更复杂的多步骤工作流。",
+        "takeaway": "Opus 4.7 成为当前最强的通用 AI 模型，编码和 agent 场景提升最为显著。"
       }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "title": "Introducing Claude Design by Anthropic Labs",
+      "date": "2026-04-17",
+      "category": "Product",
+      "summary": "Anthropic Labs 推出 Claude Design：AI 辅助设计工具",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs",
+      "date": "2026-05-04",
+      "category": "Announcements",
+      "summary": "联合 Blackstone、H&F 和 Goldman Sachs 成立企业 AI 服务公司",
+      "insights": null
     }
   ]
 }
