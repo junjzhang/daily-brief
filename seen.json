@@ -100,5 +100,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-11",
     "date": "2026-04-17"
+  },
+  "https://www.anthropic.com/news/Introducing-code-with-claude": {
+    "title": "Code with Claude - Anthropic's First Developer Conference",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-12",
+    "date": "2026-05-06"
+  },
+  "https://www.anthropic.com/news/anthropic-nec": {
+    "title": "Anthropic and NEC partner to build AI-native engineering organization",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-12",
+    "date": "2026-04-24"
+  },
+  "https://www.anthropic.com/news/anthropic-amazon-compute": {
+    "title": "Anthropic and Amazon expand collaboration for up to 5 GW of capacity",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-12",
+    "date": "2026-04-20"
   }
 }
