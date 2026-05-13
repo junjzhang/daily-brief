@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-12",
+  "date": "2026-05-13",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -13,11 +13,7 @@
       "date": "2026-05-06",
       "category": "产品更新",
       "summary": "Anthropic 举办首届 Code with Claude 开发者大会，正式发布 Dreaming、Outcomes、多 Agent 编排三大特性，并向全体外部开发者开放 Claude Agent SDK",
-      "insights": {
-        "problem": "AI Agent 缺乏跨会话记忆与自我优化能力，在复杂长程任务中无法从过往经验中积累改进，任务完成率受限。",
-        "approach": "发布 Dreaming（Agent 在空闲期自主回顾历史会话、提炼模式并自我改进）、Outcomes（自定义成功标准驱动 Agent 迭代）及多 Agent 编排三大特性进入公测；同时向全体外部开发者开放 Claude Agent SDK，并推出 Claude Finance 十款预置金融 Agent 模板。",
-        "takeaway": "Harvey AI 接入 Dreaming 后任务完成率提升约 6 倍；SpaceX Colossus 算力加持下 Claude Code 速率上限翻倍、Claude Platform API 调用量同比增长约 70 倍，Claude Agent SDK 公测开放为开发者生态提供统一编程入口。"
-      }
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
@@ -107,11 +103,7 @@
       "date": "2026-04-24",
       "category": "合作伙伴",
       "summary": "NEC 将 Claude 部署至全球约 3 万名工程师，携手 Anthropic 共建日本规模最大的 AI 原生工程团队之一，并联合开发金融、制造、政务行业 AI 产品",
-      "insights": {
-        "problem": "日本企业在 AI 转型中缺乏具备大规模交付能力的 AI 原生工程团队，现有人才储备难以支撑复杂垂直行业 AI 解决方案的快速落地。",
-        "approach": "NEC 将 Claude（含 Claude Code）部署至全球约 3 万名员工，设立 Center of Excellence 统一培训与赋能；双方联合开发面向金融、制造、地方政务的安全行业 AI 产品；NEC 同时将 Claude 引入内部安全运营中心（SOC），并通过\"Client Zero\"策略先行内部验证再对外推出。",
-        "takeaway": "此次合作使 NEC 成为 Anthropic 在日本的首个全球合作伙伴，将打造日本规模最大的 AI 原生工程团队之一，为 Claude 全面打入日本企业市场奠定基础。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -120,11 +112,7 @@
       "date": "2026-04-20",
       "category": "合作伙伴",
       "summary": "Anthropic 与亚马逊扩大算力合作，获得最高 5 GW 训练与推理算力，Amazon 追加 50 亿美元投资并承诺未来最高 200 亿美元，Anthropic 十年内向 AWS 承诺超 1000 亿美元支出",
-      "insights": {
-        "problem": "随着 Claude 模型规模与调用量持续扩张，训练与推理所需的算力供给成为制约 Anthropic 增长速度的核心瓶颈，现有算力储备无法满足中长期需求。",
-        "approach": "与亚马逊签订新协议，锁定最高 5 GW 算力（涵盖 Trainium2 至 Trainium4 及 Graviton 系列芯片），新增容量本季度开始上线；Anthropic 承诺十年内向 AWS 投入超 1000 亿美元，Amazon 追加 50 亿美元投资（叠加此前 80 亿美元），未来可达 200 亿美元追加投资。",
-        "takeaway": "2026 年底 Trainium2/3 算力规模预计接近 1 GW；合作将 Anthropic 当前训练集群（已超 100 万块 Trainium2 芯片）进一步扩展，为大规模下一代模型训练和 Claude API 推理提供长期算力保障。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
