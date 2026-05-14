@@ -118,5 +118,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-12",
     "date": "2026-04-20"
+  },
+  "https://www.anthropic.com/news/claude-for-small-business": {
+    "title": "Introducing Claude for Small Business",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-14",
+    "date": "2026-05-13"
   }
 }
