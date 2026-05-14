@@ -1,11 +1,24 @@
 {
-  "date": "2026-05-13",
+  "date": "2026-05-14",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
   "entries": [
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Introducing Claude for Small Business",
+      "date": "2026-05-13",
+      "category": "新产品",
+      "summary": "Anthropic 推出 Claude for Small Business，通过 15 套预置工作流和一键连接器，将 Claude 嵌入 QuickBooks、HubSpot、Canva 等七大主流中小企业工具。",
+      "insights": {
+        "problem": "中小企业主虽有意借助 AI 提升运营效率，却缺乏技术资源将 AI 能力融入 QuickBooks、PayPal、HubSpot 等日常依赖的业务软件，导致 AI 红利难以落地。",
+        "approach": "推出 15 套覆盖薪资核算、账务对账、营销活动、员工入职等场景的预配置工作流，以一键 toggle 安装方式接入 Intuit QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace 和 Microsoft 365；并与 PayPal 合作提供免费在线 AI 流畅度课程及 10 城线下培训巡回活动。",
+        "takeaway": "Claude for Small Business 在现有 Claude 订阅和合作伙伴工具费用之外不额外收费；所有任务均需用户先行确认或可配置为全自动端到端执行，现有权限体系不变，从而在便利性与数据安全之间取得平衡。"
+      }
+    },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/Introducing-code-with-claude",
