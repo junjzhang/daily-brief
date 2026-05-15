@@ -124,5 +124,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-14",
     "date": "2026-05-13"
+  },
+  "https://www.anthropic.com/news/gates-foundation-partnership": {
+    "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-15",
+    "date": "2026-05-14"
+  },
+  "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india": {
+    "title": "Anthropic opens Bengaluru office and announces new partnerships across India",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-15",
+    "date": "2026-02-16"
   }
 }
