@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-14",
+  "date": "2026-05-15",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,16 +8,25 @@
   "entries": [
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "date": "2026-05-14",
+      "category": "合作与公益",
+      "summary": "Anthropic 与盖茨基金会签署 2 亿美元合作协议，通过 Claude 推动全球卫生、教育及农业领域的 AI 应用。",
+      "insights": {
+        "problem": "全球约 46 亿人缺乏基本医疗服务，低收入国家在教育与小农农业领域面临巨大的专业知识缺口，传统手段难以规模化弥补。",
+        "approach": "Anthropic 提供 Claude 使用额度与技术支持，盖茨基金会提供资金与项目专业知识，四年内协同投入 2 亿美元，覆盖全球卫生（加速疫苗与疗法研发、辅助健康数据决策）、K-12 教育辅导及小农农业生产力三大方向。",
+        "takeaway": "合作将在非洲与印度部署 AI 读写辅助应用，并为近 20 亿依赖小农农业的人群提供 Claude 驱动的农业知识支持；Anthropic 半额承诺以 Claude 使用额度及技术人力的形式兑现。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-for-small-business",
       "title": "Introducing Claude for Small Business",
       "date": "2026-05-13",
       "category": "新产品",
       "summary": "Anthropic 推出 Claude for Small Business，通过 15 套预置工作流和一键连接器，将 Claude 嵌入 QuickBooks、HubSpot、Canva 等七大主流中小企业工具。",
-      "insights": {
-        "problem": "中小企业主虽有意借助 AI 提升运营效率，却缺乏技术资源将 AI 能力融入 QuickBooks、PayPal、HubSpot 等日常依赖的业务软件，导致 AI 红利难以落地。",
-        "approach": "推出 15 套覆盖薪资核算、账务对账、营销活动、员工入职等场景的预配置工作流，以一键 toggle 安装方式接入 Intuit QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace 和 Microsoft 365；并与 PayPal 合作提供免费在线 AI 流畅度课程及 10 城线下培训巡回活动。",
-        "takeaway": "Claude for Small Business 在现有 Claude 订阅和合作伙伴工具费用之外不额外收费；所有任务均需用户先行确认或可配置为全自动端到端执行，现有权限体系不变，从而在便利性与数据安全之间取得平衡。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -26,24 +35,6 @@
       "date": "2026-05-06",
       "category": "产品更新",
       "summary": "Anthropic 举办首届 Code with Claude 开发者大会，正式发布 Dreaming、Outcomes、多 Agent 编排三大特性，并向全体外部开发者开放 Claude Agent SDK",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
-      "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
-      "date": "2026-05-06",
-      "category": "Distributed",
-      "summary": "统一训练/推理模型定义实现 6x 端到端加速",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
-      "title": "Printing and Inspecting Tensors Inside torch.compile",
-      "date": "2026-05-06",
-      "category": "Dynamo",
-      "summary": "torch.compile 内零 graph break 的 tensor 检查工具链",
       "insights": null
     },
     {
@@ -65,15 +56,6 @@
       "insights": null
     },
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
-      "title": "Dynamo Isolate Recompiles for torch.compile",
-      "date": "2026-05-04",
-      "category": "Dynamo",
-      "summary": "per-compile 隔离 cache bucket 解耦重编译计数",
-      "insights": null
-    },
-    {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
       "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs",
@@ -83,28 +65,10 @@
       "insights": null
     },
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes",
-      "title": "CPython notes",
-      "date": "2026-05-03",
-      "category": "CPP",
-      "summary": "记录 PyTorch 与 CPython 交互的关键注意事项与实践经验",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog",
-      "title": "mergedog: shepherding approved PRs into pytorch/pytorch",
-      "date": "2026-05-03",
-      "category": "CI",
-      "summary": "mergedog 自动化工具接管已批准 PR 的合并流程，减少人工干预",
-      "insights": null
-    },
-    {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-for-creative-work",
       "title": "Claude for Creative Work",
-      "date": "2026-04-29",
+      "date": "2026-04-28",
       "category": "新能力",
       "summary": "Anthropic 联合 Adobe、Blender、Autodesk 等发布 9 个创意工具 connector，让 Claude 直接操作专业创作软件，同时扩展 Claude Design 产品线",
       "insights": null
@@ -146,58 +110,17 @@
       "insights": null
     },
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work",
-      "title": "How Does the Dispatcher Work?",
-      "date": "2026-04-16",
-      "category": "Dispatcher",
-      "summary": "深入解析 PyTorch dispatcher 的工作机制与 operator 调度链路",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity",
-      "title": "Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't",
-      "date": "2026-03-25",
-      "category": "Dynamic Shapes",
-      "summary": "消除 unbacked dynamic shape 相对 backed shape 的性能差距",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export",
-      "title": "Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces",
-      "date": "2026-02-27",
-      "category": "Dynamic Shapes",
-      "summary": "降低含大量 unbacked symbol 的 torch.export trace 的编译时开销",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked",
-      "title": "Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch",
-      "date": "2026-01-20",
-      "category": "Dynamic Shapes",
-      "summary": "从有 guard 的 backed shape 迁移至无 guard 的 unbacked shape 的演进路径",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes",
-      "title": "Slaying Framework Data-Dependent Errors Dragon",
-      "date": "2025-10-29",
-      "category": "Dynamic Shapes",
-      "summary": "系统性消灭框架层数据依赖错误 (DDE) 的策略与实践",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes",
-      "title": "Guard-Free Dynamic Shapes",
-      "date": "2025-07-08",
-      "category": "Dynamic Shapes",
-      "summary": "无 guard 动态形状方案：彻底消除因形状变化引发的重编译",
-      "insights": null
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
+      "title": "Anthropic opens Bengaluru office and announces new partnerships across India",
+      "date": "2026-02-16",
+      "category": "全球扩展",
+      "summary": "Anthropic 在班加罗尔正式开设印度办公室，并与 Pratham 等本地机构达成教育与农业领域多项战略合作。",
+      "insights": {
+        "problem": "印度是 Claude.ai 全球第二大市场且业务以技术与编程用途为主，但 Anthropic 此前缺乏本地团队与合作网络，制约了产品在印度的深度落地与本地语言支持。",
+        "approach": "任命 Irina Ghose 担任印度董事总经理，建立涵盖教育（Pratham、Central Square Foundation）、语言评估（Karya 与集体智能项目）和农业（EkStep 基金会）的本地合作伙伴生态，并构建覆盖印地语及孟加拉语、马拉地语等十余种地区语言的 benchmark。",
+        "takeaway": "办公室开设后印度业务营收同比翻倍；Pratham 的 AI 测试系统已在 20 所学校的 1500 名学生中完成试点，计划 2026 年底扩展至 100 所学校。"
+      }
     }
   ]
 }
