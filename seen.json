@@ -136,5 +136,83 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-15",
     "date": "2026-02-16"
+  },
+  "https://www.anthropic.com/news/pwc-expanded-partnership": {
+    "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-05-14"
+  },
+  "https://www.anthropic.com/news/the-anthropic-institute": {
+    "title": "Introducing The Anthropic Institute",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-05-07"
+  },
+  "https://www.anthropic.com/news/google-broadcom-partnership-compute": {
+    "title": "Anthropic expands partnership with Google and Broadcom",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-04-06"
+  },
+  "https://www.anthropic.com/news/where-stand-department-war": {
+    "title": "Where things stand with the Department of War",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-03-05"
+  },
+  "https://www.anthropic.com/news/statement-comments-secretary-war": {
+    "title": "Statement on the comments from Secretary of War Pete Hegseth",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-02-27"
+  },
+  "https://www.anthropic.com/news/statement-department-of-war": {
+    "title": "Statement from Dario Amodei on our discussions with the Department of War",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-02-26"
+  },
+  "https://www.anthropic.com/news/responsible-scaling-policy-v3": {
+    "title": "Responsible Scaling Policy Version 3.0",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-02-24"
+  },
+  "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation": {
+    "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-02-13"
+  },
+  "https://www.anthropic.com/news/accelerating-scientific-research": {
+    "title": "How scientists are using Claude to accelerate research and discovery",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2026-01-15"
+  },
+  "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships": {
+    "title": "Microsoft, NVIDIA and Anthropic announced new strategic partnerships",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2025-11-18"
+  },
+  "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure": {
+    "title": "Anthropic invests $50 billion in American AI infrastructure",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2025-11-12"
+  },
+  "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government": {
+    "title": "Offering expanded Claude access across all three branches of government",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2025-08-12"
+  },
+  "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan": {
+    "title": "Thoughts on America's AI Action Plan",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-16",
+    "date": "2025-07-23"
   }
 }
