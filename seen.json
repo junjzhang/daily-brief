@@ -214,5 +214,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-16",
     "date": "2025-07-23"
+  },
+  "https://www.anthropic.com/news/election-safeguards-update": {
+    "title": "An update on our election safeguards",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-17",
+    "date": "2026-04-27"
+  },
+  "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand": {
+    "title": "Theo Hourmouzis named General Manager, Australia & New Zealand",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-17",
+    "date": "2026-04-27"
   }
 }
