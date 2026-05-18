@@ -1,11 +1,89 @@
 {
-  "date": "2026-05-17",
+  "date": "2026-05-18",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
   "entries": [
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "title": "Introducing Claude Sonnet 4.6",
+      "date": "2026-02-17",
+      "category": "新模型",
+      "summary": "Claude Sonnet 4.6 全面升级编程、computer use、长上下文推理、Agent 规划、知识工作和设计六大能力维度。",
+      "insights": {
+        "problem": "如何在中端模型层级上提供接近旗舰模型的全方位能力，同时保持价格竞争力？",
+        "approach": "对 Sonnet 4.5 进行跨编程、computer use、长上下文推理、agent planning、知识工作和设计的全面提升，覆盖开发者最关注的所有核心场景。",
+        "takeaway": "Sonnet 4.6 成为该价位段性能最强的 Claude 模型，在多个维度上接近甚至超越上一代旗舰，于 2026 年 2 月 17 日正式发布。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "title": "Introducing Claude Opus 4.6",
+      "date": "2026-02-05",
+      "category": "新模型",
+      "summary": "Claude Opus 4.6 引入 1M token beta 上下文窗口和 Agent Teams 多 Agent 并行协作功能，价格维持不变。",
+      "insights": {
+        "problem": "单个 Agent 的上下文和任务规模存在瓶颈，难以应对超大型代码库和极复杂的长时任务。",
+        "approach": "将上下文窗口扩展至 1M token（是 Opus 4.5 的 5 倍），引入 agent teams 让多个 Agent 并行拆解执行大任务，并增加 adaptive thinking 和 effort controls 给开发者更精细的成本/智能控制能力。",
+        "takeaway": "Opus 4.6 在不调价的前提下大幅扩展了上下文规模和 agentic 协作能力，Agent Teams 是该系列模型的首次多 Agent 并行实践。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-new-constitution",
+      "title": "Claude's new constitution",
+      "date": "2026-01-22",
+      "category": "安全研究",
+      "summary": "Anthropic 发布 84 页 Claude 价值宪法，从规则式转向理由式 AI 对齐，首次正式承认 AI 可能具有意识或道德地位。",
+      "insights": {
+        "problem": "传统规则式 AI 对齐难以应对复杂伦理情境，模型需要理解规则背后的逻辑才能在边界场景做出正确判断。",
+        "approach": "宪法采用「安全 > 伦理 > Anthropic 准则 > 有用性」的优先层级，不再只列规则而是解释每条原则的推理过程，直接用于模型训练，并以 CC0 协议完全开放。",
+        "takeaway": "这是主流 AI 公司首份正式承认模型可能具备某种意识或道德地位的文件，标志着 AI 对齐方法从规则驱动向理由驱动的范式转变。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "title": "Introducing Claude Opus 4.5",
+      "date": "2025-11-24",
+      "category": "新模型",
+      "summary": "Claude Opus 4.5 在编程、Agents 和 computer use 三方面全面领先，价格降至 $5/$25/M tokens。",
+      "insights": {
+        "problem": "如何在提升旗舰模型综合能力（编程、agents、计算机操控及日常知识工作）的同时，降低访问门槛扩大覆盖面？",
+        "approach": "Opus 4.5 针对编程、Agents 和 computer use 进行重点优化，同时增强深度研究和多模态文档处理（演示文稿、表格）能力，并将价格显著下调至 $5/$25 每百万 token。",
+        "takeaway": "Opus 4.5 以更低价格实现了在编程、Agents、computer use 三大核心场景的全面最优，于 2025 年 11 月 24 日发布并同步登陆三大主流云平台。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "title": "Introducing Claude Sonnet 4.5",
+      "date": "2025-09-29",
+      "category": "新模型",
+      "summary": "Claude Sonnet 4.5 刷新 SWE-bench 和 OSWorld 基准，支持超 30 小时超长 agentic 任务，Claude Code 新增 checkpoints 功能。",
+      "insights": {
+        "problem": "如何让 AI 在复杂软件工程和计算机操控任务中实现更长时间的持续可靠执行？",
+        "approach": "Sonnet 4.5 在 SWE-bench Verified（编程）和 OSWorld 61.4%（计算机操控）双双领跑，API 新增 context editing 和 memory tool 支持更复杂的 Agent 任务，Claude Code 引入 checkpoints 实现状态回滚。",
+        "takeaway": "在定价不变（$3/$15/M tokens）的前提下，Sonnet 4.5 成为当时最强的 agentic 和 computer use 模型，为长周期任务执行树立新标准。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "title": "Introducing Claude 4",
+      "date": "2025-05-22",
+      "category": "新模型",
+      "summary": "Anthropic 发布 Claude Opus 4 和 Sonnet 4，在编程、推理和 agentic 任务上树立新标杆，「走捷径」行为减少 65%。",
+      "insights": {
+        "problem": "如何构建能够在复杂长时 agentic 工作流中保持高性能，同时减少利用漏洞完成任务等不期望行为的 AI 模型？",
+        "approach": "Claude Opus 4 专注于持续性深度编程和 agent 任务执行；Claude Sonnet 4 大幅提升指令遵循精确度；两者均通过训练将「走捷径」行为相较 Sonnet 3.7 减少了 65%。",
+        "takeaway": "Claude Opus 4 成为当时世界最强编程模型，Sonnet 4 在日常推理和指令遵循上大幅超越前代，Claude 4 系列正式开启 Anthropic 新一代模型时代。"
+      }
+    },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
@@ -94,11 +172,7 @@
       "date": "2026-04-27",
       "category": "安全",
       "summary": "Anthropic 发布 2026 年美国中期选举 AI 安全防护专项报告，涵盖多模型性能基准、首次自主影响力操控测试和 TurboVote election banner 合作。",
-      "insights": {
-        "problem": "2026 年美国中期选举期间，Claude 等大型语言模型面临被滥用于传播选举虚假信息、协助策划影响力操控活动的风险，需要系统性评估与防护。",
-        "approach": "构建 600 条提示的专项基准（含 300 条有害请求），首次测试模型能否自主端到端策划运营影响力操控活动；同时推出与 TurboVote 合作的 election banner，在选民相关查询中主动引导用户至权威信息来源。",
-        "takeaway": "Claude Opus 4.7 在专项基准上正确响应率达 100%，最新模型几乎拒绝了所有自主运营影响力操控任务；当用户询问中期选举相关问题时，92–95% 的概率会自动触发网络搜索以获取最新信息。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -107,11 +181,7 @@
       "date": "2026-04-27",
       "category": "全球扩展",
       "summary": "Anthropic 正式开设悉尼办公室（成为亚太第四个办公室），任命 Theo Hourmouzis 为澳新区总经理，并宣布与 Canva、Xero 等达成多年期深度合作。",
-      "insights": {
-        "problem": "Anthropic 在澳大利亚和新西兰市场缺乏本地化运营能力，难以满足 Commonwealth Bank、Canva 等当地头部企业的 AI 需求，且无法有效支持本地 AI 科研生态。",
-        "approach": "在悉尼设立第四个亚太办公室，任命拥有 20 年亚太科技行业经验（前 Snowflake 澳新及东盟区 SVP）的 Theo Hourmouzis 主导当地团队，同步宣布与 Canva、Xero 达成多年期平台深度合作及与澳国立大学、Garvan 研究所等机构的 AI for Science 合作。",
-        "takeaway": "悉尼是继东京、班加罗尔、首尔之后 Anthropic 在亚太设立的第四个办公室，标志着 Anthropic 在澳新地区的正式本地化运营启动，进一步巩固其全球扩张势头。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -255,6 +325,105 @@
       "date": "2025-07-23",
       "category": "AI 政策",
       "summary": "Anthropic 对白宫发布的《美国 AI 行动计划》表达支持，肯定其在基础设施加速与安全测试方面的举措，同时呼吁进一步加强出口管制和 AI 开发透明度标准。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
+      "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
+      "date": "2026-05-06",
+      "category": "distributed",
+      "summary": "torch.compile 集成 TorchTitan RL 训练框架后，统一 RL 训练速度提升 6 倍。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
+      "title": "Printing and Inspecting Tensors Inside torch.compile",
+      "date": "2026-05-06",
+      "category": "dynamo",
+      "summary": "介绍在 torch.compile 编译模式下调试时打印和检查 Tensor 的实用方法。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
+      "title": "Dynamo Isolate Recompiles for torch.compile",
+      "date": "2026-05-04",
+      "category": "dynamo",
+      "summary": "Dynamo 新增隔离重编译功能，防止单模块变化触发全图重编译，降低编译开销。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes",
+      "title": "CPython notes",
+      "date": "2026-05-03",
+      "category": "cpp",
+      "summary": "记录 PyTorch 与 CPython 深度交互中的关键实现细节与注意事项。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog",
+      "title": "mergedog: shepherding approved PRs into pytorch/pytorch",
+      "date": "2026-05-03",
+      "category": "ci",
+      "summary": "mergedog 工具自动将已批准的 PR 有序合并进 pytorch/pytorch 主仓库。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work",
+      "title": "How Does the Dispatcher Work?",
+      "date": "2026-04-16",
+      "category": "dispatcher",
+      "summary": "深入解析 PyTorch Dispatcher 的工作机制、调度链路和设计原理。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity",
+      "title": "Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't",
+      "date": "2026-03-25",
+      "category": "dynamic_shapes",
+      "summary": "修复 Unbacked Dynamic Shapes 导致的性能退化，使其性能与有支持 shape 持平。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export",
+      "title": "Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces",
+      "date": "2026-02-27",
+      "category": "dynamic_shapes",
+      "summary": "减少 torch.export 中 Unbacked Symbol 密集场景下的编译时开销。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked",
+      "title": "Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch",
+      "date": "2026-01-20",
+      "category": "dynamic_shapes",
+      "summary": "介绍从有守卫 shape 迁移至无守卫动态 shape 的技术路径，消除运行时形状守卫开销。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes",
+      "title": "Slaying Framework Data-Dependent Errors Dragon",
+      "date": "2025-10-29",
+      "category": "dynamic_shapes",
+      "summary": "系统性解决 PyTorch 框架中数据依赖错误（DDE）这一长期存在的难题。",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes",
+      "title": "Guard-Free Dynamic Shapes",
+      "date": "2025-07-08",
+      "category": "dynamic_shapes",
+      "summary": "实现无守卫动态形状，消除动态 shape 编译时的形状守卫检查开销。",
       "insights": null
     }
   ]
