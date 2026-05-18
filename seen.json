@@ -226,5 +226,41 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-17",
     "date": "2026-04-27"
+  },
+  "https://www.anthropic.com/news/claude-sonnet-4-6": {
+    "title": "Introducing Claude Sonnet 4.6",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2026-02-17"
+  },
+  "https://www.anthropic.com/news/claude-opus-4-6": {
+    "title": "Introducing Claude Opus 4.6",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2026-02-05"
+  },
+  "https://www.anthropic.com/news/claude-new-constitution": {
+    "title": "Claude's new constitution",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2026-01-22"
+  },
+  "https://www.anthropic.com/news/claude-opus-4-5": {
+    "title": "Introducing Claude Opus 4.5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2025-11-24"
+  },
+  "https://www.anthropic.com/news/claude-sonnet-4-5": {
+    "title": "Introducing Claude Sonnet 4.5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2025-09-29"
+  },
+  "https://www.anthropic.com/news/claude-4": {
+    "title": "Introducing Claude 4",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-18",
+    "date": "2025-05-22"
   }
 }
