@@ -262,5 +262,41 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-18",
     "date": "2025-05-22"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-05-14-python-first-comms": {
+    "title": "Python First Comms for Researchers",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-05-19",
+    "date": "2026-05-14"
+  },
+  "https://www.anthropic.com/news/anthropic-acquires-stainless": {
+    "title": "Anthropic acquires Stainless",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-19",
+    "date": "2026-05-18"
+  },
+  "https://www.anthropic.com/news/claude-partner-network": {
+    "title": "Anthropic invests $100 million into the Claude Partner Network",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-19",
+    "date": "2026-03-12"
+  },
+  "https://www.anthropic.com/news/acquires-vercept": {
+    "title": "Anthropic acquires Vercept to advance Claude's computer use capabilities",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-19",
+    "date": "2026-02-25"
+  },
+  "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone": {
+    "title": "Anthropic acquires Bun as Claude Code reaches $1B milestone",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-19",
+    "date": "2025-12-02"
+  },
+  "https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership": {
+    "title": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-19",
+    "date": "2025-10-14"
   }
 }
