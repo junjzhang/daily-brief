@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-19",
+  "date": "2026-05-20",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -13,11 +13,7 @@
       "date": "2026-05-14",
       "category": "distributed",
       "summary": "Python 绑定让研究人员无需修改 C++ 即可原型化自定义集合通信算法",
-      "insights": {
-        "problem": "研究人员修改 C++ 通信层编译成本高、门槛高，难以快速原型化新的集合通信方案。",
-        "approach": "为 torchcomms 添加 Python 绑定，提供两种纯 Python 后端原型：nccl4py（封装 NCCL Python 绑定）和 SymmetricMemory + Triton 实现所有集合操作。",
-        "takeaway": "两种方案均与 torch.distributed 无缝集成，可直接用于 TorchTitan 等项目；目前为实验性实现，缺乏调试和超时等生产级特性。"
-      }
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
@@ -125,11 +121,7 @@
       "date": "2026-05-18",
       "category": "收购",
       "summary": "Anthropic 收购 SDK 与 MCP 服务器工具公司 Stainless，据报道交易金额超 3 亿美元",
-      "insights": {
-        "problem": "多语言 SDK 和 MCP 服务器的构建与维护成本极高，制约了 AI agent 生态系统的工具连接广度。",
-        "approach": "收购 Stainless——其技术可从 OpenAPI 规范自动生成 TypeScript、Python、Go、Java、Kotlin 等七种语言的 SDK 及 MCP 服务器；收购后关闭对外托管服务，专注支持 Anthropic 生态。",
-        "takeaway": "Stainless 此前同时为 OpenAI、Google 提供服务；Anthropic 借此掌控跨语言 SDK 生成基础设施，显著拓宽 Claude agent 的工具连接能力。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -282,11 +274,7 @@
       "date": "2026-03-12",
       "category": "生态",
       "summary": "Anthropic 投入 1 亿美元启动 Claude Partner Network，覆盖 Accenture、Deloitte、PwC、KPMG 等头部合作伙伴",
-      "insights": {
-        "problem": "企业大规模部署 Claude 时缺乏专业的技术支持、培训认证和联合市场开发资源，单靠 Anthropic 直销难以覆盖全球需求。",
-        "approach": "设立 Claude Partner Network 并投入 1 亿美元，为合作伙伴提供 Applied AI 工程师驻场支持、技术架构咨询和国际化联合市场开发，合作伙伴团队规模扩大五倍。",
-        "takeaway": "初期合作伙伴包括 Accenture、Deloitte、PwC、KPMG、Slalom；平台覆盖培训认证与本地化市场支持，预计后续年度投入将持续增加。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -304,11 +292,7 @@
       "date": "2026-02-25",
       "category": "收购",
       "summary": "Anthropic 收购计算机视觉与 GUI 交互 AI 创业公司 Vercept，加速 Claude computer use 能力进化",
-      "insights": {
-        "problem": "AI 系统在执行 computer use 任务时缺乏精准的视觉感知与 GUI 交互能力，难以像人类一样操作图形界面。",
-        "approach": "收购专注于感知与界面交互研究的 Vercept 团队（核心成员来自 Allen AI Institute），将其视觉感知研究积累整合进 Claude。",
-        "takeaway": "Claude Sonnet 4.6 在 OSWorld 评测上准确率从 <15% 跃升至 72.5%，接近人类操作水平；computer use 能力已显著商业化。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -384,6 +368,19 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
+      "title": "Anthropic and Teach For All launch global AI training initiative for educators",
+      "date": "2026-01-21",
+      "category": "合作伙伴",
+      "summary": "Anthropic 携手 Teach For All 面向 63 个国家逾 10 万名教师推出 AI 素养培训项目，并提供 Claude Pro 使用权限",
+      "insights": {
+        "problem": "全球教育工作者普遍缺乏系统的 AI 素养培训，难以将 Claude 有效融入课堂教学和个性化辅导场景。",
+        "approach": "与 Teach For All 合作建立"AI 素养与创造者集体（LCC）"，通过三类项目覆盖 63 国逾 10 万名教师：直播式 AI 能力学习系列课程、多国教师日常互动的 Claude Connect 社区，以及提供 Claude Pro 权限与产品反馈渠道的 Claude Lab 实验室。",
+        "takeaway": "首届系列课程已吸引逾 530 名教育者参与，Claude Connect 社区已汇聚 60 余国 1000+ 教师；参与者可直接参与 Claude 产品路线图讨论，实现教育赋能与产品迭代的正向循环。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/accelerating-scientific-research",
       "title": "How scientists are using Claude to accelerate research and discovery",
       "date": "2026-01-15",
@@ -398,11 +395,7 @@
       "date": "2025-12-02",
       "category": "收购",
       "summary": "Claude Code 上线 6 个月达成年化营收 10 亿美元，Anthropic 同步收购 JavaScript 运行时 Bun",
-      "insights": {
-        "problem": "Claude Code 需要更高性能的 JavaScript/TypeScript 执行环境以应对 AI 驱动的软件工程工作负载，现有工具链速度不足。",
-        "approach": "收购 Bun（集 JS 运行时、包管理器、打包工具、测试框架于一体的高性能工具链），持续保持 MIT 开源授权，月下载量超 700 万次。",
-        "takeaway": "Claude Code 仅用 6 个月即达年化营收 10 亿美元里程碑，远快于 ChatGPT；Bun 已被 Midjourney、Lovable 等公司采用，GitHub 星标超 8.2 万。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -438,11 +431,7 @@
       "date": "2025-10-14",
       "category": "合作伙伴",
       "summary": "Claude 成为 Salesforce Agentforce 首选模型，首家完全在 Salesforce VPC 内运行的 LLM 提供商",
-      "insights": {
-        "problem": "金融服务、医疗、网络安全等受监管行业需要在严格数据合规边界内使用 AI，无法容忍数据出境风险。",
-        "approach": "Claude 完全集成在 Salesforce 虚拟私有云（VPC）内运行，通过 Slack MCP Server 访问企业数据，并与 Agentforce Financial Services 深度集成，针对特定行业构建定制化 AI 解决方案。",
-        "takeaway": "CrowdStrike、RBC Wealth Management 已上线使用；Salesforce 全球工程团队部署 Claude Code 加速软件交付，成为首个完全在 Salesforce 信任边界内运行的 LLM 提供商。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
