@@ -298,5 +298,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-19",
     "date": "2025-10-14"
+  },
+  "https://www.anthropic.com/news/anthropic-kpmg": {
+    "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-21",
+    "date": "2026-05-19"
+  },
+  "https://www.anthropic.com/news/claude-is-a-space-to-think": {
+    "title": "Claude is a space to think",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-21",
+    "date": "2026-02-04"
+  },
+  "https://www.anthropic.com/news/anthropic-teach-for-all": {
+    "title": "Anthropic and Teach For All launch global AI training initiative for educators",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-21",
+    "date": "2026-01-21"
   }
 }
