@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-20",
+  "date": "2026-05-21",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -113,6 +113,19 @@
       "category": "dynamic_shapes",
       "summary": "无需静态 guard 的动态形状推断机制：在编译期处理未知维度的新方法",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
+      "date": "2026-05-19",
+      "category": "企业",
+      "summary": "KPMG 与 Anthropic 建立全球战略联盟，将 Claude 嵌入 Digital Gateway 平台，面向全球 27.6 万名员工及税务、PE 客户提供 AI 能力",
+      "insights": {
+        "problem": "大型专业服务机构缺乏将前沿 AI 直接嵌入专业工作流的能力，原本需要数周才能完成的税务 agent 搭建严重制约了企业 AI 落地效率。",
+        "approach": "KPMG 将 Claude 嵌入其 Digital Gateway 客户交付平台，为全球 27.6 万名员工提供 Claude 访问权限，以税务和私募股权客户为首要切入点，并推出 KPMG Blaze 加速 IT 现代化。",
+        "takeaway": "借助 Claude 的 Managed Agents 能力，原本需数周的税务 agent 构建压缩至几分钟；Big Four 联盟标志着 Claude 企业化落地进入大规模专业服务阶段。"
+      }
     },
     {
       "source": "Anthropic Blog",
@@ -359,6 +372,19 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "title": "Claude is a space to think",
+      "date": "2026-02-04",
+      "category": "产品政策",
+      "summary": "Anthropic 宣布 Claude 将永远保持无广告，以「思考空间」为定位对抗商业化侵蚀",
+      "insights": {
+        "problem": "广告驱动的商业模式会在 AI 对话中引入商业激励，污染其在敏感咨询场景下的中立性，用户难以判断建议是否受隐性利益左右。",
+        "approach": "Anthropic 公开承诺 Claude 永远不显示赞助内容、不受广告主影响，以「思考空间」（space to think）定位区别于引入广告的竞品，依靠订阅制和企业合同实现商业可持续。",
+        "takeaway": "此声明在 OpenAI 宣布 ChatGPT 广告计划后数日发出，将无广告策略作为核心差异化承诺，明确表态商业利益不应凌驾于用户信任与对话中立性之上。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-new-constitution",
       "title": "Claude's new constitution",
       "date": "2026-01-22",
@@ -375,7 +401,7 @@
       "summary": "Anthropic 携手 Teach For All 面向 63 个国家逾 10 万名教师推出 AI 素养培训项目，并提供 Claude Pro 使用权限",
       "insights": {
         "problem": "全球教育工作者普遍缺乏系统的 AI 素养培训，难以将 Claude 有效融入课堂教学和个性化辅导场景。",
-        "approach": "与 Teach For All 合作建立"AI 素养与创造者集体（LCC）"，通过三类项目覆盖 63 国逾 10 万名教师：直播式 AI 能力学习系列课程、多国教师日常互动的 Claude Connect 社区，以及提供 Claude Pro 权限与产品反馈渠道的 Claude Lab 实验室。",
+        "approach": "与 Teach For All 合作建立「AI 素养与创造者集体（LCC）」，通过三类项目覆盖 63 国逾 10 万名教师：直播式 AI 能力学习系列课程、多国教师日常互动的 Claude Connect 社区，以及提供 Claude Pro 权限与产品反馈渠道的 Claude Lab 实验室。",
         "takeaway": "首届系列课程已吸引逾 530 名教育者参与，Claude Connect 社区已汇聚 60 余国 1000+ 教师；参与者可直接参与 Claude 产品路线图讨论，实现教育赋能与产品迭代的正向循环。"
       }
     },
