@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-21",
+  "date": "2026-05-22",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -121,11 +121,7 @@
       "date": "2026-05-19",
       "category": "企业",
       "summary": "KPMG 与 Anthropic 建立全球战略联盟，将 Claude 嵌入 Digital Gateway 平台，面向全球 27.6 万名员工及税务、PE 客户提供 AI 能力",
-      "insights": {
-        "problem": "大型专业服务机构缺乏将前沿 AI 直接嵌入专业工作流的能力，原本需要数周才能完成的税务 agent 搭建严重制约了企业 AI 落地效率。",
-        "approach": "KPMG 将 Claude 嵌入其 Digital Gateway 客户交付平台，为全球 27.6 万名员工提供 Claude 访问权限，以税务和私募股权客户为首要切入点，并推出 KPMG Blaze 加速 IT 现代化。",
-        "takeaway": "借助 Claude 的 Managed Agents 能力，原本需数周的税务 agent 构建压缩至几分钟；Big Four 联盟标志着 Claude 企业化落地进入大规模专业服务阶段。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -138,20 +134,20 @@
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
-      "date": "2026-05-14",
-      "category": "合作伙伴",
-      "summary": "Anthropic 与盖茨基金会建立 2 亿美元合作，聚焦全球健康、生命科学、教育和经济流动性领域 AI 应用",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
       "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
       "date": "2026-05-14",
       "category": "企业",
       "summary": "普华永道大规模部署 Claude，用于技术构建、交易执行和企业职能重塑",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "date": "2026-05-14",
+      "category": "合作伙伴",
+      "summary": "Anthropic 与盖茨基金会建立 2 亿美元合作，聚焦全球健康、生命科学、教育和经济流动性领域 AI 应用",
       "insights": null
     },
     {
@@ -291,20 +287,22 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
+      "title": "Sydney will become Anthropic's fourth office in Asia-Pacific",
+      "date": "2026-03-10",
+      "category": "扩张",
+      "summary": "悉尼将成为 Anthropic 亚太地区第四个办公室，继东京、班加罗尔和首尔之后进一步拓展 APAC 区域布局",
+      "insights": {
+        "error": "fetch failed"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/where-stand-department-war",
       "title": "Where things stand with the Department of War",
       "date": "2026-03-05",
       "category": "安全政策",
       "summary": "Anthropic 就与美国国防部合作的进展和立场发表最新声明",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/acquires-vercept",
-      "title": "Anthropic acquires Vercept to advance Claude's computer use capabilities",
-      "date": "2026-02-25",
-      "category": "收购",
-      "summary": "Anthropic 收购计算机视觉与 GUI 交互 AI 创业公司 Vercept，加速 Claude computer use 能力进化",
       "insights": null
     },
     {
@@ -377,11 +375,7 @@
       "date": "2026-02-04",
       "category": "产品政策",
       "summary": "Anthropic 宣布 Claude 将永远保持无广告，以「思考空间」为定位对抗商业化侵蚀",
-      "insights": {
-        "problem": "广告驱动的商业模式会在 AI 对话中引入商业激励，污染其在敏感咨询场景下的中立性，用户难以判断建议是否受隐性利益左右。",
-        "approach": "Anthropic 公开承诺 Claude 永远不显示赞助内容、不受广告主影响，以「思考空间」（space to think）定位区别于引入广告的竞品，依靠订阅制和企业合同实现商业可持续。",
-        "takeaway": "此声明在 OpenAI 宣布 ChatGPT 广告计划后数日发出，将无广告策略作为核心差异化承诺，明确表态商业利益不应凌驾于用户信任与对话中立性之上。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -399,11 +393,7 @@
       "date": "2026-01-21",
       "category": "合作伙伴",
       "summary": "Anthropic 携手 Teach For All 面向 63 个国家逾 10 万名教师推出 AI 素养培训项目，并提供 Claude Pro 使用权限",
-      "insights": {
-        "problem": "全球教育工作者普遍缺乏系统的 AI 素养培训，难以将 Claude 有效融入课堂教学和个性化辅导场景。",
-        "approach": "与 Teach For All 合作建立「AI 素养与创造者集体（LCC）」，通过三类项目覆盖 63 国逾 10 万名教师：直播式 AI 能力学习系列课程、多国教师日常互动的 Claude Connect 社区，以及提供 Claude Pro 权限与产品反馈渠道的 Claude Lab 实验室。",
-        "takeaway": "首届系列课程已吸引逾 530 名教育者参与，Claude Connect 社区已汇聚 60 余国 1000+ 教师；参与者可直接参与 Claude 产品路线图讨论，实现教育赋能与产品迭代的正向循环。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -413,6 +403,17 @@
       "category": "研究",
       "summary": "介绍科学家如何利用 Claude 在生物、医学和物理领域加速研究发现",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
+      "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises",
+      "date": "2025-12-03",
+      "category": "合作伙伴",
+      "summary": "Snowflake 与 Anthropic 达成 2 亿美元多年战略协议，将 Claude 接入 Snowflake 平台，覆盖全球 12,600+ 家企业客户",
+      "insights": {
+        "error": "fetch failed"
+      }
     },
     {
       "source": "Anthropic Blog",
@@ -452,12 +453,56 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence",
+      "title": "New offices in Paris and Munich expand Anthropic's European presence",
+      "date": "2025-11-07",
+      "category": "扩张",
+      "summary": "Anthropic 在巴黎和慕尼黑开设新办公室扩大欧洲版图；过去一年 EMEA 团队规模翻三倍，营收增长逾 9 倍",
+      "insights": {
+        "error": "fetch failed"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+      "title": "Seoul becomes Anthropic's third office in Asia-Pacific",
+      "date": "2025-10-24",
+      "category": "扩张",
+      "summary": "首尔成为 Anthropic 亚太地区第三个办公室，韩国用户活跃度跻身全球前五，Claude Code 韩国用户四个月增长 6 倍",
+      "insights": {
+        "error": "fetch failed"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "title": "Expanding our use of Google Cloud TPUs and Services",
+      "date": "2025-10-23",
+      "category": "合作伙伴",
+      "summary": "Anthropic 扩大与 Google Cloud 合作，获最多 100 万块 TPU 访问权，数十亿美元协议将在 2026 年带来超 1 GW 算力",
+      "insights": {
+        "error": "fetch failed"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership",
       "title": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
       "date": "2025-10-14",
       "category": "合作伙伴",
       "summary": "Claude 成为 Salesforce Agentforce 首选模型，首家完全在 Salesforce VPC 内运行的 LLM 提供商",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+      "title": "Anthropic expands global operations to India, plans to open an office in Bengaluru",
+      "date": "2025-10-07",
+      "category": "扩张",
+      "summary": "Anthropic 宣布 2026 年初于班加罗尔开设印度首个办公室，CEO Dario Amodei 赴印会见政府与企业伙伴",
+      "insights": {
+        "error": "fetch failed"
+      }
     },
     {
       "source": "Anthropic Blog",
