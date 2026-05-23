@@ -316,5 +316,59 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-21",
     "date": "2026-01-21"
+  },
+  "https://www.anthropic.com/news/australia-MOU": {
+    "title": "Australian government and Anthropic sign MOU for AI safety and research",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2026-03-31"
+  },
+  "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific": {
+    "title": "Sydney will become Anthropic's fourth office in Asia-Pacific",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2026-03-10"
+  },
+  "https://www.anthropic.com/news/donate-public-first-action": {
+    "title": "Anthropic is donating $20 million to Public First Action",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2026-02-12"
+  },
+  "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership": {
+    "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-12-03"
+  },
+  "https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence": {
+    "title": "New offices in Paris and Munich expand Anthropic's European presence",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-11-07"
+  },
+  "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific": {
+    "title": "Seoul becomes Anthropic's third office in Asia-Pacific",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-10-24"
+  },
+  "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services": {
+    "title": "Expanding our use of Google Cloud TPUs and Services",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-10-23"
+  },
+  "https://www.anthropic.com/news/expanding-global-operations-to-india": {
+    "title": "Anthropic expands global operations to India, plans to open an office in Bengaluru",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-10-07"
+  },
+  "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan": {
+    "title": "Anthropic's Recommendations to OSTP for the U.S. AI Action Plan",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-23",
+    "date": "2025-03-06"
   }
 }
