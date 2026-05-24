@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-23",
+  "date": "2026-05-24",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -14,6 +14,19 @@
       "category": "distributed",
       "summary": "Python 绑定让研究人员无需修改 C++ 即可原型化自定义集合通信算法",
       "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-13-agent-friendly-dynamo",
+      "title": "Toward Agent-Friendly Dynamo: Mirroring CPython Semantics",
+      "date": "2026-05-13",
+      "category": "dynamo",
+      "summary": "重构 Dynamo 使其精准镜像 CPython 对象语义，消除 VariableTracker 与多继承的兼容缺口",
+      "insights": {
+        "problem": "Dynamo 的 VariableTracker 未能忠实反映 CPython 的对象模型（尤其是多继承层次），导致在处理 AI 智能体生成的复杂 Python 代码时出现语义缺口，进而引发编译失败。",
+        "approach": "在类型层级显式建模多继承关系，将类型特定逻辑迁移至对应的 Class Variable，使 Dynamo 的 isinstance 等核心语义与 CPython 实际实现保持一致。",
+        "takeaway": "对齐 CPython 语义后，torch.compile 可更可靠地处理多继承等复杂 Python 模式，减少因对象模型不匹配导致的编译失败，提升智能体工作流中的实用性。"
+      }
     },
     {
       "source": "PyTorch DevLogs",
@@ -385,6 +398,19 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
+      "title": "Anthropic partners with CodePath to bring Claude to the US's largest collegiate computer science program",
+      "date": "2026-02-13",
+      "category": "教育",
+      "summary": "Anthropic 与 CodePath 合作，为逾 2 万名社区大学和 HBCU 学生提供 Claude Code 实战 AI 工程课程",
+      "insights": {
+        "problem": "社区大学和 HBCU 学生缺乏接触前沿 AI 开发工具的机会，CodePath 逾 40% 的学生来自年收入低于 5 万美元的家庭，精英院校与普通院校间的 AI 资源不平等日益突出。",
+        "approach": "将 Claude 和 Claude Code 嵌入 CodePath 的 AI 工程课程（涵盖 Foundations、Applications 和 Open-Source Capstone），让学生借助 Claude Code 为 GitLab、Puter 等真实开源项目贡献代码。",
+        "takeaway": "通过将前沿 AI 开发工具引入服务弱势群体的高校，缩小 AI 时代的教育机会鸿沟，帮助更多学生进入以 AI 辅助开发为标准的软件工程岗位。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/donate-public-first-action",
       "title": "Anthropic is donating $20 million to Public First Action",
       "date": "2026-02-12",
@@ -413,6 +439,19 @@
       "category": "产品政策",
       "summary": "Anthropic 宣布 Claude 将永远保持无广告，以「思考空间」为定位对抗商业化侵蚀",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
+      "title": "Anthropic partners with Allen Institute and Howard Hughes Medical Institute to accelerate scientific discovery",
+      "date": "2026-02-02",
+      "category": "科学研究",
+      "summary": "Anthropic 与艾伦研究所和 HHMI 合作，以 Claude 多智能体系统加速生命科学的数据分析与知识综合",
+      "insights": {
+        "problem": "生命科学研究面临知识综合、假设生成和实验解读的效率瓶颈，数月漫长的数据分析成为制约科学发现速度的关键障碍。",
+        "approach": "在 HHMI 的 Janelia 研究校区和艾伦研究所部署多智能体 Claude 系统，支持多模态科学研究、数据标注与协作，AI 工具根据真实实验需求持续迭代优化。",
+        "takeaway": "Claude 作为增强而非替代科学家判断的工具，目标是将数月的数据分析压缩至数小时，帮助发现研究者可能错过的规律，推动 AI 与前沿科学的深度融合。"
+      }
     },
     {
       "source": "Anthropic Blog",
@@ -586,6 +625,19 @@
       "category": "产品发布",
       "summary": "推出 Claude 4 系列，包含 Opus、Sonnet 和 Haiku，开启新一代模型时代",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/integrations",
+      "title": "Claude can now connect to your world",
+      "date": "2025-05-01",
+      "category": "产品发布",
+      "summary": "推出 Claude Integrations，支持连接 Jira、Confluence、Zapier 等 10 种工具，并升级 Research 模式支持 45 分钟深度调研",
+      "insights": {
+        "problem": "Claude 此前无法直接接入外部应用和工作流，限制了其在团队生产力和跨系统协作场景中的实用价值。",
+        "approach": "发布 Integrations 框架，初期支持 10 款主流服务（含 Atlassian、Zapier、Cloudflare、Sentry 等），高级 Research 模式可横跨 Web、Google Workspace 及集成数据源进行最长 45 分钟深度调研，并输出带引用的完整报告。",
+        "takeaway": "Integrations 在 Max/Team/Enterprise 订阅公测、随后覆盖 Pro 计划；开发者可在 30 分钟内创建自定义 Integration，标志着 Claude 向工作流 AI 助理的关键转型。"
+      }
     },
     {
       "source": "Anthropic Blog",
