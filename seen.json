@@ -394,5 +394,41 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-24",
     "date": "2025-05-01"
+  },
+  "https://www.anthropic.com/news/widening-conversation-ai": {
+    "title": "Widening the conversation on frontier AI",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2026-05-19"
+  },
+  "https://www.anthropic.com/news/mozilla-firefox-security": {
+    "title": "Partnering with Mozilla to improve Firefox's security",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2026-03-06"
+  },
+  "https://www.anthropic.com/news/anthropic-interviewer": {
+    "title": "Introducing Anthropic Interviewer",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2025-12-15"
+  },
+  "https://www.anthropic.com/news/healthcare-life-sciences": {
+    "title": "Advancing Claude in healthcare and the life sciences",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2026-01-11"
+  },
+  "https://www.anthropic.com/news/research": {
+    "title": "Claude takes research to new places",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2025-10-31"
+  },
+  "https://www.anthropic.com/news/memory": {
+    "title": "Bringing memory to teams",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-25",
+    "date": "2025-09-11"
   }
 }
