@@ -430,5 +430,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-25",
     "date": "2025-09-11"
+  },
+  "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical": {
+    "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-27",
+    "date": "2026-05-25"
   }
 }
