@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-27",
+  "date": "2026-05-28",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,16 +8,25 @@
   "entries": [
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "title": "Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening",
+      "date": "2026-05-26",
+      "category": "公司动态",
+      "summary": "Anthropic 任命前 Snowflake 韩国区负责人 Choi Ki-young 为韩国代表董事，正式推进 Seoul 办公室开设。",
+      "insights": {
+        "problem": "韩国市场 Claude 使用量超出预期 3.5 倍，Anthropic 需要本地化领导力来应对企业、政府和开发者生态的快速增长需求。",
+        "approach": "任命拥有 Google Cloud、Adobe、Snowflake 等大型科技企业韩国区管理经验的资深高管，制定针对韩国市场的定制化战略，重点推进企业合作（SK Telecom、Law&Company）与政府关系建设。",
+        "takeaway": "Seoul 办公室的正式成立标志着 Anthropic 亚太布局的进一步深化，韩国已成为其东亚第二大流量市场，本地化运营将加速 Claude 在韩国企业级场景的渗透。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
       "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
       "date": "2026-05-25",
       "category": "AI伦理",
       "summary": "Anthropic 联合创始人 Chris Olah 赴梵蒂冈出席教皇利奥十四世 AI 通谕发布，呼吁外部力量参与 AI 安全监督",
-      "insights": {
-        "problem": "前沿 AI 实验室内部的激励机制和约束有时与「做正确的事」相冲突，仅靠内部自律难以确保 AI 安全",
-        "approach": "Olah 受邀赴梵蒂冈与神学家、红衣主教共同出席《Magnifica humanitas》通谕发布仪式，跨越宗教与科技边界进行对话，强调外部批评者的价值",
-        "takeaway": "Olah 呼吁 AI 圈外部、不受商业激励驱动的人士积极参与安全批评；教皇感谢其出席并称「在分歧中相互倾听是希望的重大标志」"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
