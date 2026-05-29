@@ -442,5 +442,29 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-28",
     "date": "2026-05-26"
+  },
+  "https://www.anthropic.com/news/series-h": {
+    "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-29",
+    "date": "2026-05-28"
+  },
+  "https://www.anthropic.com/news/milan-office-opening": {
+    "title": "Anthropic opens Milan office to support Italian enterprise, research, and developers",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-29",
+    "date": "2026-05-27"
+  },
+  "https://www.anthropic.com/research/glasswing-initial-update": {
+    "title": "Project Glasswing: An initial update",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-29",
+    "date": "2026-05-22"
+  },
+  "https://www.anthropic.com/news/introducing-anthropic-labs": {
+    "title": "Introducing Labs",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-29",
+    "date": "2026-01-14"
   }
 }
