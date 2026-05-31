@@ -466,5 +466,29 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-29",
     "date": "2026-01-14"
+  },
+  "https://www.anthropic.com/news/claude-opus-4-8": {
+    "title": "Introducing Claude Opus 4.8",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-31",
+    "date": "2026-05-27"
+  },
+  "https://www.anthropic.com/research/anthropic-institute-agenda": {
+    "title": "Focus areas for The Anthropic Institute",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-31",
+    "date": "2026-05-08"
+  },
+  "https://www.anthropic.com/research/economic-index-march-2026-report": {
+    "title": "Anthropic Economic Index report: Learning curves",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-31",
+    "date": "2026-03-24"
+  },
+  "https://www.anthropic.com/news/claude-haiku-4-5": {
+    "title": "Introducing Claude Haiku 4.5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-05-31",
+    "date": "2025-10-15"
   }
 }
