@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-30",
+  "date": "2026-05-31",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -128,7 +128,7 @@
       "insights": {
         "problem": "AI对经济、安全和社会的深远影响缺乏基于真实数据的系统性量化研究，政策制定者和监管机构难以获得可靠的实证依据",
         "approach": "利用Anthropic内部真实数据，围绕四大领域（经济扩散、威胁与韧性、野外AI系统、AI驱动研发）建立研究议程，通过Anthropic Economic Index等工具定期向公众发布报告",
-        "takeaway": "TAI研究成果将直接输入Anthropic长期利益信托，指导AI发布决策；研究范围涵盖AI自我改进的治理挑战和情报爆炸情景的"消防演习"，为监管提供实证支撑"
+        "takeaway": "TAI研究成果将直接输入Anthropic长期利益信托，指导AI发布决策；研究范围涵盖AI自我改进的治理挑战和情报爆炸情景的「消防演习」，为监管提供实证支撑"
       }
     },
     {
