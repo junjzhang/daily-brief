@@ -490,5 +490,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-05-31",
     "date": "2025-10-15"
+  },
+  "https://www.anthropic.com/research/coding-agents-social-sciences": {
+    "title": "Coding agents in the social sciences",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-01",
+    "date": "2026-05-27"
   }
 }
