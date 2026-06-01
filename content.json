@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-31",
+  "date": "2026-06-01",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,15 +8,15 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "title": "Introducing Claude Opus 4.8",
+      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+      "title": "Coding agents in the social sciences",
       "date": "2026-05-27",
-      "category": "产品发布",
-      "summary": "Anthropic发布最强通用模型Claude Opus 4.8，引入Dynamic Workflows支持数百个并行子代理，Fast模式定价降低3倍",
+      "category": "Research",
+      "summary": "调查 1,260 名定量社会科学研究者，揭示 AI 编程工具采用的性别与机构差距及学术产出影响",
       "insights": {
-        "problem": "现有AI代理在大规模任务执行时可靠性不足，容易忽视代码中的缺陷，浏览器操作能力受限，且高速推理成本偏高",
-        "approach": "通过强化诚实性训练将代码错误自报率提升4倍，引入Dynamic Workflows研究预览版支持数百个并行子代理完成代码库级迁移，并将Fast模式定价降至$10/$50（每百万token），比上一代低3倍",
-        "takeaway": "Opus 4.8是首个在Super-Agent基准测试中完成全部用例的模型，Online-Mind2Web浏览器代理得分达84%，已进入生产级浏览器代理部署阶段"
+        "problem": "AI 编程工具在社会科学研究中的采用存在系统性不均衡——性别、职业阶段和机构地位均显著影响使用率，使生产率提升并不平等地分布在研究群体中。",
+        "approach": "对 1,260 名活跃定量社会科学研究者开展调查（2026 年 2-3 月），分析 coding agent 的使用模式、学术产出变化（工作论文、项目申请、期刊投稿）以及性别和机构差异。",
+        "takeaway": "经济学家采用率最高（39%），男性使用率是女性两倍以上；使用者工作论文发表和项目申请更积极，但期刊投稿尚未显著增加，研究者担忧工具可能加剧选择性报告等现有问题。"
       }
     },
     {
@@ -24,8 +24,17 @@
       "url": "https://www.anthropic.com/news/series-h",
       "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
       "date": "2026-05-28",
-      "category": "融资",
-      "summary": "Anthropic完成650亿美元H轮融资，估值达9650亿美元，本月运营收入年化突破470亿美元",
+      "category": "公司动态",
+      "summary": "Anthropic 以 9650 亿美元估值完成 650 亿美元 H 轮融资，成为全球估值最高的 AI 公司",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title": "Introducing Claude Opus 4.8",
+      "date": "2026-05-27",
+      "category": "模型发布",
+      "summary": "Claude Opus 4.8 发布，诚实性和代码质量显著提升，Claude Code 新增动态工作流功能",
       "insights": null
     },
     {
@@ -34,7 +43,7 @@
       "title": "Anthropic opens Milan office to support Italian enterprise, research, and developers",
       "date": "2026-05-27",
       "category": "公司动态",
-      "summary": "Anthropic在米兰开设办公室，支持意大利企业、研究机构和开发者",
+      "summary": "Anthropic 在米兰开设办公室，扩大欧洲业务并支持意大利企业和开发者社区",
       "insights": null
     },
     {
@@ -43,7 +52,7 @@
       "title": "Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening",
       "date": "2026-05-26",
       "category": "公司动态",
-      "summary": "Anthropic任命崔基英为韩国代表理事，为首尔办公室开业做准备",
+      "summary": "Anthropic 任命 KiYoung Choi 为韩国代表董事，为首尔办公室开业做准备",
       "insights": null
     },
     {
@@ -52,7 +61,7 @@
       "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
       "date": "2026-05-25",
       "category": "观点",
-      "summary": "Anthropic联合创始人Chris Olah就教皇利奥十四世通谕《Magnifica humanitas》发表感想",
+      "summary": "联合创始人 Chris Olah 就教皇 Leo XIV 涉及 AI 的通谕发表评论",
       "insights": null
     },
     {
@@ -60,17 +69,8 @@
       "url": "https://www.anthropic.com/research/glasswing-initial-update",
       "title": "Project Glasswing: An initial update",
       "date": "2026-05-22",
-      "category": "安全研究",
-      "summary": "Project Glasswing初步进展更新：Anthropic主动网络安全防御研究项目",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/widening-conversation-ai",
-      "title": "Widening the conversation on frontier AI",
-      "date": "2026-05-19",
-      "category": "政策",
-      "summary": "拓展前沿AI对话：Anthropic分享对多方参与AI治理讨论的思考",
+      "category": "Research",
+      "summary": "Project Glasswing 初始进展：Claude Mythos Preview 协助合作伙伴在首月发现超万个高危软件漏洞",
       "insights": null
     },
     {
@@ -78,8 +78,17 @@
       "url": "https://www.anthropic.com/news/anthropic-kpmg",
       "title": "KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance",
       "date": "2026-05-19",
-      "category": "合作伙伴",
-      "summary": "KPMG将Claude整合至核心业务，覆盖全球27.6万名员工，与Anthropic达成战略联盟",
+      "category": "合作",
+      "summary": "KPMG 在战略联盟中将 Claude 整合到核心业务及逾 27.6 万员工日常工作中",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "title": "Widening the conversation on frontier AI",
+      "date": "2026-05-19",
+      "category": "政策与安全",
+      "summary": "Anthropic 倡导扩大前沿 AI 的公众参与和多方对话",
       "insights": null
     },
     {
@@ -87,17 +96,8 @@
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "title": "Anthropic acquires Stainless",
       "date": "2026-05-18",
-      "category": "收购",
-      "summary": "Anthropic收购API SDK开发工具公司Stainless，以改善开发者工具体验",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-      "date": "2026-05-14",
-      "category": "合作伙伴",
-      "summary": "PwC部署Claude构建技术、执行交易并为客户重塑企业职能",
+      "category": "公司动态",
+      "summary": "Anthropic 收购 SDK 生成工具公司 Stainless，增强开发者工具链能力",
       "insights": null
     },
     {
@@ -105,8 +105,17 @@
       "url": "https://www.anthropic.com/news/gates-foundation-partnership",
       "title": "Anthropic forms $200 million partnership with the Gates Foundation",
       "date": "2026-05-14",
-      "category": "合作伙伴",
-      "summary": "Anthropic与盖茨基金会建立2亿美元合作，支持全球健康、教育和经济流动项目",
+      "category": "合作",
+      "summary": "Anthropic 与盖茨基金会达成 2 亿美元合作，推进全球健康、教育和经济流动领域的 AI 应用",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "date": "2026-05-14",
+      "category": "合作",
+      "summary": "普华永道扩展与 Anthropic 的合作，为客户部署 Claude 以重塑企业核心职能",
       "insights": null
     },
     {
@@ -114,8 +123,8 @@
       "url": "https://www.anthropic.com/news/claude-for-small-business",
       "title": "Introducing Claude for Small Business",
       "date": "2026-05-13",
-      "category": "产品发布",
-      "summary": "Anthropic推出面向小型企业的Claude服务，提供专属功能和定价方案",
+      "category": "产品",
+      "summary": "Claude for Small Business 发布，为小型企业提供专属 AI 套餐和工具",
       "insights": null
     },
     {
@@ -123,21 +132,17 @@
       "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
       "title": "Focus areas for The Anthropic Institute",
       "date": "2026-05-08",
-      "category": "研究",
-      "summary": "The Anthropic Institute发布研究议程，聚焦经济扩散、威胁与韧性、野外AI系统和AI驱动研发四大方向",
-      "insights": {
-        "problem": "AI对经济、安全和社会的深远影响缺乏基于真实数据的系统性量化研究，政策制定者和监管机构难以获得可靠的实证依据",
-        "approach": "利用Anthropic内部真实数据，围绕四大领域（经济扩散、威胁与韧性、野外AI系统、AI驱动研发）建立研究议程，通过Anthropic Economic Index等工具定期向公众发布报告",
-        "takeaway": "TAI研究成果将直接输入Anthropic长期利益信托，指导AI发布决策；研究范围涵盖AI自我改进的治理挑战和情报爆炸情景的「消防演习」，为监管提供实证支撑"
-      }
+      "category": "Research",
+      "summary": "Anthropic Institute 确定四大研究方向：经济扩散、威胁与韧性、野外 AI 系统及 AI 驱动的 R&D",
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/the-anthropic-institute",
       "title": "Introducing The Anthropic Institute",
       "date": "2026-05-07",
-      "category": "研究",
-      "summary": "介绍The Anthropic Institute：专注研究AI对社会和经济影响的独立研究机构",
+      "category": "公司动态",
+      "summary": "Anthropic Institute 正式成立，利用前沿实验室内部信息研究 AI 对世界的影响",
       "insights": null
     },
     {
@@ -145,8 +150,8 @@
       "url": "https://www.anthropic.com/news/higher-limits-spacex",
       "title": "Higher usage limits for Claude and a compute deal with SpaceX",
       "date": "2026-05-06",
-      "category": "产品更新",
-      "summary": "Claude提升使用限制并与SpaceX达成算力合作协议",
+      "category": "产品",
+      "summary": "Claude 提高使用限额，并与 SpaceX 达成算力合作协议",
       "insights": null
     },
     {
@@ -154,8 +159,8 @@
       "url": "https://www.anthropic.com/news/Introducing-code-with-claude",
       "title": "Code with Claude - Anthropic's First Developer Conference",
       "date": "2026-05-06",
-      "category": "活动",
-      "summary": "Code with Claude：Anthropic首届开发者大会，展示AI辅助编程的未来方向",
+      "category": "产品",
+      "summary": "Code with Claude：Anthropic 首届开发者大会发布多项编程工具新功能",
       "insights": null
     },
     {
@@ -164,7 +169,7 @@
       "title": "Agents for financial services",
       "date": "2026-05-05",
       "category": "产品",
-      "summary": "Anthropic推出面向金融服务领域的Claude代理解决方案",
+      "summary": "Claude 金融服务智能体发布，支持合规敏感的金融场景和工作流自动化",
       "insights": null
     },
     {
@@ -173,7 +178,7 @@
       "title": "Building a new enterprise AI services company with Blackstone, H&F, and Goldman Sachs",
       "date": "2026-05-04",
       "category": "公司动态",
-      "summary": "Anthropic与Blackstone、H&F、高盛联合成立新企业AI服务公司，聚焦中型企业核心业务",
+      "summary": "Anthropic 联合 Blackstone、H&F 和高盛成立新企业 AI 服务公司",
       "insights": null
     },
     {
@@ -182,7 +187,7 @@
       "title": "Claude for Creative Work",
       "date": "2026-04-28",
       "category": "产品",
-      "summary": "推出Claude创意工作专项功能，为创意专业人士提供定制化AI辅助体验",
+      "summary": "Claude for Creative Work 发布，专为创意写作、故事创作和内容生产优化",
       "insights": null
     },
     {
@@ -190,8 +195,8 @@
       "url": "https://www.anthropic.com/news/election-safeguards-update",
       "title": "An update on our election safeguards",
       "date": "2026-04-27",
-      "category": "安全",
-      "summary": "Anthropic更新选举安全防护措施，防止Claude被用于影响选举",
+      "category": "政策与安全",
+      "summary": "Anthropic 更新选举安全措施，介绍防止 AI 被用于选举干预的最新进展",
       "insights": null
     },
     {
@@ -200,7 +205,7 @@
       "title": "Theo Hourmouzis named General Manager, Australia & New Zealand",
       "date": "2026-04-27",
       "category": "公司动态",
-      "summary": "Theo Hourmouzis被任命为Anthropic澳大利亚和新西兰总经理",
+      "summary": "Theo Hourmouzis 出任 Anthropic 澳大利亚和新西兰区总经理",
       "insights": null
     },
     {
@@ -208,8 +213,8 @@
       "url": "https://www.anthropic.com/news/anthropic-nec",
       "title": "Anthropic and NEC partner to build AI-native engineering organization",
       "date": "2026-04-24",
-      "category": "合作伙伴",
-      "summary": "Anthropic与NEC合作，共同构建AI原生工程组织",
+      "category": "合作",
+      "summary": "Anthropic 与 NEC 合作打造 AI 原生工程组织，推动企业软件开发转型",
       "insights": null
     },
     {
@@ -217,8 +222,8 @@
       "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
       "title": "Anthropic and Amazon expand collaboration for up to 5 GW of capacity",
       "date": "2026-04-20",
-      "category": "合作伙伴",
-      "summary": "Anthropic与Amazon扩大合作，算力容量最高达5GW",
+      "category": "合作",
+      "summary": "Anthropic 与亚马逊扩大合作，获得最高 5GW 算力支持用于模型训练和部署",
       "insights": null
     },
     {
@@ -226,8 +231,8 @@
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
       "title": "Introducing Claude Design by Anthropic Labs",
       "date": "2026-04-17",
-      "category": "产品发布",
-      "summary": "Anthropic Labs推出Claude Design，AI驱动的设计辅助工具",
+      "category": "产品",
+      "summary": "Anthropic Labs 推出 Claude Design，提供 AI 驱动的设计辅助能力",
       "insights": null
     },
     {
@@ -235,8 +240,26 @@
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
       "title": "Introducing Claude Opus 4.7",
       "date": "2026-04-16",
-      "category": "产品发布",
-      "summary": "介绍Claude Opus 4.7：上一代旗舰模型，在编码和代理任务中表现领先",
+      "category": "模型发布",
+      "summary": "Claude Opus 4.7 发布，提升复杂推理和指令遵循能力",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "title": "Anthropic expands partnership with Google and Broadcom",
+      "date": "2026-04-06",
+      "category": "合作",
+      "summary": "Anthropic 与谷歌和博通扩大合作，获取多吉瓦特级下一代算力资源",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/australia-MOU",
+      "title": "Australian government and Anthropic sign MOU for AI safety and research",
+      "date": "2026-03-31",
+      "category": "政策与安全",
+      "summary": "澳大利亚政府与 Anthropic 签署 AI 安全与研究谅解备忘录",
       "insights": null
     },
     {
@@ -244,34 +267,386 @@
       "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
       "title": "Anthropic Economic Index report: Learning curves",
       "date": "2026-03-24",
-      "category": "研究",
-      "summary": "Anthropic经济指数报告：分析用户学习曲线，有经验用户成功率提升10%，任务多样性持续扩展",
-      "insights": {
-        "problem": "AI采用存在明显的用户经验差距、任务集中化和地域不平衡现象，需要量化这些模式以理解AI扩散规律并预警重大变革",
-        "approach": "分析100万次Claude对话数据，追踪用户使用时长与成功率关联、任务类型分布变化、模型选择策略及美国地域采用差异",
-        "takeaway": "使用Claude 6个月以上的用户成功率提升10%；前10类任务占比从24%降至19%；美国前五州人均使用占比从30%降至24%，显示AI使用正从少数高知识密度地区向更广范围扩散"
-      }
+      "category": "Research",
+      "summary": "Anthropic 经济指数报告（2026 年 3 月）：AI 对劳动力市场影响的学习曲线分析",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-partner-network",
+      "title": "Anthropic invests $100 million into the Claude Partner Network",
+      "date": "2026-03-12",
+      "category": "产品",
+      "summary": "Anthropic 向 Claude 合作伙伴网络投入 1 亿美元，支持生态系统建设",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
+      "title": "Sydney will become Anthropic's fourth office in Asia-Pacific",
+      "date": "2026-03-10",
+      "category": "公司动态",
+      "summary": "悉尼将成为 Anthropic 亚太地区第四个办公室，进一步扩大区域布局",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/mozilla-firefox-security",
+      "title": "Partnering with Mozilla to improve Firefox's security",
+      "date": "2026-03-06",
+      "category": "合作",
+      "summary": "Anthropic 与 Mozilla 合作，利用 Claude 提升 Firefox 浏览器的安全性",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/where-stand-department-war",
+      "title": "Where things stand with the Department of War",
+      "date": "2026-03-05",
+      "category": "政策与安全",
+      "summary": "Anthropic 就与美国国防部合作状态的公开说明",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
+      "title": "Statement on the comments from Secretary of War Pete Hegseth",
+      "date": "2026-02-27",
+      "category": "政策与安全",
+      "summary": "Anthropic 就国防部长 Pete Hegseth 评论发表声明",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "title": "Statement from Dario Amodei on our discussions with the Department of War",
+      "date": "2026-02-26",
+      "category": "政策与安全",
+      "summary": "Dario Amodei 就 Anthropic 与国防部讨论事项的公开声明",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/acquires-vercept",
+      "title": "Anthropic acquires Vercept to advance Claude's computer use capabilities",
+      "date": "2026-02-25",
+      "category": "公司动态",
+      "summary": "Anthropic 收购 Vercept 以增强 Claude 的电脑操作和视觉理解能力",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+      "title": "Responsible Scaling Policy Version 3.0",
+      "date": "2026-02-24",
+      "category": "政策与安全",
+      "summary": "Anthropic 发布负责任扩展政策 3.0 版，更新 AI 安全评估和部署标准",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "title": "Introducing Claude Sonnet 4.6",
+      "date": "2026-02-17",
+      "category": "模型发布",
+      "summary": "Claude Sonnet 4.6 发布，在速度与能力之间取得更优平衡",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
+      "title": "Anthropic opens Bengaluru office and announces new partnerships across India",
+      "date": "2026-02-16",
+      "category": "公司动态",
+      "summary": "Anthropic 在班加罗尔开设办公室并宣布印度多项合作伙伴关系",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
+      "date": "2026-02-13",
+      "category": "公司动态",
+      "summary": "Anthropic 以 3800 亿美元估值完成 300 亿美元 G 轮融资",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
+      "title": "Anthropic partners with CodePath to bring Claude to the US's largest collegiate computer science program",
+      "date": "2026-02-13",
+      "category": "合作",
+      "summary": "Anthropic 与 CodePath 合作，为美国最大高校计算机科学项目引入 Claude",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/donate-public-first-action",
+      "title": "Anthropic is donating $20 million to Public First Action",
+      "date": "2026-02-12",
+      "category": "公司动态",
+      "summary": "Anthropic 向 Public First Action 捐款 2000 万美元支持 AI 公共政策研究",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-6",
+      "title": "Introducing Claude Opus 4.6",
+      "date": "2026-02-05",
+      "category": "模型发布",
+      "summary": "Claude Opus 4.6 发布，提升复杂任务处理和长文本理解能力",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "title": "Claude is a space to think",
+      "date": "2026-02-04",
+      "category": "产品",
+      "summary": "阐述 Claude 作为思考伙伴的产品哲学和设计理念",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
+      "title": "Anthropic partners with Allen Institute and Howard Hughes Medical Institute to accelerate scientific discovery",
+      "date": "2026-02-02",
+      "category": "合作",
+      "summary": "Anthropic 与艾伦研究所和霍华德·休斯医学研究所合作，加速科学发现",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-new-constitution",
+      "title": "Claude's new constitution",
+      "date": "2026-01-22",
+      "category": "政策与安全",
+      "summary": "Claude 更新价值观和行为准则，强化透明度和与人类价值观的对齐",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
+      "title": "Anthropic and Teach For All launch global AI training initiative for educators",
+      "date": "2026-01-21",
+      "category": "合作",
+      "summary": "Anthropic 与 Teach For All 合作，面向全球教育工作者启动 AI 培训项目",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
+      "title": "How scientists are using Claude to accelerate research and discovery",
+      "date": "2026-01-15",
+      "category": "产品",
+      "summary": "科学家如何借助 Claude 加速研究发现：典型案例与应用场景介绍",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/introducing-anthropic-labs",
+      "title": "Introducing Labs",
+      "date": "2026-01-14",
+      "category": "产品",
+      "summary": "Anthropic Labs 正式推出，作为早期实验性产品功能的发布平台",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/healthcare-life-sciences",
+      "title": "Advancing Claude in healthcare and the life sciences",
+      "date": "2026-01-11",
+      "category": "产品",
+      "summary": "推进 Claude 在医疗保健和生命科学领域的专业化应用",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-interviewer",
+      "title": "Introducing Anthropic Interviewer",
+      "date": "2025-12-15",
+      "category": "产品",
+      "summary": "Anthropic Interviewer 发布，支持 AI 驱动的结构化访谈和调研场景",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
+      "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises",
+      "date": "2025-12-03",
+      "category": "合作",
+      "summary": "Snowflake 与 Anthropic 达成 2 亿美元合作，将智能体 AI 引入全球企业数据平台",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
+      "title": "Anthropic acquires Bun as Claude Code reaches $1B milestone",
+      "date": "2025-12-02",
+      "category": "公司动态",
+      "summary": "Anthropic 收购 JavaScript 运行时 Bun，同时 Claude Code 达成 10 亿美元收入里程碑",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "title": "Introducing Claude Opus 4.5",
+      "date": "2025-11-24",
+      "category": "模型发布",
+      "summary": "Claude Opus 4.5 发布，在推理、编程和多步骤任务上大幅提升",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships",
+      "title": "Microsoft, NVIDIA and Anthropic announced new strategic partnerships",
+      "date": "2025-11-18",
+      "category": "合作",
+      "summary": "微软、英伟达与 Anthropic 宣布新战略合作，扩展 Claude 的基础设施和分发渠道",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
+      "title": "Anthropic invests $50 billion in American AI infrastructure",
+      "date": "2025-11-12",
+      "category": "公司动态",
+      "summary": "Anthropic 投资 500 亿美元建设美国 AI 基础设施，在德克萨斯州和纽约建设数据中心",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence",
+      "title": "New offices in Paris and Munich expand Anthropic's European presence",
+      "date": "2025-11-07",
+      "category": "公司动态",
+      "summary": "Anthropic 在巴黎和慕尼黑开设新办公室，扩大欧洲业务布局",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/research",
+      "title": "Claude takes research to new places",
+      "date": "2025-10-31",
+      "category": "产品",
+      "summary": "Claude 深度研究功能扩展到更多场景，提供更强的信息整合和分析能力",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+      "title": "Seoul becomes Anthropic's third office in Asia-Pacific",
+      "date": "2025-10-24",
+      "category": "公司动态",
+      "summary": "首尔成为 Anthropic 亚太地区第三个办公室，加速在韩国的业务拓展",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "title": "Expanding our use of Google Cloud TPUs and Services",
+      "date": "2025-10-23",
+      "category": "公司动态",
+      "summary": "Anthropic 扩大对 Google Cloud TPU 和服务的使用，增强模型训练能力",
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-haiku-4-5",
       "title": "Introducing Claude Haiku 4.5",
       "date": "2025-10-15",
-      "category": "产品发布",
-      "summary": "推出Claude Haiku 4.5：以Claude Sonnet 4三分之一成本实现两倍速度，支持extended thinking，适合高频代理场景",
-      "insights": {
-        "problem": "大型AI模型推理成本高、延迟大，制约了高频调用的代理工作流和边缘场景的实际部署规模",
-        "approach": "提供轻量级高效小模型并保留extended thinking能力，在代理编码任务中以Sonnet 4.5一半以下成本实现接近90%的性能，定价为$1/$5（每百万token输入/输出）",
-        "takeaway": "在Augment代理编码评测中达到Claude Sonnet 4.5性能的90%，以最优性价比填补Haiku系列与高阶模型之间的能力空缺，为规模化代理部署提供经济可行方案"
-      }
+      "category": "模型发布",
+      "summary": "Claude Haiku 4.5 发布，轻量高效，适用于高吞吐量和低延迟场景",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership",
+      "title": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
+      "date": "2025-10-14",
+      "category": "合作",
+      "summary": "Anthropic 与 Salesforce 扩大合作，将 Claude 引入金融、医疗等受监管行业",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+      "title": "Anthropic expands global operations to India, plans to open an office in Bengaluru",
+      "date": "2025-10-07",
+      "category": "公司动态",
+      "summary": "Anthropic 拓展印度业务，计划在班加罗尔开设办公室",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "title": "Introducing Claude Sonnet 4.5",
+      "date": "2025-09-29",
+      "category": "模型发布",
+      "summary": "Claude Sonnet 4.5 发布，在速度、成本和能力上实现更优平衡",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/memory",
+      "title": "Bringing memory to teams",
+      "date": "2025-09-11",
+      "category": "产品",
+      "summary": "Claude 团队记忆功能上线，支持跨对话的上下文持久化",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government",
+      "title": "Offering expanded Claude access across all three branches of government",
+      "date": "2025-08-12",
+      "category": "政策与安全",
+      "summary": "为美国行政、立法、司法三权政府提供 Claude 扩展访问权限",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
+      "title": "Thoughts on America's AI Action Plan",
+      "date": "2025-07-23",
+      "category": "政策与安全",
+      "summary": "Anthropic 就美国 AI 行动计划发表政策观点和建议",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "title": "Introducing Claude 4",
+      "date": "2025-05-22",
+      "category": "模型发布",
+      "summary": "Claude 4 系列发布，包括 Opus 4 和 Sonnet 4，在多项基准上达到新高度",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/integrations",
+      "title": "Claude can now connect to your world",
+      "date": "2025-05-01",
+      "category": "产品",
+      "summary": "Claude 集成功能发布，支持连接 Google Docs、Slack 等第三方应用",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan",
+      "title": "Anthropic's Recommendations to OSTP for the U.S. AI Action Plan",
+      "date": "2025-03-06",
+      "category": "政策与安全",
+      "summary": "Anthropic 向 OSTP 提交美国 AI 行动计划政策建议书",
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
       "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-14-python-first-comms",
       "title": "Python First Comms for Researchers",
       "date": "2026-05-14",
-      "category": "分布式训练",
-      "summary": "面向研究人员的Python优先通信原语，简化分布式训练中的通信抽象层",
+      "category": "Distributed",
+      "summary": "面向研究者的 Python 优先通信原语，以更简洁的 API 抽象简化分布式训练代码",
       "insights": null
     },
     {
@@ -280,7 +655,7 @@
       "title": "Toward Agent-Friendly Dynamo: Mirroring CPython Semantics",
       "date": "2026-05-13",
       "category": "Dynamo",
-      "summary": "让Dynamo更贴近CPython语义，提升torch.compile在代理场景和动态控制流下的兼容性",
+      "summary": "对齐 CPython 语义，使 Dynamo 更适合 AI 智能体工作负载，减少非预期的 graph break",
       "insights": null
     },
     {
@@ -288,8 +663,8 @@
       "url": "https://docs.pytorch.org/devlogs/distributed/2026-05-06-torchcompile-torchtitan-rl",
       "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
       "date": "2026-05-06",
-      "category": "分布式训练",
-      "summary": "torch.compile集成TorchTitan RL训练框架，实现统一强化学习训练流程6倍加速",
+      "category": "Distributed",
+      "summary": "torch.compile 与 TorchTitan RL 结合，将统一强化学习训练速度提升 6 倍",
       "insights": null
     },
     {
@@ -298,7 +673,7 @@
       "title": "Printing and Inspecting Tensors Inside torch.compile",
       "date": "2026-05-06",
       "category": "Dynamo",
-      "summary": "在torch.compile内部打印和检查tensor的方法，提升编译图的调试体验",
+      "summary": "在 torch.compile 编译图内部打印和检查张量的实用调试技巧",
       "insights": null
     },
     {
@@ -307,7 +682,7 @@
       "title": "Dynamo Isolate Recompiles for torch.compile",
       "date": "2026-05-04",
       "category": "Dynamo",
-      "summary": "引入isolate_recompiles=True，为每次torch.compile调用提供独立缓存桶，解决工厂模式中的重编译冲突",
+      "summary": "隔离 torch.compile 重编译：每个调用拥有独立缓存桶，防止工厂模式下的缓存冲突",
       "insights": null
     },
     {
@@ -315,8 +690,8 @@
       "url": "https://docs.pytorch.org/devlogs/cpp/2026-05-03-cpython-notes",
       "title": "CPython notes",
       "date": "2026-05-03",
-      "category": "CPython",
-      "summary": "CPython内部机制笔记，探讨与PyTorch编译优化相关的Python解释器实现细节",
+      "category": "C++",
+      "summary": "PyTorch 与 CPython 内部机制交互的实现笔记，涵盖字节码、帧对象等底层细节",
       "insights": null
     },
     {
@@ -324,8 +699,8 @@
       "url": "https://docs.pytorch.org/devlogs/ci/2026-05-03-mergedog",
       "title": "mergedog: shepherding approved PRs into pytorch/pytorch",
       "date": "2026-05-03",
-      "category": "CI",
-      "summary": "mergedog：自动化引导已批准PR合并至pytorch/pytorch主仓库的持续集成工具",
+      "category": "CI/Infra",
+      "summary": "mergedog 工具：自动引导已审批 PR 有序合入 pytorch/pytorch，减少人工干预",
       "insights": null
     },
     {
@@ -333,8 +708,53 @@
       "url": "https://docs.pytorch.org/devlogs/dispatcher/2026-04-16-how-does-the-dispatcher-work",
       "title": "How Does the Dispatcher Work?",
       "date": "2026-04-16",
-      "category": "分发器",
-      "summary": "深入解析PyTorch分发器工作原理：算子分发机制的设计、实现与扩展点",
+      "category": "Dispatcher",
+      "summary": "深度解析 PyTorch 调度器（Dispatcher）的工作原理及其在算子分发中的核心作用",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-03-25-unbacked-perf-parity",
+      "title": "Unbacked Dynamic Shapes Shouldn't Be Slower — Now They Aren't",
+      "date": "2026-03-25",
+      "category": "Dynamic Shapes",
+      "summary": "无支持动态形状性能达到与有支持形状持平，消除因 guard-free 路径带来的额外开销",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-02-27-compile-time-unbacked-export",
+      "title": "Reducing Compile-Time Overhead in Unbacked-Symbol-Heavy torch.export Traces",
+      "date": "2026-02-27",
+      "category": "Dynamic Shapes",
+      "summary": "降低含大量无支持符号的 torch.export 轨迹编译时开销，提升导出效率",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-01-20-backed-to-unbacked",
+      "title": "Backed to Unbacked: From Guardable to Guardless Shapes in PyTorch",
+      "date": "2026-01-20",
+      "category": "Dynamic Shapes",
+      "summary": "从可守卫形状到无守卫形状：PyTorch 动态形状新范式及其对编译性能的影响",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-10-29-slaying-framework-ddes",
+      "title": "Slaying Framework Data-Dependent Errors Dragon",
+      "date": "2025-10-29",
+      "category": "Dynamic Shapes",
+      "summary": "消灭框架数据依赖错误（DDE）的实践：系统化识别和修复 torch.compile 中的 DDE 问题",
+      "insights": null
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamic_shapes/2025-07-08-guard-free-dynamic-shapes",
+      "title": "Guard-Free Dynamic Shapes",
+      "date": "2025-07-08",
+      "category": "Dynamic Shapes",
+      "summary": "无守卫动态形状机制：新一代形状推断方案，减少重编译并支持更灵活的模型部署",
       "insights": null
     }
   ]
