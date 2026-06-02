@@ -496,5 +496,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-01",
     "date": "2026-05-27"
+  },
+  "https://www.anthropic.com/news/confidential-draft-s1-sec": {
+    "title": "Anthropic confidentially submits draft S-1 to the SEC",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-02",
+    "date": "2026-06-01"
+  },
+  "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously": {
+    "title": "Enabling Claude Code to work more autonomously",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-02",
+    "date": "2026-05-06"
+  },
+  "https://www.anthropic.com/news/claude-code-on-the-web": {
+    "title": "Claude Code on the web",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-02",
+    "date": "2026-05-06"
   }
 }
