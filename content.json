@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-01",
+  "date": "2026-06-02",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,16 +8,51 @@
   "entries": [
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "date": "2026-06-01",
+      "category": "公司动态",
+      "summary": "Anthropic于6月1日向SEC秘密提交S-1注册草案，正式启动IPO上市流程，当前估值约9650亿美元",
+      "insights": {
+        "problem": "Anthropic需要持续的公开市场融资渠道来支持其激进的模型研究与大规模基础设施扩张计划。",
+        "approach": "以保密方式向SEC提交S-1草案，在保留上市选择权的同时暂时不公开详细财务数据，待SEC审核完成后再决定是否正式上市；此前已通过H轮融资650亿美元，估值达9650亿美元。",
+        "takeaway": "若IPO成功，Anthropic将以接近万亿美元估值跻身全球顶级科技公司行列；2026年营收年化已达470亿美元，较2025年底约100亿美元大幅增长。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
+      "title": "Enabling Claude Code to work more autonomously",
+      "date": "2026-05-06",
+      "category": "产品更新",
+      "summary": "Claude Code新增子代理、钩子与后台任务三大自主性特性，并推出原生VS Code扩展、终端2.0及检查点功能",
+      "insights": {
+        "problem": "开发者希望将代码重构、大规模迁移等长时任务委托给AI代理，但难以在自主执行与人工可控之间取得平衡。",
+        "approach": "引入三种机制：子代理（Subagents）可并行处理专项任务；钩子（Hooks）在代码提交或测试完成等节点自动触发动作；后台任务（Background tasks）让开发服务器等长期进程在不阻塞主流程的情况下持续运行。",
+        "takeaway": "检查点（Checkpoints）让开发者可随时回滚至任意历史状态；Claude Agent SDK同步获得子代理与钩子支持，方便团队基于相同基础设施构建定制化自主工作流。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-code-on-the-web",
+      "title": "Claude Code on the web",
+      "date": "2026-05-06",
+      "category": "产品更新",
+      "summary": "Claude Code推出网页版，无需本地终端即可在云端并行运行多个编码任务，支持连接GitHub仓库并通过手机监控进度",
+      "insights": {
+        "problem": "Claude Code此前仅限本地终端运行，无法跨设备、跨代码库异步并发工作，限制了大规模多任务开发场景。",
+        "approach": "推出Web版（claude.ai/code），任务运行在Anthropic管理的云基础设施上，通过连接GitHub账号即可克隆仓库、并行启动多个会话，并可从Claude移动App监控所有任务状态。",
+        "takeaway": "会话在关闭浏览器后仍持续执行，完成后自动创建PR并附带清晰的变更摘要，显著提升多项目并发开发效率。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
       "title": "Coding agents in the social sciences",
       "date": "2026-05-27",
       "category": "Research",
       "summary": "调查 1,260 名定量社会科学研究者，揭示 AI 编程工具采用的性别与机构差距及学术产出影响",
-      "insights": {
-        "problem": "AI 编程工具在社会科学研究中的采用存在系统性不均衡——性别、职业阶段和机构地位均显著影响使用率，使生产率提升并不平等地分布在研究群体中。",
-        "approach": "对 1,260 名活跃定量社会科学研究者开展调查（2026 年 2-3 月），分析 coding agent 的使用模式、学术产出变化（工作论文、项目申请、期刊投稿）以及性别和机构差异。",
-        "takeaway": "经济学家采用率最高（39%），男性使用率是女性两倍以上；使用者工作论文发表和项目申请更积极，但期刊投稿尚未显著增加，研究者担忧工具可能加剧选择性报告等现有问题。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
