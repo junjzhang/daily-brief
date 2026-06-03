@@ -514,5 +514,29 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-02",
     "date": "2026-05-06"
+  },
+  "https://www.anthropic.com/news/expanding-project-glasswing": {
+    "title": "Expanding Project Glasswing",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-03",
+    "date": "2026-06-02"
+  },
+  "https://docs.pytorch.org/devlogs/eager/2026-06-01-cuda-caching-allocator": {
+    "title": "When does fragmentation occur in the CUDA caching allocator?",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-06-03",
+    "date": "2026-06-01"
+  },
+  "https://docs.pytorch.org/devlogs/ai-agents/2026-05-30-ai-coding-playbook": {
+    "title": "PyTorch's playbook for AI coding, as of May 2026",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-06-03",
+    "date": "2026-05-30"
+  },
+  "https://docs.pytorch.org/devlogs/dynamo/2026-05-15-debug-graph-breaks-skill": {
+    "title": "Introducing debug-graph-breaks: A Skill for Torch Compile Debugging",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-06-03",
+    "date": "2026-05-15"
   }
 }
