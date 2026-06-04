@@ -1,11 +1,37 @@
 {
-  "date": "2026-06-03",
+  "date": "2026-06-04",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
   "entries": [
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "date": "2026-06-03",
+      "category": "合作伙伴",
+      "summary": "Claude Partner Network 推出三级 Services Track 认证与 Partner Hub 门户，帮助企业客户快速找到最匹配的 Claude 实施合作伙伴。",
+      "insights": {
+        "problem": "逾 4 万家企业加入 Claude Partner Network 后，客户缺乏标准化机制评估合作伙伴的实际 Claude 解决方案交付能力。",
+        "approach": "引入三级 Services Track（按实际 Claude 交付深度分层）和每日刷新的 Partner Hub 门户，并设每年两次晋级评审（1 月 1 日和 7 月 1 日）。",
+        "takeaway": "超过 1 万名顾问已取得 Claude 认证，该体系让企业客户可按项目复杂度精准匹配合作伙伴，同时激励咨询公司持续深化 Claude 实践。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "title": "What we learned mapping a year's worth of AI-enabled cyber threats",
+      "date": "2026-06-03",
+      "category": "安全研究",
+      "summary": "Anthropic 联合 Verizon 分析 832 个被封禁恶意账户，发现 AI 主要被用于后期攻击阶段，高危行为者比例一年内从 33% 跃升至 56%。",
+      "insights": {
+        "problem": "缺乏系统化数据量化 AI 工具对网络攻击者的实际赋能程度，现有威胁报告难以评估风险等级的变化趋势。",
+        "approach": "对 2025 年 3 月至 2026 年 3 月因恶意网络活动被封禁的 832 个账户进行分析，将行为映射至 MITRE ATT&CK 框架，并在 Verizon 2026 DBIR 中联合发布。",
+        "takeaway": "67.3% 的攻击者将 AI 用于编写恶意软件等后期攻击阶段；高风险等级攻击者比例从 33% 跃升至 56%，表明 AI 正在实质性提升网络威胁的复杂度。"
+      }
+    },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/expanding-project-glasswing",
