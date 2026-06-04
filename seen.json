@@ -538,5 +538,17 @@
     "source": "PyTorch DevLogs",
     "first_seen": "2026-06-03",
     "date": "2026-05-15"
+  },
+  "https://www.anthropic.com/news/services-track-partner-hub": {
+    "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-04",
+    "date": "2026-06-03"
+  },
+  "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack": {
+    "title": "What we learned mapping a year's worth of AI-enabled cyber threats",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-04",
+    "date": "2026-06-03"
   }
 }
