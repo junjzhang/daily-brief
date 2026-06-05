@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-04",
+  "date": "2026-06-05",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,16 +8,38 @@
   "entries": [
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/usage-policy-update",
+      "title": "Usage Policy Update",
+      "date": "2026-05-14",
+      "category": "产品更新",
+      "summary": "Anthropic 宣布 6 月 15 日起将 Agent SDK 等程序化用量从订阅套餐中分离，创建独立月度积分池，交互式对话使用不受影响。",
+      "insights": {
+        "problem": "部分 Claude 订阅用户每月仅支付 20–200 美元，却通过 Agent SDK 和第三方 Agent 消耗了数倍于订阅价值的算力资源，Anthropic 持续为低效第三方代码承担额外成本。",
+        "approach": "从 6 月 15 日起，Agent SDK、claude -p、Claude Code GitHub Actions 及所有第三方 Agent 应用迁移至独立"Agent SDK 积分池"，按 API 标准费率计费；Pro 用户分配 $20 月度积分、Max 5x 为 $100、Max 20x 为 $200，积分不滚存。",
+        "takeaway": "交互式对话（claude.ai、移动端、Claude Code 终端）使用不受影响；程序化 Agent 用量超出积分后请求将失败，开发者需在 6 月 8 日前留意 Anthropic 邮件以领取积分，并在 6 月 15 日前规划 Agent 工作负载。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/maryland-partnership",
+      "title": "The State of Maryland partners with Anthropic to better serve residents",
+      "date": "2025-11-13",
+      "category": "合作",
+      "summary": "马里兰州与 Anthropic 合作，将 Claude 部署于政府福利系统，帮助居民申请 SNAP 等福利并辅助公务员高效处理每月逾 15 万份文件。",
+      "insights": {
+        "problem": "马里兰州每月须人工处理逾 15 万份福利申请文件，居民难以便捷发现符合资格的救助项目，公务员审核效率低下且难以规模化覆盖。",
+        "approach": "部署 Claude 驱动的双语虚拟助手，帮助居民申请 SNAP、Medicaid、临时现金补助和 WIC 等福利并主动识别其他可申请项目；同时为公务员提供文件核验、资格评估和复杂案例政策指导工具，覆盖 Maryland Benefits、劳工部等多个州级机构。",
+        "takeaway": "马里兰州成为美国首批以多机构综合方式引入 AI 的州之一，该模式联合 Percepta 和 The Rockefeller Foundation，有望为其他州级政府 AI 部署提供可复制的参考模板。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
       "date": "2026-06-03",
       "category": "合作伙伴",
       "summary": "Claude Partner Network 推出三级 Services Track 认证与 Partner Hub 门户，帮助企业客户快速找到最匹配的 Claude 实施合作伙伴。",
-      "insights": {
-        "problem": "逾 4 万家企业加入 Claude Partner Network 后，客户缺乏标准化机制评估合作伙伴的实际 Claude 解决方案交付能力。",
-        "approach": "引入三级 Services Track（按实际 Claude 交付深度分层）和每日刷新的 Partner Hub 门户，并设每年两次晋级评审（1 月 1 日和 7 月 1 日）。",
-        "takeaway": "超过 1 万名顾问已取得 Claude 认证，该体系让企业客户可按项目复杂度精准匹配合作伙伴，同时激励咨询公司持续深化 Claude 实践。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -26,11 +48,7 @@
       "date": "2026-06-03",
       "category": "安全研究",
       "summary": "Anthropic 联合 Verizon 分析 832 个被封禁恶意账户，发现 AI 主要被用于后期攻击阶段，高危行为者比例一年内从 33% 跃升至 56%。",
-      "insights": {
-        "problem": "缺乏系统化数据量化 AI 工具对网络攻击者的实际赋能程度，现有威胁报告难以评估风险等级的变化趋势。",
-        "approach": "对 2025 年 3 月至 2026 年 3 月因恶意网络活动被封禁的 832 个账户进行分析，将行为映射至 MITRE ATT&CK 框架，并在 Verizon 2026 DBIR 中联合发布。",
-        "takeaway": "67.3% 的攻击者将 AI 用于编写恶意软件等后期攻击阶段；高风险等级攻击者比例从 33% 跃升至 56%，表明 AI 正在实质性提升网络威胁的复杂度。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -39,11 +57,7 @@
       "date": "2026-06-02",
       "category": "安全",
       "summary": "Anthropic 将安全扫描计划 Glasswing 扩展至 15+ 国家的 150 个新组织，合作方已累计发现逾万个高危漏洞",
-      "insights": {
-        "problem": "全球关键软件基础设施（操作系统、浏览器、电力、医疗、通信系统等）存在大量高危漏洞，人工安全审查无法规模化覆盖",
-        "approach": "利用 Claude Mythos Preview 模型对 150 个新合作组织的代码库进行 AI 驱动的自动化安全扫描，覆盖此前代表不足的电力、水务、医疗、通信和硬件行业",
-        "takeaway": "合作伙伴已在每个主流操作系统和网络浏览器中发现高危漏洞，AI 辅助代码安全扫描正在规模化验证其实用价值"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -709,11 +723,7 @@
       "date": "2026-06-01",
       "category": "Eager",
       "summary": "解析 CUDA 缓存分配器内存碎片化的触发条件，帮助开发者理解并规避大规模训练中的 OOM 错误",
-      "insights": {
-        "problem": "CUDA 缓存分配器在特定分配模式下会产生内存碎片：虽然空闲显存总量足够，但由于 block 无法合并，分配器无法响应请求，引发难以排查的 OOM 错误",
-        "approach": "本文（由 Claude 起草、Edward Yang 编辑）系统分析了碎片化触发机制——分配器保留已释放 block 供复用但无法合并非连续 block——并对常见触发模式进行分类",
-        "takeaway": "理解碎片化发生的条件，有助于开发者将 GPU 显存视为固定预算进行编程，从根本上降低大规模训练和推理任务中 OOM 的发生频率"
-      }
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
@@ -722,11 +732,7 @@
       "date": "2026-05-30",
       "category": "AI Agents",
       "summary": "PyTorch 团队发布 AI 编程协作手册，规范化 AI 生成 PR 的代码审查与贡献流程",
-      "insights": {
-        "problem": "AI 生成的 PR 在 PyTorch 代码库中日益普遍，但团队缺乏统一规范来保证 AI 辅助贡献的代码质量",
-        "approach": "基于 2026 年 5 月 PyTorch 编译器 offsite 的集体讨论，Edward Yang 整理出半描述性、半规范性的操作手册，覆盖 AI 代理使用、代码审查和 OSS 协作等维度",
-        "takeaway": "手册为团队成员与 AI 编程代理协作提供了参考框架，并持续推动关于 AI 辅助开源贡献最佳实践的内部对话"
-      }
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
@@ -735,11 +741,7 @@
       "date": "2026-05-15",
       "category": "Dynamo",
       "summary": "推出 debug-graph-breaks AI 技能工具，可自动分析 Torch Compile 图断点根因并给出代码修复建议",
-      "insights": {
-        "problem": "Torch Compile 中的图断点（graph breaks）阻止完整图捕获、拖累性能，但定位根本原因十分困难，即便 LLM 代理也难以系统性修复",
-        "approach": "在 meta-pytorch/skills 仓库发布 `debug-graph-breaks` AI 技能，基于包含真实 OSS 模型场景的图断点语料库进行评估，能够给出具体的代码级修复建议",
-        "takeaway": "测试显示 NGB 方案使 82 个基准模型中 81 个通过，图断点减少最高达 67%，运行时加速最高可达 15%"
-      }
+      "insights": null
     },
     {
       "source": "PyTorch DevLogs",
