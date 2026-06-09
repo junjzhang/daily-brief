@@ -550,5 +550,47 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-04",
     "date": "2026-06-03"
+  },
+  "https://www.anthropic.com/institute/recursive-self-improvement": {
+    "title": "When AI builds itself",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-06-04"
+  },
+  "https://www.anthropic.com/research/making-claude-a-chemist": {
+    "title": "Making Claude a Chemist",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-06-05"
+  },
+  "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench": {
+    "title": "Evaluating Claude's bioinformatics research capabilities with BioMysteryBench",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-04-29"
+  },
+  "https://www.anthropic.com/news/introducing-claude-for-education": {
+    "title": "Introducing Claude for education",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-04-28"
+  },
+  "https://www.anthropic.com/research/teaching-claude-why": {
+    "title": "Teaching Claude why",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-05-08"
+  },
+  "https://www.anthropic.com/research/AI-fluency-index": {
+    "title": "Anthropic Education Report: The AI Fluency Index",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-02-16"
+  },
+  "https://www.anthropic.com/news/updating-our-usage-policy": {
+    "title": "Updating our Usage Policy",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-09",
+    "date": "2026-03-16"
   }
 }
