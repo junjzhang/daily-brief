@@ -10,6 +10,15 @@
   },
   "briefs": [
     {
+      "date": "2026-06-10",
+      "file": "2026-06-10.html",
+      "new_count": 2,
+      "sources": [
+        "Anthropic Blog",
+        "PyTorch DevLogs"
+      ]
+    },
+    {
       "date": "2026-06-09",
       "file": "2026-06-09.html",
       "new_count": 7,

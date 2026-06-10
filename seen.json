@@ -592,5 +592,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-09",
     "date": "2026-03-16"
+  },
+  "https://www.anthropic.com/news/claude-fable-5-mythos-5": {
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-10",
+    "date": "2026-06-09"
+  },
+  "https://www.anthropic.com/research/agents-in-biology": {
+    "title": "Paving the way for agents in biology",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-10",
+    "date": "2026-06-08"
   }
 }
