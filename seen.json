@@ -604,5 +604,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-10",
     "date": "2026-06-08"
+  },
+  "https://www.anthropic.com/research/introducing-anthropic-science": {
+    "title": "Introducing our Science Blog",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-11",
+    "date": "2026-03-23"
+  },
+  "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report": {
+    "title": "Anthropic Economic Index report: Economic primitives",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-11",
+    "date": "2026-01-15"
+  },
+  "https://www.anthropic.com/news/disrupting-AI-espionage": {
+    "title": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-11",
+    "date": "2025-11-14"
   }
 }
