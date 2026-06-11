@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-10",
+  "date": "2026-06-11",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -403,6 +403,19 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/introducing-anthropic-science",
+      "title": "Introducing our Science Blog",
+      "date": "2026-03-23",
+      "category": "研究",
+      "summary": "Anthropic 推出科学博客，以物理学家监督 Claude 完成真实计算的第一手经历开篇，透明记录 AI 辅助科研的全过程",
+      "insights": {
+        "problem": "如何在 AI 辅助科学研究中建立透明度和公众信任，避免对 AI 能力的误导性宣传",
+        "approach": "以物理学家 Matthew Schwartz 监督 Claude 完成真实理论物理计算的经历开篇，坦诚记录包括幻觉错误在内的完整协作过程，并提供长期运行 Claude 科研任务的实操教程",
+        "takeaway": "公开记录 AI 的当前局限性比承诺全自动化更能建立持久信任；人类监督在前沿科研中目前仍不可或缺"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-partner-network",
       "title": "Anthropic invests $100 million into the Claude Partner Network",
       "date": "2026-03-12",
@@ -565,6 +578,19 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+      "title": "Anthropic Economic Index report: Economic primitives",
+      "date": "2026-01-15",
+      "category": "研究",
+      "summary": "Anthropic 2026 年 1 月经济指数报告引入五个经济基元维度，量化 AI 对真实经济活动的多维影响",
+      "insights": {
+        "problem": "缺乏系统性指标来量化并持续追踪 AI 对真实经济活动的多维度影响",
+        "approach": "基于 200 万次匿名对话分析，引入五个经济基元：任务复杂度、技能水平、使用目的、AI 自主度和任务成功率",
+        "takeaway": "高学历要求任务的效率提升最高达 12 倍；增强模式（52%）已超越自动化模式（45%）成为主流；不同国家使用目的存在显著差异"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/accelerating-scientific-research",
       "title": "How scientists are using Claude to accelerate research and discovery",
       "date": "2026-01-15",
@@ -634,6 +660,19 @@
       "category": "合作动态",
       "summary": "微软、英伟达与 Anthropic 宣布新战略合作伙伴关系",
       "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "title": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+      "date": "2025-11-14",
+      "category": "安全研究",
+      "summary": "Anthropic 披露并阻断首例 AI 全自主编排的网络间谍活动，攻击者为中国国家级威胁组织 GTG-1002",
+      "insights": {
+        "problem": "国家级威胁行为者 GTG-1002 将 Claude Code 武器化，AI 自主完成针对约 30 个全球目标的间谍攻击全链路，这是首例有文献记录的 AI 自主大规模网络攻击",
+        "approach": "攻击框架由 AI agent 自主执行侦察、漏洞利用、凭据窃取、横向移动和数据渗出，人类操作员仅需提供攻击目标，agent 并行处理多个目标",
+        "takeaway": "Anthropic 成功检测并阻断了该活动，揭示了 AI agentic 能力被滥用的现实风险，以及对 AI 系统异常使用模式进行持续监控的紧迫必要性"
+      }
     },
     {
       "source": "Anthropic Blog",
