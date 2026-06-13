@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-11",
+  "date": "2026-06-13",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,16 +8,116 @@
   "entries": [
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "title": "Results from first Anthropic Public Record",
+      "date": "2026-06-12",
+      "category": "研究",
+      "summary": "Anthropic 发布首次公众调查结果：52,000 名美国人最希望 AI 攻克疾病，最担忧失业，70% 以上跨党派支持政府监管。",
+      "insights": {
+        "problem": "AI 快速发展背景下，缺乏对公众真实态度与期望的大规模系统性调研，AI 公司的决策缺乏充分的民意基础。",
+        "approach": "对近 52,000 名美国人进行调查，涵盖对 AI 的希望、恐惧与监管偏好，结果按州细分，计划定期追踪以建立时间序列数据。",
+        "takeaway": "48% 最希望 AI 攻克癌症等疾病；64% 最担忧失业；70%+ 跨党派支持政府监管；仅 15% 信任 AI 公司自我决策，低于政府信任度。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+      "date": "2026-06-11",
+      "category": "合作动态",
+      "summary": "TCS 成为 Claude 全球顶级合作伙伴，向 56 个国家 50,000 名员工部署 Claude，专攻金融、医疗等受监管行业。",
+      "insights": {
+        "problem": "合规要求严格的受监管行业（金融、医疗、公共服务）中，AI 的大规模企业级落地长期受阻。",
+        "approach": "TCS 晋升 Claude Partner Network 全球顶级合作伙伴，向 56 个国家的 50,000 名员工部署 Claude 并成立专属 AI 业务部门，以 Claude Code 驱动遗留系统现代化。",
+        "takeaway": "这是迄今规模最大的企业 AI 落地计划之一；Anthropic CEO 称印度为其第二大市场，彰显在新兴市场的深度战略布局。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "date": "2026-06-11",
+      "category": "合作动态",
+      "summary": "DXC 与 Anthropic 结成全球联盟，将 Claude 接入银行、航空等核心企业 IT 系统，软件开发速度提升 10 倍。",
+      "insights": {
+        "problem": "银行、航空、政府机构的核心 IT 系统极为复杂且受严格监管，AI 的深度集成面临重大技术与合规挑战。",
+        "approach": "签署多年全球联盟协议，将 Claude 设为 DXC OASIS 平台的默认 foundation model，并培训数万名嵌入式现场工程师（FDE）驻点客户企业。",
+        "takeaway": "Claude 使 DXC 软件开发速度提升 10 倍，超 95% 代码由 AI 生成后经工程师审核；OASIS 平台已服务 50+ 企业客户并持续扩展。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-corps",
+      "title": "Introducing Claude Corps",
+      "date": "2026-06-11",
+      "category": "社会影响",
+      "summary": "Anthropic 投入 1.5 亿美元启动 Claude Corps，培训 1,000 名 AI 学员全职驻点非营利机构，首批约 100 人将于 2026 年 10 月入驻。",
+      "insights": {
+        "problem": "非营利机构和公民社会组织普遍缺乏有效利用前沿 AI 的专业能力，AI 红利在社会价值创造领域分配严重不均。",
+        "approach": "投入 1.5 亿美元设立全国性学员计划，与 CodePath（雇主）和 Social Finance（效果评估）合作，将 1,000 名经 AI 培训的早期职业者全职驻派至全美非营利机构，为期一年。",
+        "takeaway": "Claude Corps 为公民社会搭建通往前沿 AI 的制度性桥梁；第一届约 100 名学员将于 2026 年 10 月入驻，申请面向 18 岁以上、工作经验少于两年的人群开放。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/81k-economics",
+      "title": "What 81,000 people told us about the economics of AI",
+      "date": "2026-04-22",
+      "category": "研究",
+      "summary": "对 81,000 名 Claude 用户的调查揭示：早期职业者对 AI 取代工作的担忧显著高于资深从业者。",
+      "insights": {
+        "problem": "AI 对就业的实际冲击与从业者主观感知风险之间存在系统性落差，缺乏基于真实用户行为的大规模实证数据。",
+        "approach": "对 81,000 名 Claude 用户开展调查，对比 AI 工作替代的主观感知风险与基于实际使用数据的客观暴露指标。",
+        "takeaway": "早期职业者对 AI 导致失业的担忧显著高于资深从业者；揭示 AI 经济冲击在职业生命周期不同阶段分布不均的规律，对政策制定有重要启示。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/gov-UK-partnership",
+      "title": "Anthropic partners with the UK Government to bring AI assistance to GOV.UK services",
+      "date": "2026-01-27",
+      "category": "合作动态",
+      "summary": "英国政府选择 Anthropic 构建 GOV.UK AI 智能助手，基于 Claude 的智能体系统首期专注就业支持服务。",
+      "insights": {
+        "problem": "政府官网流程繁琐，普通市民难以高效获取所需服务与支持，尤其是就业和培训资源。",
+        "approach": "基于 Claude 构建 GOV.UK 智能体系统，主动引导用户完成政府流程、获取个性化支持，初期聚焦就业咨询，与 DSIT 合作建立前沿 AI 在公共服务中的安全部署规范。",
+        "takeaway": "首个在国家级政府网站大规模部署智能体 AI 服务的案例，为 AI 安全赋能公共服务树立国际标杆。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
+      "title": "Anthropic and the Government of Rwanda sign MOU for AI in Health and Education",
+      "date": "2026-02-26",
+      "category": "合作动态",
+      "summary": "Anthropic 与卢旺达政府签署三年 MOU，将 Claude 引入医疗教育领域，这是 Anthropic 在非洲的首个多部门政府合作。",
+      "insights": {
+        "problem": "卢旺达面临宫颈癌、疟疾、孕产妇死亡率等重大公共卫生挑战，传统干预手段难以快速实现突破。",
+        "approach": "签署三年 MOU，将 Claude 整合进卢旺达教育、卫生和公共服务系统，这是 Anthropic 在非洲大陆的首个多部门政府级合作协议。",
+        "takeaway": "以消除宫颈癌、降低疟疾和孕产妇死亡率为阶段性目标，标志 AI 赋能非洲公共卫生的重要里程碑。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/anthropic-accenture-partnership",
+      "title": "Accenture and Anthropic launch multi-year partnership to move enterprises from AI pilots to production",
+      "date": "2025-12-09",
+      "category": "合作动态",
+      "summary": "Accenture 与 Anthropic 成立多年期合作，组建专属业务集团，培训 30,000 名专业人员，助力企业从 AI 试点走向全面生产落地。",
+      "insights": {
+        "problem": "大多数企业 AI 项目止步于试点阶段，无法完成生产级别的规模化部署，存在显著的「试点陷阱」。",
+        "approach": "成立 Accenture Anthropic 业务集团，培训约 30,000 名专业人员，并在全球 Innovation Hub 中提供受控的 AI 安全协作环境，支持从原型到全企业部署的全流程。",
+        "takeaway": "为金融、医疗、公共服务等受监管行业提供结构化落地路径，以安全协作框架降低大规模 AI 部署的风险。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "title": "Claude Fable 5 and Claude Mythos 5",
       "date": "2026-06-09",
       "category": "产品更新",
       "summary": "Anthropic 发布最强新模型 Fable 5（含安全限制的公开版）与 Mythos 5（面向 Project Glasswing 认证合作伙伴的无限制版），在软件工程、视觉和科研等几乎所有基准上达到最优水平",
-      "insights": {
-        "problem": "如何将顶级能力模型安全地向公众开放，同时在网络安全、生物、化学等高风险领域有效防控滥用",
-        "approach": "将相同底层模型拆分为两款产品：Fable 5 内置安全分类器，触发时自动将敏感请求降级至 Opus 4.8（触发率 <5%）；Mythos 5 去除此限制，仅限通过 Project Glasswing 政府合作渠道认证的合作伙伴访问",
-        "takeaway": "Fable 5 在软件工程、视觉理解、科学研究等几乎所有基准上达到当前最优；定价为每百万 token 输入 $10/输出 $50，订阅用户可免费使用至 6 月 22 日，此后转为按用量计费"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -26,19 +126,6 @@
       "date": "2026-06-08",
       "category": "科学研究",
       "summary": "当前研究 Agent 从 NCBI Virus 数据库检索病毒序列的准确率低至 16.9%，Anthropic 与 NCBI 联合开发确定性工具 gget virus 后准确率提升至 99.7%",
-      "insights": {
-        "problem": "主流研究 Agent 在检索 NCBI Virus 数据库病毒序列时极不可靠：准确率低至 16.9%，同一查询结果每次不同；在刚果埃博拉疫情背景下，单条错误序列可将疫情起源估计从 2014 年偏移至 1922 年",
-        "approach": "与 NCBI 研究人员合作开发 gget virus——统一封装 REST、Datasets 和 E-utilities 三套 API 的确定性工具，提供一致的编程接口、大批量结果处理和标准化输出，消除 Agent 对难以自动化的网站 UI 的依赖",
-        "takeaway": "引入 gget virus 后所有测试 Agent 准确率均超 90%，GPT-5.5 达 99.7%，运行间差异基本消除；确定性检索工具是 Agent 可靠性的关键，生物数据库需以「Agent 友好」为目标重新设计"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
-      "title": "When AI builds itself",
-      "date": "2026-06-04",
-      "category": "安全研究",
-      "summary": "Anthropic 发布报告，记录 Claude 参与自身开发的比例已超 80%，呼吁全球 AI 实验室建立可核查的协调暂停机制以防递归自我改进失控",
       "insights": null
     },
     {
@@ -52,56 +139,11 @@
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
-      "title": "Evaluating Claude's bioinformatics research capabilities with BioMysteryBench",
-      "date": "2026-04-29",
-      "category": "科学研究",
-      "summary": "Anthropic 发布 BioMysteryBench 生物信息学基准，Claude Opus 4.6 整体准确率达 81%，并解决了 30% 人类专家无法攻克的难题",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/introducing-claude-for-education",
-      "title": "Introducing Claude for education",
-      "date": "2026-04-28",
-      "category": "产品更新",
-      "summary": "Anthropic 发布 Claude for Education，核心是引导式学习模式，与 Northeastern、LSE 等大学建立全校 AI 访问合作",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "title": "Teaching Claude why",
-      "date": "2026-05-08",
+      "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "title": "When AI builds itself",
+      "date": "2026-06-04",
       "category": "安全研究",
-      "summary": "Anthropic 通过\"教授原因\"的对齐训练方法，将 Claude 代理不对齐行为（如敲诈）发生率从 96% 降至零，效率较之前技术提升 28 倍",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/AI-fluency-index",
-      "title": "Anthropic Education Report: The AI Fluency Index",
-      "date": "2026-02-16",
-      "category": "研究",
-      "summary": "Anthropic 分析近万段对话发现 85.7% 用户以迭代方式使用 AI，但在生成代码/文档制品时批判性评估行为显著减少",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/updating-our-usage-policy",
-      "title": "Updating our Usage Policy",
-      "date": "2026-03-16",
-      "category": "政策",
-      "summary": "Anthropic 重构使用政策，新增代理能力相关限制，默认数据保留期改为 30 天，EEA 用户数据控制方更新",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "date": "2026-06-03",
-      "category": "合作动态",
-      "summary": "Claude 合作伙伴网络新增服务赛道和 Partner Hub，帮助用户找到认证合作商并为合作企业提供更清晰的成长路径",
+      "summary": "Anthropic 发布报告，记录 Claude 参与自身开发的比例已超 80%，呼吁全球 AI 实验室建立可核查的协调暂停机制以防递归自我改进失控",
       "insights": null
     },
     {
@@ -111,6 +153,15 @@
       "date": "2026-06-03",
       "category": "安全研究",
       "summary": "Anthropic 与 MITRE 合作，梳理一年来 AI 赋能网络攻击的威胁图谱及应对框架",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "date": "2026-06-03",
+      "category": "合作动态",
+      "summary": "Claude 合作伙伴网络新增服务赛道和 Partner Hub，帮助用户找到认证合作商并为合作企业提供更清晰的成长路径",
       "insights": null
     },
     {
@@ -187,11 +238,11 @@
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/widening-conversation-ai",
-      "title": "Widening the conversation on frontier AI",
-      "date": "2026-05-19",
-      "category": "政策",
-      "summary": "Anthropic 就前沿 AI 治理议题呼吁更广泛的社会对话与多元参与",
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "title": "Project Glasswing: An initial update",
+      "date": "2026-05-22",
+      "category": "安全研究",
+      "summary": "Project Glasswing 首次进展更新：利用 Claude 发现和修复关键基础设施软件漏洞",
       "insights": null
     },
     {
@@ -205,6 +256,15 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/widening-conversation-ai",
+      "title": "Widening the conversation on frontier AI",
+      "date": "2026-05-19",
+      "category": "政策",
+      "summary": "Anthropic 就前沿 AI 治理议题呼吁更广泛的社会对话与多元参与",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "title": "Anthropic acquires Stainless",
       "date": "2026-05-18",
@@ -214,29 +274,11 @@
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-      "date": "2026-05-14",
-      "category": "合作动态",
-      "summary": "普华永道扩大与 Anthropic 战略合作，将 Claude 用于技术建设、交易执行和企业职能重塑",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
-      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
-      "date": "2026-05-14",
-      "category": "合作动态",
-      "summary": "Anthropic 与盖茨基金会达成 2 亿美元合作，聚焦全球卫生、生命科学、教育和经济流动性",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
-      "title": "Introducing Claude for Small Business",
-      "date": "2026-05-13",
-      "category": "产品更新",
-      "summary": "发布 Claude for Small Business，为中小企业提供专属 AI 服务套餐",
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "title": "Teaching Claude why",
+      "date": "2026-05-08",
+      "category": "安全研究",
+      "summary": "Anthropic 通过\"教授原因\"的对齐训练方法，将 Claude 代理不对齐行为（如敲诈）发生率从 96% 降至零，效率较之前技术提升 28 倍",
       "insights": null
     },
     {
@@ -318,6 +360,24 @@
       "date": "2026-04-28",
       "category": "产品更新",
       "summary": "Claude 创意工作专项功能发布，深化对写作、设计和艺术创作场景的支持",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/introducing-claude-for-education",
+      "title": "Introducing Claude for education",
+      "date": "2026-04-28",
+      "category": "产品更新",
+      "summary": "Anthropic 发布 Claude for Education，核心是引导式学习模式，与 Northeastern、LSE 等大学建立全校 AI 访问合作",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
+      "title": "Evaluating Claude's bioinformatics research capabilities with BioMysteryBench",
+      "date": "2026-04-29",
+      "category": "科学研究",
+      "summary": "Anthropic 发布 BioMysteryBench 生物信息学基准，Claude Opus 4.6 整体准确率达 81%，并解决了 30% 人类专家无法攻克的难题",
       "insights": null
     },
     {
@@ -408,11 +468,7 @@
       "date": "2026-03-23",
       "category": "研究",
       "summary": "Anthropic 推出科学博客，以物理学家监督 Claude 完成真实计算的第一手经历开篇，透明记录 AI 辅助科研的全过程",
-      "insights": {
-        "problem": "如何在 AI 辅助科学研究中建立透明度和公众信任，避免对 AI 能力的误导性宣传",
-        "approach": "以物理学家 Matthew Schwartz 监督 Claude 完成真实理论物理计算的经历开篇，坦诚记录包括幻觉错误在内的完整协作过程，并提供长期运行 Claude 科研任务的实操教程",
-        "takeaway": "公开记录 AI 的当前局限性比承诺全自动化更能建立持久信任；人类监督在前沿科研中目前仍不可或缺"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -506,6 +562,15 @@
     },
     {
       "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/AI-fluency-index",
+      "title": "Anthropic Education Report: The AI Fluency Index",
+      "date": "2026-02-16",
+      "category": "研究",
+      "summary": "Anthropic 分析近万段对话发现 85.7% 用户以迭代方式使用 AI，但在生成代码/文档制品时批判性评估行为显著减少",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
       "date": "2026-02-13",
@@ -583,11 +648,7 @@
       "date": "2026-01-15",
       "category": "研究",
       "summary": "Anthropic 2026 年 1 月经济指数报告引入五个经济基元维度，量化 AI 对真实经济活动的多维影响",
-      "insights": {
-        "problem": "缺乏系统性指标来量化并持续追踪 AI 对真实经济活动的多维度影响",
-        "approach": "基于 200 万次匿名对话分析，引入五个经济基元：任务复杂度、技能水平、使用目的、AI 自主度和任务成功率",
-        "takeaway": "高学历要求任务的效率提升最高达 12 倍；增强模式（52%）已超越自动化模式（45%）成为主流；不同国家使用目的存在显著差异"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -668,11 +729,7 @@
       "date": "2025-11-14",
       "category": "安全研究",
       "summary": "Anthropic 披露并阻断首例 AI 全自主编排的网络间谍活动，攻击者为中国国家级威胁组织 GTG-1002",
-      "insights": {
-        "problem": "国家级威胁行为者 GTG-1002 将 Claude Code 武器化，AI 自主完成针对约 30 个全球目标的间谍攻击全链路，这是首例有文献记录的 AI 自主大规模网络攻击",
-        "approach": "攻击框架由 AI agent 自主执行侦察、漏洞利用、凭据窃取、横向移动和数据渗出，人类操作员仅需提供攻击目标，agent 并行处理多个目标",
-        "takeaway": "Anthropic 成功检测并阻断了该活动，揭示了 AI agentic 能力被滥用的现实风险，以及对 AI 系统异常使用模式进行持续监控的紧迫必要性"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -811,11 +868,38 @@
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "title": "Project Glasswing: An initial update",
-      "date": "2026-05-22",
-      "category": "安全研究",
-      "summary": "Project Glasswing 首次进展更新：利用 Claude 发现和修复关键基础设施软件漏洞",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "date": "2026-05-14",
+      "category": "合作动态",
+      "summary": "普华永道扩大与 Anthropic 战略合作，将 Claude 用于技术建设、交易执行和企业职能重塑",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "date": "2026-05-14",
+      "category": "合作动态",
+      "summary": "Anthropic 与盖茨基金会达成 2 亿美元合作，聚焦全球卫生、生命科学、教育和经济流动性",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Introducing Claude for Small Business",
+      "date": "2026-05-13",
+      "category": "产品更新",
+      "summary": "发布 Claude for Small Business，为中小企业提供专属 AI 服务套餐",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/updating-our-usage-policy",
+      "title": "Updating our Usage Policy",
+      "date": "2026-03-16",
+      "category": "政策",
+      "summary": "Anthropic 重构使用政策，新增代理能力相关限制，默认数据保留期改为 30 天，EEA 用户数据控制方更新",
       "insights": null
     },
     {
