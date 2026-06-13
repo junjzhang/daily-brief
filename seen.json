@@ -622,5 +622,53 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-11",
     "date": "2025-11-14"
+  },
+  "https://www.anthropic.com/news/anthropic-public-record": {
+    "title": "Results from first Anthropic Public Record",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-06-12"
+  },
+  "https://www.anthropic.com/news/tcs-anthropic-partnership": {
+    "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-06-11"
+  },
+  "https://www.anthropic.com/news/dxc-anthropic-alliance": {
+    "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-06-11"
+  },
+  "https://www.anthropic.com/news/claude-corps": {
+    "title": "Introducing Claude Corps",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-06-11"
+  },
+  "https://www.anthropic.com/research/81k-economics": {
+    "title": "What 81,000 people told us about the economics of AI",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-04-22"
+  },
+  "https://www.anthropic.com/news/gov-UK-partnership": {
+    "title": "Anthropic partners with the UK Government to bring AI assistance to GOV.UK services",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-01-27"
+  },
+  "https://www.anthropic.com/news/anthropic-rwanda-mou": {
+    "title": "Anthropic and the Government of Rwanda sign MOU for AI in Health and Education",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2026-02-26"
+  },
+  "https://www.anthropic.com/news/anthropic-accenture-partnership": {
+    "title": "Accenture and Anthropic launch multi-year partnership to move enterprises from AI pilots to production",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-13",
+    "date": "2025-12-09"
   }
 }
