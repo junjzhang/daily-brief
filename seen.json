@@ -682,5 +682,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-16",
     "date": "2026-05-14"
+  },
+  "https://www.anthropic.com/research/claude-code-expertise": {
+    "title": "Agentic coding and persistent returns to expertise",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-17",
+    "date": "2026-06-16"
   }
 }
