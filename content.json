@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,37 +8,33 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/fable-mythos-access",
-      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
-      "date": "2026-06-12",
-      "category": "安全与政策",
-      "summary": "美国政府以国家安全为由下令暂停所有外国公民对 Fable 5 和 Mythos 5 的访问，Anthropic 被迫全面关闭这两款模型。",
+      "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "title": "Agentic coding and persistent returns to expertise",
+      "date": "2026-06-16",
+      "category": "经济研究",
+      "summary": "基于40万次 Claude Code 会话分析，探究领域专业知识如何影响 agentic coding 效率与成功率",
       "insights": {
-        "problem": "美国政府援引国家安全权力发出出口管制指令，要求 Anthropic 暂停所有外国公民（含 Anthropic 外籍员工）对 Fable 5 和 Mythos 5 的访问——理由是政府认为已发现绕过 Fable 5 安全机制的 jailbreak 方法。",
-        "approach": "由于无法在技术上针对外国公民选择性屏蔽，Anthropic 不得不向所有客户全面关闭这两款模型；其他 Anthropic 模型（如 Claude Opus 4.8）不受影响，公司同时积极与政府沟通争取尽快恢复访问。",
-        "takeaway": "此次政府干预表明前沿 AI 模型面临实质性出口管制风险；Anthropic 公开表示认为政府对 jailbreak 的认定存在误解，事件暴露了高能力模型在安全合规与业务连续性之间的深层张力。"
+        "problem": "随着 agentic coding 工具快速普及，需要厘清用户专业知识如何影响人机协作效率与任务成功率，以及这对劳动力市场准入门槛有何启示。",
+        "approach": "对约40万次 Claude Code 会话（2025年10月至2026年4月）进行隐私保护分析，研究人机任务分工模式、专业知识梯度与会话成功率之间的关系。",
+        "takeaway": "领域专业知识（而非编码技能）决定 agentic coding 的成效——各主要职业编码任务成功率与软件工程师接近，表明 AI 大幅降低了编程门槛，扩大了受益人群。"
       }
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/2028-ai-leadership",
-      "title": "2028: Two scenarios for global AI leadership",
-      "date": "2026-05-14",
-      "category": "AI 政策",
-      "summary": "Anthropic 政策文章分析到 2028 年美中 AI 竞争的两种走向，呼吁收紧芯片出口管制和限制模型蒸馏攻击以巩固民主国家的领先优势。",
-      "insights": {
-        "problem": "若美国及盟友不采取行动捍卫计算资源优势、打击中国对美国前沿模型的蒸馏攻击，中国有望在 2028 年追赶至前沿 AI 能力甚至超越，届时全球 AI 规范将由威权体制主导。",
-        "approach": "Anthropic 提出两种情景：情景一为民主国家通过进一步收紧先进芯片出口管制、封堵蒸馏攻击漏洞、加速本国 AI 生态全球部署，维持 12–24 个月的前沿能力领先；情景二为政策不作为导致中国追赶乃至超越前沿。",
-        "takeaway": "捍卫芯片与 compute 优势是当前最关键的政策杠杆；若决策者立即行动，民主国家有望在 2028 年前巩固领先，否则窗口期将迅速关闭。"
-      }
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "date": "2026-06-12",
+      "category": "政策",
+      "summary": "Anthropic 就美国政府暂停 Fable 5 和 Mythos 5 访问权限的指令发表官方声明",
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
       "url": "https://www.anthropic.com/news/anthropic-public-record",
       "title": "Results from first Anthropic Public Record",
       "date": "2026-06-12",
-      "category": "公司动态",
-      "summary": "Anthropic 首届公开记录调查结果发布，覆盖近 5.2 万名美国公众，首次系统了解非 AI 用户群体的态度差异。",
+      "category": "透明度",
+      "summary": "Anthropic 公布首次公开记录结果，展示公司运营透明度与政策执行情况",
       "insights": null
     },
     {
@@ -47,7 +43,7 @@
       "title": "TCS and Anthropic partner to bring Claude to regulated industries",
       "date": "2026-06-11",
       "category": "合作伙伴",
-      "summary": "TCS 与 Anthropic 建立合作，将 Claude 引入受监管行业的企业应用场景。",
+      "summary": "TCS 与 Anthropic 达成合作，将 Claude 引入金融、医疗等受监管行业",
       "insights": null
     },
     {
@@ -56,7 +52,7 @@
       "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
       "date": "2026-06-11",
       "category": "合作伙伴",
-      "summary": "DXC Technology 将把 Claude 集成到银行、航空等受监管行业依赖的核心 IT 系统中。",
+      "summary": "DXC 将 Claude 集成到银行、航空公司等受监管行业的核心 IT 系统",
       "insights": null
     },
     {
@@ -64,8 +60,8 @@
       "url": "https://www.anthropic.com/news/claude-corps",
       "title": "Introducing Claude Corps",
       "date": "2026-06-11",
-      "category": "产品",
-      "summary": "Anthropic 推出 Claude Corps 计划，将 Claude 能力引入公益与社会影响场景。",
+      "category": "社会影响",
+      "summary": "Anthropic 推出 Claude Corps，扩大 AI 在教育、医疗等公益领域的应用",
       "insights": null
     },
     {
@@ -73,8 +69,8 @@
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "title": "Claude Fable 5 and Claude Mythos 5",
       "date": "2026-06-09",
-      "category": "模型发布",
-      "summary": "Anthropic 发布 Claude Fable 5（通用发布）与 Claude Mythos 5（限定合作伙伴），为目前能力最强的两款模型。",
+      "category": "产品发布",
+      "summary": "Anthropic 发布最新旗舰模型 Claude Fable 5 与 Claude Mythos 5",
       "insights": null
     },
     {
@@ -83,7 +79,7 @@
       "title": "Paving the way for agents in biology",
       "date": "2026-06-08",
       "category": "研究",
-      "summary": "Anthropic 研究探讨 AI Agent 在生物学领域的应用路径，并分析降低 Agentic 错位风险的方法。",
+      "summary": "探索 AI agent 在生物学研究中的应用路径，加速科学发现",
       "insights": null
     },
     {
@@ -92,7 +88,7 @@
       "title": "Making Claude a Chemist",
       "date": "2026-06-05",
       "category": "研究",
-      "summary": "Anthropic 研究展示如何使 Claude 具备化学家级别的专业推理能力及其在化学任务上的评测结果。",
+      "summary": "介绍如何赋予 Claude 化学专业能力以支持科学研究加速",
       "insights": null
     },
     {
@@ -100,17 +96,8 @@
       "url": "https://www.anthropic.com/institute/recursive-self-improvement",
       "title": "When AI builds itself",
       "date": "2026-06-04",
-      "category": "安全研究",
-      "summary": "Anthropic Institute 分析 AI 递归自我改进的前景、加速曲线与潜在安全风险。",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "date": "2026-06-03",
-      "category": "生态",
-      "summary": "Claude Partner Network 推出 Services Track 和 Partner Hub，进一步扩展企业合作伙伴生态。",
+      "category": "研究",
+      "summary": "探讨 AI 递归自我改进的潜力、风险及安全边界",
       "insights": null
     },
     {
@@ -118,8 +105,17 @@
       "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
       "title": "What we learned mapping a year's worth of AI-enabled cyber threats",
       "date": "2026-06-03",
-      "category": "安全研究",
-      "summary": "Anthropic 对一年内 AI 辅助网络威胁进行 MITRE ATT&CK 框架映射，总结关键威胁模式与防御发现。",
+      "category": "安全",
+      "summary": "整理一年 AI 赋能网络威胁案例，总结安全攻防规律与防御建议",
+      "insights": null
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "date": "2026-06-03",
+      "category": "合作伙伴",
+      "summary": "推出 Claude 合作伙伴网络服务赛道与合作中心，加速企业 AI 落地",
       "insights": null
     },
     {
@@ -127,8 +123,8 @@
       "url": "https://www.anthropic.com/news/expanding-project-glasswing",
       "title": "Expanding Project Glasswing",
       "date": "2026-06-02",
-      "category": "安全",
-      "summary": "Project Glasswing 安全研究项目扩展至约 150 个新合作组织，深化前沿模型安全协作。",
+      "category": "研究",
+      "summary": "Project Glasswing 扩展更新，推进前沿 AI 安全研究项目",
       "insights": null
     },
     {
@@ -137,43 +133,7 @@
       "title": "Anthropic confidentially submits draft S-1 to the SEC",
       "date": "2026-06-01",
       "category": "公司动态",
-      "summary": "Anthropic 向美国证券交易委员会秘密提交 S-1 注册草稿，为潜在 IPO 迈出重要一步。",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/series-h",
-      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-      "date": "2026-05-28",
-      "category": "公司动态",
-      "summary": "Anthropic 完成 H 轮 650 亿美元融资，投后估值达 9650 亿美元。",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "title": "Introducing Claude Opus 4.8",
-      "date": "2026-05-27",
-      "category": "模型发布",
-      "summary": "Anthropic 发布 Claude Opus 4.8，在推理能力和 Agentic 任务上带来显著提升。",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
-      "title": "Coding agents in the social sciences",
-      "date": "2026-05-27",
-      "category": "研究",
-      "summary": "研究探讨 AI Coding Agent 在社会科学数据分析与研究流程中的应用与局限。",
-      "insights": null
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/widening-conversation-ai",
-      "title": "Widening the conversation on frontier AI",
-      "date": "2026-05-19",
-      "category": "安全研究",
-      "summary": "Anthropic 倡导扩大前沿 AI 决策讨论范围，引入更多利益相关方参与治理对话。",
+      "summary": "Anthropic 向美国 SEC 秘密提交 S-1 招股书草案，正式启动 IPO 进程",
       "insights": null
     },
     {
@@ -182,7 +142,7 @@
       "title": "When does fragmentation occur in the CUDA caching allocator?",
       "date": "2026-06-01",
       "category": "eager",
-      "summary": "分析 CUDA caching allocator 中内存碎片化的触发条件，以及 expandable segments 如何解决这一问题。",
+      "summary": "深入分析 CUDA 缓存分配器内存碎片化的触发条件，以及可扩展段如何解决该问题",
       "insights": null
     },
     {
@@ -191,7 +151,7 @@
       "title": "PyTorch's playbook for AI coding, as of May 2026",
       "date": "2026-05-30",
       "category": "ai-agents",
-      "summary": "PyTorch 团队整理 AI Coding Agent 参与大型代码库的实践手册，覆盖工具选择、任务拆解和质量保障等环节。",
+      "summary": "PyTorch 团队分享截至2026年5月的 AI 编程实战手册与最佳实践",
       "insights": null
     },
     {
@@ -200,7 +160,7 @@
       "title": "Introducing debug-graph-breaks: A Skill for Torch Compile Debugging",
       "date": "2026-05-15",
       "category": "dynamo",
-      "summary": "推出 debug-graph-breaks 调试技能，自动识别 torch.compile graph break 根因并给出修复建议。",
+      "summary": "推出 debug-graph-breaks 技能，帮助开发者高效定位 torch.compile 中的图断点问题",
       "insights": null
     },
     {
@@ -209,7 +169,7 @@
       "title": "Python First Comms for Researchers",
       "date": "2026-05-14",
       "category": "distributed",
-      "summary": "介绍面向研究者的 Python-first 通信原语库，简化分布式训练中的集合通信调用。",
+      "summary": "为研究人员引入 Python 优先的分布式通信原语，简化自定义通信逻辑实现",
       "insights": null
     },
     {
@@ -218,7 +178,7 @@
       "title": "Toward Agent-Friendly Dynamo: Mirroring CPython Semantics",
       "date": "2026-05-13",
       "category": "dynamo",
-      "summary": "探索通过镜像 CPython 语义让 Dynamo 对 AI Coding Agent 更友好，减少 graph break 和行为差异。",
+      "summary": "探讨让 Dynamo 更贴近 CPython 语义、支持 agent 友好型 torch.compile 的技术路径",
       "insights": null
     },
     {
@@ -227,25 +187,7 @@
       "title": "torch.compile for TorchTitan RL: 6x Faster Unified RL Training",
       "date": "2026-05-06",
       "category": "distributed",
-      "summary": "torch.compile 与 TorchTitan 结合将统一 RL 训练吞吐量提升 6 倍，详解实现路径与编译优化策略。",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-06-printing-and-inspecting-tensors-inside-pt2",
-      "title": "Printing and Inspecting Tensors Inside torch.compile",
-      "date": "2026-05-06",
-      "category": "dynamo",
-      "summary": "介绍在 torch.compile 编译图内部打印和检查 tensor 的调试方法，帮助开发者理解中间状态。",
-      "insights": null
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/dynamo/2026-05-04-dynamo-isolate-recompiles",
-      "title": "Dynamo Isolate Recompiles for torch.compile",
-      "date": "2026-05-04",
-      "category": "dynamo",
-      "summary": "isolate_recompiles=True 为每次调用分配独立缓存桶，解决工厂模式场景下的重编译上限冲突问题。",
+      "summary": "通过 torch.compile 优化 TorchTitan RL 训练流程，实现6倍速度提升",
       "insights": null
     }
   ]
