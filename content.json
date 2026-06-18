@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -13,11 +13,7 @@
       "date": "2026-06-16",
       "category": "经济研究",
       "summary": "基于40万次 Claude Code 会话分析，探究领域专业知识如何影响 agentic coding 效率与成功率",
-      "insights": {
-        "problem": "随着 agentic coding 工具快速普及，需要厘清用户专业知识如何影响人机协作效率与任务成功率，以及这对劳动力市场准入门槛有何启示。",
-        "approach": "对约40万次 Claude Code 会话（2025年10月至2026年4月）进行隐私保护分析，研究人机任务分工模式、专业知识梯度与会话成功率之间的关系。",
-        "takeaway": "领域专业知识（而非编码技能）决定 agentic coding 的成效——各主要职业编码任务成功率与软件工程师接近，表明 AI 大幅降低了编程门槛，扩大了受益人群。"
-      }
+      "insights": null
     },
     {
       "source": "Anthropic Blog",
@@ -178,7 +174,7 @@
       "title": "Toward Agent-Friendly Dynamo: Mirroring CPython Semantics",
       "date": "2026-05-13",
       "category": "dynamo",
-      "summary": "探讨让 Dynamo 更贴近 CPython 语义、支持 agent 友好型 torch.compile 的技术路径",
+      "summary": "探讨让 Dynamo 更贴近 CPython Semantics、支持 agent 友好型 torch.compile 的技术路径",
       "insights": null
     },
     {
