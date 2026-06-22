@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-21",
+  "date": "2026-06-22",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -30,6 +30,17 @@
         "problem": "Anthropic需要在韩国建立本地运营和合作网络，以回应韩国企业对Claude大规模落地的需求，同时推进与韩国政府在AI安全领域的合作。",
         "approach": "以首尔办公室为枢纽（亚太第三个，继东京和班加罗尔之后），推动NAVER、Samsung SDS、LG CNS、Nexon等六大企业部署Claude Code和企业级Claude，同时向KAIST等60位学术研究者提供模型访问，并与科技部签署AI安全MOU。",
         "takeaway": "NAVER将Claude Code部署至全工程团队，三星SDS则推广至Samsung Electronics内部，标志着Claude在东北亚头部科技企业中实现规模化落地；政府MOU进一步巩固了Anthropic在亚太地区的监管合规基础。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
+      "title": "Project Fetch: Can Claude train a robot dog?",
+      "date": "2025-11-12",
+      "category": "研究",
+      "summary": "Anthropic测试Claude能否帮助非机器人专家完成四足机器人任务：八名工程师分两组，有Claude辅助的团队完成速度约快一倍，完成任务数更多。",
+      "insights": {
+        "error": "fetch failed"
       }
     },
     {
