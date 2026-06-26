@@ -3,9 +3,19 @@
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN",
-    "sources": []
+    "sources": [
+      "Anthropic Blog"
+    ]
   },
   "briefs": [
+    {
+      "date": "2026-06-26",
+      "file": "2026-06-26.html",
+      "new_count": 2,
+      "sources": [
+        "Anthropic Blog"
+      ]
+    },
     {
       "date": "2026-06-25",
       "file": "2026-06-25.html",

@@ -688,5 +688,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-17",
     "date": "2026-06-16"
+  },
+  "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem": {
+    "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-26",
+    "date": "2026-06-17"
+  },
+  "https://www.anthropic.com/news/introducing-claude-tag": {
+    "title": "Introducing Claude Tag",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-06-26",
+    "date": "2026-06-23"
   }
 }
