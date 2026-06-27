@@ -1,36 +1,9 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
-  "entries": [
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
-      "date": "2026-06-17",
-      "category": "企业与合作",
-      "summary": "Anthropic 正式开设首尔办公室（亚太第三处），与韩国政府签署 AI 安全 MOU，并与 NAVER、Samsung SDS、LG CNS 等企业达成 Claude 规模化部署协议",
-      "insights": {
-        "problem": "Anthropic 缺乏本地化支持，难以有效服务韩国企业、政府和学术用户，且出口管制已限制了顶级模型在韩国的可用性。",
-        "approach": "在首尔开设实体办公室并任命 KiYoung Choi 为代表理事；与韩国科学技术信息通信部签署 AI 安全合作 MOU，并与 NAVER（全工程组织推广 Claude Code）、Samsung SDS、LG CNS、Nexon 等大型企业达成 Claude Code 和 Cowork 的规模化部署协议，同时向 KAIST 等六十所大学研究人员开放模型访问。",
-        "takeaway": "Anthropic 已在韩国构建起覆盖政府、大型企业及学术机构的完整 AI 生态合作网络，韩国成为其继东京、班加罗尔之后亚太扩张的第三个核心支点。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/introducing-claude-tag",
-      "title": "Introducing Claude Tag",
-      "date": "2026-06-23",
-      "category": "产品更新",
-      "summary": "Anthropic 推出 Claude Tag，让 Claude 以持久化团队成员身份接入 Slack，支持多人共享记忆、异步任务执行和 Ambient 主动信息推送",
-      "insights": {
-        "problem": "企业团队在 Slack 中使用 AI 时面临上下文断裂和协作碎片化问题——每次对话需重新建立背景，AI 状态无法在团队成员间共享，任务也难以异步延续。",
-        "approach": "推出 Claude Tag，Claude 作为持久化 Slack 频道成员运行，具备跨成员共享的频道级记忆（按频道隔离）、异步任务分解执行，以及 Ambient 模式主动推送重要信息；管理员可精细控制 token 预算和各频道的工具访问范围。",
-        "takeaway": "Claude Tag 已向 Enterprise 和 Team 计划用户开放公测，搭载 Opus 4.8；旧版 Claude for Slack 将于 2026 年 8 月 3 日退休，Anthropic 内部 65% 的产品代码已由其内部版本生成。"
-      }
-    }
-  ]
+  "entries": []
 }
