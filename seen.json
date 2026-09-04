@@ -700,5 +700,245 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-06-26",
     "date": "2026-06-23"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-09-02-olmo3-reproduction/": {
+    "title": "Olmo3 reproduction in TorchTitan",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-09-02"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-08-26-spmd-types-in-torchtitan/": {
+    "title": "SPMD types in TorchTitan",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-26"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-08-17-config-based-sharding-full-dtensor/": {
+    "title": "Config-Based Sharding and Full DTensor Adoption in TorchTitan",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-17"
+  },
+  "https://docs.pytorch.org/devlogs/eager/2026-08-11-hidden-h2d-sync/": {
+    "title": "Host-to-device syncs are bad too",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-11"
+  },
+  "https://docs.pytorch.org/devlogs/eager/2026-08-09-pinned-memory-allocator/": {
+    "title": "Pinned memory: what it is for, and why nobody gives it back",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-09"
+  },
+  "https://docs.pytorch.org/devlogs/compiler/2026-07-25-pytorch-a-reference-language/": {
+    "title": "PyTorch: a reference language",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-25"
+  },
+  "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-07-10-materialize-symints/": {
+    "title": "Stop Passing Raw SymInts to FX Graph Nodes — Use materialize_symints",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-10"
+  },
+  "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-07-10-symbolic-tracing-distributed/": {
+    "title": "Making PT2 Symbolic Tracing Reliable for Distributed Workloads",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-10"
+  },
+  "https://docs.pytorch.org/devlogs/dynamic_shapes/2026-06-24-shapes-spec/": {
+    "title": "ShapesSpec: A Unified, Descriptive Dynamic-Shapes API",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-06-24"
+  },
+  "https://www.anthropic.com/claude-fable-and-mythos-5-1": {
+    "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-09-01"
+  },
+  "https://www.anthropic.com/news/enterprise-frontier-safeguards": {
+    "title": "Developing Enterprise Frontier Safeguards with our customers",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-09-01"
+  },
+  "https://www.anthropic.com/news/improving-alignment-security-efforts": {
+    "title": "Improving our alignment and security efforts",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-31"
+  },
+  "https://www.anthropic.com/news/model-hardware-standard-research-preview": {
+    "title": "Previewing the Model Hardware Standard",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-27"
+  },
+  "https://www.anthropic.com/news/expanding-support-for-scientists": {
+    "title": "Expanding our support for scientists",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-27"
+  },
+  "https://www.anthropic.com/news/wellbeing-research-grants": {
+    "title": "Funding better evaluations of AI’s impact on wellbeing",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-25"
+  },
+  "https://www.anthropic.com/news/claude-text-watermark": {
+    "title": "How Claude’s text watermark works",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-14"
+  },
+  "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": {
+    "title": "Improving Fable 5's biology safeguards",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-07"
+  },
+  "https://www.anthropic.com/news/tino-cuellar": {
+    "title": "Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-08-04"
+  },
+  "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
+    "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-30"
+  },
+  "https://www.anthropic.com/news/position-open-weights-models": {
+    "title": "Our position on open-weights models",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-27"
+  },
+  "https://www.anthropic.com/news/cognizant-anthropic": {
+    "title": "Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-27"
+  },
+  "https://www.anthropic.com/news/claude-opus-5": {
+    "title": "Introducing Claude Opus 5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-24"
+  },
+  "https://www.anthropic.com/news/economic-futures-research-fund-agenda": {
+    "title": "A research agenda for the Economic Futures Research Fund",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-22"
+  },
+  "https://www.anthropic.com/news/anthropic-economic-index-connector": {
+    "title": "Ask Claude about the Anthropic Economic Index",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-22"
+  },
+  "https://www.anthropic.com/news/donation-public-first-action": {
+    "title": "Anthropic is donating another $20 million to Public First Action",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-21"
+  },
+  "https://www.anthropic.com/news/rare-disease-research-grants": {
+    "title": "Apply for Anthropic’s AI for Science rare disease research grants",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-20"
+  },
+  "https://www.anthropic.com/news/claude-for-teachers": {
+    "title": "Introducing Claude for Teachers",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-14"
+  },
+  "https://www.anthropic.com/news/canadian-ai-research": {
+    "title": "Anthropic commits $10 million to Canadian AI research",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-14"
+  },
+  "https://www.anthropic.com/news/ust-claude": {
+    "title": "UST is bringing Claude to physical AI",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-09"
+  },
+  "https://www.anthropic.com/news/hard-questions": {
+    "title": "Inviting hard questions",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-09"
+  },
+  "https://www.anthropic.com/news/ben-bernanke": {
+    "title": "Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-09"
+  },
+  "https://www.anthropic.com/news/reflect-with-claude": {
+    "title": "Introducing a way to reflect on how you use Claude",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-09"
+  },
+  "https://www.anthropic.com/news/alberta-government-claude-cybersecurity": {
+    "title": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-06"
+  },
+  "https://www.anthropic.com/features/making-of-claude-code": {
+    "title": "The Making of Claude Code",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-06"
+  },
+  "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework": {
+    "title": "More details on Fable 5’s cyber safeguards and our jailbreak framework",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-07-02"
+  },
+  "https://www.anthropic.com/news/claude-sonnet-5": {
+    "title": "Introducing Claude Sonnet 5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-06-30"
+  },
+  "https://www.anthropic.com/news/redeploying-fable-5": {
+    "title": "Redeploying Fable 5",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-06-30"
+  },
+  "https://www.anthropic.com/news/claude-science-ai-workbench": {
+    "title": "Claude Science, an AI workbench for scientists, is now available",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-04",
+    "date": "2026-06-30"
+  },
+  "https://docs.pytorch.org/devlogs/dynamo/2026-05-13-dynamo-nested-graph-breaks-update/": {
+    "title": "Nested Graph Breaks: May 2026 Update",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-05-13"
+  },
+  "https://docs.pytorch.org/devlogs/inductor/2026-05-11-torch-compile-and-diffusers/": {
+    "title": "torch.compile and Diffusers: A Hands-On Guide to Peak Performance",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-04",
+    "date": "2026-05-11"
   }
 }
