@@ -940,5 +940,17 @@
     "source": "PyTorch DevLogs",
     "first_seen": "2026-09-04",
     "date": "2026-05-11"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-07-21-rdma4py/": {
+    "title": "rdma4py: Do We Need Transfer Engines for PyTorch and RDMA?",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-17",
+    "date": "2026-07-21"
+  },
+  "https://docs.pytorch.org/devlogs/distributed/2026-06-23-cpu-offloading/": {
+    "title": "Graph-based CPU Offloading for TorchTitan Frontier Model Training",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-17",
+    "date": "2026-06-23"
   }
 }
