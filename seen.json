@@ -952,5 +952,11 @@
     "source": "PyTorch DevLogs",
     "first_seen": "2026-09-17",
     "date": "2026-06-23"
+  },
+  "https://www.anthropic.com/news/life-sciences-verification-program": {
+    "title": "Introducing the Life Sciences Verification Program",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-18",
+    "date": "2026-09-17"
   }
 }
