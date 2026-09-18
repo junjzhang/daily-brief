@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -7,29 +7,16 @@
   },
   "entries": [
     {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/distributed/2026-07-21-rdma4py/",
-      "title": "rdma4py: Do We Need Transfer Engines for PyTorch and RDMA?",
-      "date": "2026-07-21",
-      "category": "分布式训练",
-      "summary": "rdma4py 用轻量 Python 绑定直接控制 ibverbs、AWS EFA 与 NVMe-oF，在 GPU Direct RDMA 基准中接近 400 Gbps 线速。",
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "title": "Introducing the Life Sciences Verification Program",
+      "date": "2026-09-17",
+      "category": "科研与模型安全",
+      "summary": "Anthropic 推出 Life Sciences Verification Program，经核验的科研团队可在分级 safeguards 下使用 Claude Mythos、Opus 和 Sonnet 开展生命科学工作。",
       "insights": {
-        "problem": "训练和推理中的检查点、权重同步与容错需要高吞吐 RDMA，但底层接口通常要求 C/C++，大型跨平台 transfer engine 又可能隐藏硬件控制并增加复杂度。",
-        "approach": "rdma4py 为 ibverbs、EFA、NVMe-oF 分别提供基于 Cython 的轻量绑定，保留原生 API 控制；基准使用多队列或多 lane，并按 NUMA/PCIe 拓扑配对 GPU 与网卡。",
-        "takeaway": "EFA 与 ibverbs 分别达到 48.88 和 48.55 GB/s，接近 400 Gbps 线速，表明大块传输可由 Python 驱动而无需庞大引擎；项目目前仍是可能改动 API 的原型。"
-      }
-    },
-    {
-      "source": "PyTorch DevLogs",
-      "url": "https://docs.pytorch.org/devlogs/distributed/2026-06-23-cpu-offloading/",
-      "title": "Graph-based CPU Offloading for TorchTitan Frontier Model Training",
-      "date": "2026-06-23",
-      "category": "分布式训练",
-      "summary": "TorchTitan 的图级 activation CPU offloading 根据预算、延迟和预取策略，以 PCIe 带宽换取 GPU 显存并尽量隐藏传输开销。",
-      "insights": {
-        "problem": "长上下文和大 micro-batch 训练中的 activation 会大量占用 HBM；单纯保存或重算分别受显存和算力约束，eager saved-tensor hook 也难以全局安排传输时序。",
-        "approach": "graph_trainer 在完整前后向图上选择大 tensor、安排 D2H/H2D 拷贝和预取，并用 view replay 重建共享 storage 的视图；可复用 pinned memory pool 与 NUMA 绑定降低分配和跨节点开销。",
-        "takeaway": "密集模型可在吞吐损失不到 1% 时回收约 10% 峰值显存，更激进配置在约 20% 吞吐损失下回收 Llama3 33%、Qwen3 38%；策略需按模型的计算与传输重叠能力调节。"
+        "problem": "通用模型的生物安全拦截会阻碍合法的药物发现、临床开发和制造研究，而双重用途风险又要求防范账号盗用、内部滥用及 agent 越界。",
+        "approach": "申请方须接受研究资质、安全标准和伦理监督核验；计划提供团队级 Standard Use 与按项目授权的 High-risk Use，并结合申报用途、跨会话离线监测和 30 天数据保留来识别异常行为。",
+        "takeaway": "Beta 已向 Team、Enterprise 和第一方 API 开放；Opus 5 与 Sonnet 5 可申请高风险授权，Mythos 的高风险访问仍限少数额外核验机构，个人计划和第三方平台暂不支持。"
       }
     }
   ]
