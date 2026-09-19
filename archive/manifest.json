@@ -4,10 +4,20 @@
     "description": "LLM-powered daily digest",
     "lang": "zh-CN",
     "sources": [
+      "PyTorch DevLogs",
       "Anthropic Blog"
     ]
   },
   "briefs": [
+    {
+      "date": "2026-09-19",
+      "file": "2026-09-19.html",
+      "new_count": 3,
+      "sources": [
+        "PyTorch DevLogs",
+        "Anthropic Blog"
+      ]
+    },
     {
       "date": "2026-09-18",
       "file": "2026-09-18.html",

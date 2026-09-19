@@ -958,5 +958,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-09-18",
     "date": "2026-09-17"
+  },
+  "https://docs.pytorch.org/devlogs/dynamo/2025-12-31-dynamo-nested-graph-break-post-2025/": {
+    "title": "Nested Graph Breaks 2025 Update",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-19",
+    "date": "2025-12-31"
+  },
+  "https://docs.pytorch.org/devlogs/dynamo/2025-06-04-inside-torch-compile-guards/": {
+    "title": "Inside torch.compile Guards: How They Work, What They Cost, and Ways to Optimize",
+    "source": "PyTorch DevLogs",
+    "first_seen": "2026-09-19",
+    "date": "2025-06-04"
+  },
+  "https://www.anthropic.com/news/accenture-embedded-evaluation": {
+    "title": "Partnering with Accenture on embedded evaluation",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-09-19",
+    "date": "2026-09-18"
   }
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Brief 每日简报 — 2026-09-19</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1e2e 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;text-align:center;position:relative}
+.header h1{font-size:1.6rem;font-weight:600;margin-bottom:.4rem}
+.header .date{color:var(--muted);font-size:.95rem}
+.header .back{position:absolute;left:1.5rem;top:1.5rem;color:var(--muted);font-size:.85rem}
+
+.container{max-width:800px;margin:0 auto;padding:1.5rem}
+
+.stats{text-align:center;padding:.6rem 1rem;margin-bottom:1.5rem;font-size:.9rem;font-weight:500;color:var(--accent);background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.15);border-radius:8px}
+.stats-empty{color:var(--muted);background:var(--surface);border-color:var(--border)}
+
+.section{margin-bottom:2.5rem}
+.section-title{font-size:1.15rem;font-weight:600;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.count{background:var(--surface);color:var(--muted);font-size:.75rem;padding:2px 8px;border-radius:10px;margin-left:.5rem}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem;transition:border-color .2s}
+.card:hover{border-color:#484f58}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem;flex-wrap:wrap}
+.card-title{font-size:1.05rem;font-weight:600;color:var(--text)}
+.badge{font-size:.7rem;font-weight:500;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0}
+.card-meta{font-size:.8rem;color:var(--muted);margin-bottom:.75rem}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.card-link{font-size:.85rem;color:var(--accent)}
+.copy-btn{background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;padding:4px 10px;font-size:.75rem;display:flex;align-items:center;gap:4px;transition:all .2s}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent)}
+.copy-btn.copied{border-color:var(--accent);color:var(--accent)}
+
+.insights{margin-top:.85rem;padding:.85rem 1rem;background:var(--surface2);border-radius:8px;border-left:3px solid var(--accent)}
+.insight-row{display:flex;gap:.5rem;margin-bottom:.45rem;font-size:.88rem}
+.insight-row:last-child{margin-bottom:0}
+.insight-tag{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.insight-text{color:#c9d1d9}
+
+.compact{list-style:none;padding:0}
+.compact li{padding:.6rem .85rem;margin-bottom:.35rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem}
+.compact li:hover{border-color:#484f58}
+.compact .c-title{flex:1}
+.compact .c-meta{color:var(--muted);font-size:.8rem;white-space:nowrap;display:flex;align-items:center;gap:.6rem}
+
+.footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border)}
+
+@media(max-width:600px){
+  .container{padding:1rem}
+  .card{padding:1rem}
+  .card-head{flex-direction:column;gap:.4rem}
+  .compact li{flex-direction:column;align-items:flex-start;gap:.3rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="./" class="back">← 所有简报</a>
+  <h1>Daily Brief 每日简报</h1>
+  <div class="date">2026-09-19 · 自动生成</div>
+</div>
+
+<div class="container">
+  <div class="stats">今日 3 篇新文章 · 来自 2 个源</div>
+  <div class="section"><div class="section-title">PyTorch DevLogs <span class="count">2 篇新文章</span></div><div class="card"><div class="card-head"><span class="card-title">Nested Graph Breaks 2025 Update</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">Dynamo 与 torch.compile</span></div><div class="card-meta">2025-12-31</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">Dynamo 过去只能从顶层 frame 的 graph break 恢复，深层函数中的一次中断会产生 O(N) 次重复 graph break 和 O(N²) 次 frame 追踪，拖慢编译并削弱图优化。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">新实现为每层调用 frame 生成并串联 resume function，统一保存 stack、locals、cells 与 side effects，使执行可从任意嵌套深度恢复，并通过开关逐步覆盖测试与基准。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">初步基准把两个模型的 graph break 从 18 降至 9、从 9 降至 2；极端微基准编译时间由 504 秒降至 34 秒，但该功能当时仍需显式开启并继续修复边缘问题。</span></div></div><div class="card-foot"><a class="card-link" href="https://docs.pytorch.org/devlogs/dynamo/2025-12-31-dynamo-nested-graph-break-post-2025/">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Nested Graph Breaks 2025 Update
+Source: PyTorch DevLogs
+Date: 2025-12-31
+URL: https://docs.pytorch.org/devlogs/dynamo/2025-12-31-dynamo-nested-graph-break-post-2025/
+
+Problem: Dynamo 过去只能从顶层 frame 的 graph break 恢复，深层函数中的一次中断会产生 O(N) 次重复 graph break 和 O(N²) 次 frame 追踪，拖慢编译并削弱图优化。
+Approach: 新实现为每层调用 frame 生成并串联 resume function，统一保存 stack、locals、cells 与 side effects，使执行可从任意嵌套深度恢复，并通过开关逐步覆盖测试与基准。
+Takeaway: 初步基准把两个模型的 graph break 从 18 降至 9、从 9 降至 2；极端微基准编译时间由 504 秒降至 34 秒，但该功能当时仍需显式开启并继续修复边缘问题。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Inside torch.compile Guards: How They Work, What They Cost, and Ways to Optimize</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">Dynamo 性能优化</span></div><div class="card-meta">2025-06-04</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">torch.compile 会把 shape、dtype、device 和对象属性等假设固化为 guards；guard 失败会触发重新编译，而每次调用检查大量 guards 也可能形成可观的运行时开销。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">文章建议用 mark_dynamic、配置项和 recompile_limit 管理重编译，并在输入与模型稳定后谨慎使用 skip_guard_eval_unsafe 或 guard_filter_fn 精简 guard 集合，同时通过 PyTorch Profiler 衡量收益。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">示例中 guard 检查约耗时 0.9 ms，精简后可降至接近零；但 unsafe 模式可能让失效图继续运行并产生静默错误，只适用于能够保证模型和输入特征不再变化的场景。</span></div></div><div class="card-foot"><a class="card-link" href="https://docs.pytorch.org/devlogs/dynamo/2025-06-04-inside-torch-compile-guards/">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Inside torch.compile Guards: How They Work, What They Cost, and Ways to Optimize
+Source: PyTorch DevLogs
+Date: 2025-06-04
+URL: https://docs.pytorch.org/devlogs/dynamo/2025-06-04-inside-torch-compile-guards/
+
+Problem: torch.compile 会把 shape、dtype、device 和对象属性等假设固化为 guards；guard 失败会触发重新编译，而每次调用检查大量 guards 也可能形成可观的运行时开销。
+Approach: 文章建议用 mark_dynamic、配置项和 recompile_limit 管理重编译，并在输入与模型稳定后谨慎使用 skip_guard_eval_unsafe 或 guard_filter_fn 精简 guard 集合，同时通过 PyTorch Profiler 衡量收益。
+Takeaway: 示例中 guard 检查约耗时 0.9 ms，精简后可降至接近零；但 unsafe 模式可能让失效图继续运行并产生静默错误，只适用于能够保证模型和输入特征不再变化的场景。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div></div><div class="section"><div class="section-title">Anthropic Blog <span class="count">1 篇新文章</span></div><div class="card"><div class="card-head"><span class="card-title">Partnering with Accenture on embedded evaluation</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">前沿模型评估与安全</span></div><div class="card-meta">2026-09-18</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">传统外部评估难以持续观察 frontier model 的训练、决策和部署过程，也缺少统一的信息访问、报告与独立资金标准，公众因此难以验证实验室是否履行安全承诺。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">Accenture 旗下 Faculty 将以接近员工的访问深度开展模型评估、red teaming、alignment assessment 和 safeguards 测试；双方计划未来五年至少各投入 10 亿美元建设相关能力。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">这是非排他的早期试点，Anthropic 仍承担模型安全责任，并计划与 METR 等更多机构探索不同资金模式，推动形成采用共同标准的独立评估生态。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/accenture-embedded-evaluation">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Partnering with Accenture on embedded evaluation
+Source: Anthropic Blog
+Date: 2026-09-18
+URL: https://www.anthropic.com/news/accenture-embedded-evaluation
+
+Problem: 传统外部评估难以持续观察 frontier model 的训练、决策和部署过程，也缺少统一的信息访问、报告与独立资金标准，公众因此难以验证实验室是否履行安全承诺。
+Approach: Accenture 旗下 Faculty 将以接近员工的访问深度开展模型评估、red teaming、alignment assessment 和 safeguards 测试；双方计划未来五年至少各投入 10 亿美元建设相关能力。
+Takeaway: 这是非排他的早期试点，Anthropic 仍承担模型安全责任，并计划与 METR 等更多机构探索不同资金模式，推动形成采用共同标准的独立评估生态。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div></div>
+</div>
+
+<div class="footer">
+  由 Claude Code Routine 自动生成 · 数据来源 <a href="https://docs.pytorch.org/devlogs/dynamo/2025-12-31-dynamo-nested-graph-break-post-2025/">PyTorch DevLogs</a> · <a href="https://www.anthropic.com/news/accenture-embedded-evaluation">Anthropic Blog</a>
+</div>
+
+<script>
+function copyCtx(btn){
+  const text=btn.getAttribute('data-ctx');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.classList.add('copied');
+    const orig=btn.innerHTML;
+    btn.innerHTML='<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Copied';
+    setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied')},1500);
+  });
+}
+</script>
+</body>
+</html>
