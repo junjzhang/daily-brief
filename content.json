@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -7,16 +7,42 @@
   },
   "entries": [
     {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-      "title": "Introducing the Life Sciences Verification Program",
-      "date": "2026-09-17",
-      "category": "科研与模型安全",
-      "summary": "Anthropic 推出 Life Sciences Verification Program，经核验的科研团队可在分级 safeguards 下使用 Claude Mythos、Opus 和 Sonnet 开展生命科学工作。",
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2025-12-31-dynamo-nested-graph-break-post-2025/",
+      "title": "Nested Graph Breaks 2025 Update",
+      "date": "2025-12-31",
+      "category": "Dynamo 与 torch.compile",
+      "summary": "Dynamo 通过支持在任意调用深度恢复执行，减少 nested graph break 的重复追踪、编译开销与图碎片。",
       "insights": {
-        "problem": "通用模型的生物安全拦截会阻碍合法的药物发现、临床开发和制造研究，而双重用途风险又要求防范账号盗用、内部滥用及 agent 越界。",
-        "approach": "申请方须接受研究资质、安全标准和伦理监督核验；计划提供团队级 Standard Use 与按项目授权的 High-risk Use，并结合申报用途、跨会话离线监测和 30 天数据保留来识别异常行为。",
-        "takeaway": "Beta 已向 Team、Enterprise 和第一方 API 开放；Opus 5 与 Sonnet 5 可申请高风险授权，Mythos 的高风险访问仍限少数额外核验机构，个人计划和第三方平台暂不支持。"
+        "problem": "Dynamo 过去只能从顶层 frame 的 graph break 恢复，深层函数中的一次中断会产生 O(N) 次重复 graph break 和 O(N²) 次 frame 追踪，拖慢编译并削弱图优化。",
+        "approach": "新实现为每层调用 frame 生成并串联 resume function，统一保存 stack、locals、cells 与 side effects，使执行可从任意嵌套深度恢复，并通过开关逐步覆盖测试与基准。",
+        "takeaway": "初步基准把两个模型的 graph break 从 18 降至 9、从 9 降至 2；极端微基准编译时间由 504 秒降至 34 秒，但该功能当时仍需显式开启并继续修复边缘问题。"
+      }
+    },
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/dynamo/2025-06-04-inside-torch-compile-guards/",
+      "title": "Inside torch.compile Guards: How They Work, What They Cost, and Ways to Optimize",
+      "date": "2025-06-04",
+      "category": "Dynamo 性能优化",
+      "summary": "文章解释 torch.compile guards 如何决定图复用与重新编译，并给出降低编译和每次调用检查开销的方法。",
+      "insights": {
+        "problem": "torch.compile 会把 shape、dtype、device 和对象属性等假设固化为 guards；guard 失败会触发重新编译，而每次调用检查大量 guards 也可能形成可观的运行时开销。",
+        "approach": "文章建议用 mark_dynamic、配置项和 recompile_limit 管理重编译，并在输入与模型稳定后谨慎使用 skip_guard_eval_unsafe 或 guard_filter_fn 精简 guard 集合，同时通过 PyTorch Profiler 衡量收益。",
+        "takeaway": "示例中 guard 检查约耗时 0.9 ms，精简后可降至接近零；但 unsafe 模式可能让失效图继续运行并产生静默错误，只适用于能够保证模型和输入特征不再变化的场景。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "date": "2026-09-18",
+      "category": "前沿模型评估与安全",
+      "summary": "Anthropic 与 Accenture 合作试点 embedded evaluation，让独立评估方更深入参与 frontier AI 的评测、红队和 safeguards 验证。",
+      "insights": {
+        "problem": "传统外部评估难以持续观察 frontier model 的训练、决策和部署过程，也缺少统一的信息访问、报告与独立资金标准，公众因此难以验证实验室是否履行安全承诺。",
+        "approach": "Accenture 旗下 Faculty 将以接近员工的访问深度开展模型评估、red teaming、alignment assessment 和 safeguards 测试；双方计划未来五年至少各投入 10 亿美元建设相关能力。",
+        "takeaway": "这是非排他的早期试点，Anthropic 仍承担模型安全责任，并计划与 METR 等更多机构探索不同资金模式，推动形成采用共同标准的独立评估生态。"
       }
     }
   ]
