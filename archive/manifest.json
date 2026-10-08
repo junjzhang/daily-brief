@@ -3,9 +3,21 @@
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN",
-    "sources": []
+    "sources": [
+      "PyTorch DevLogs",
+      "Anthropic Blog"
+    ]
   },
   "briefs": [
+    {
+      "date": "2026-10-08",
+      "file": "2026-10-08.html",
+      "new_count": 9,
+      "sources": [
+        "PyTorch DevLogs",
+        "Anthropic Blog"
+      ]
+    },
     {
       "date": "2026-09-21",
       "file": "2026-09-21.html",

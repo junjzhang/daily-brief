@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Brief 每日简报 — 2026-10-08</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1e2e 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;text-align:center;position:relative}
+.header h1{font-size:1.6rem;font-weight:600;margin-bottom:.4rem}
+.header .date{color:var(--muted);font-size:.95rem}
+.header .back{position:absolute;left:1.5rem;top:1.5rem;color:var(--muted);font-size:.85rem}
+
+.container{max-width:800px;margin:0 auto;padding:1.5rem}
+
+.stats{text-align:center;padding:.6rem 1rem;margin-bottom:1.5rem;font-size:.9rem;font-weight:500;color:var(--accent);background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.15);border-radius:8px}
+.stats-empty{color:var(--muted);background:var(--surface);border-color:var(--border)}
+
+.section{margin-bottom:2.5rem}
+.section-title{font-size:1.15rem;font-weight:600;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.count{background:var(--surface);color:var(--muted);font-size:.75rem;padding:2px 8px;border-radius:10px;margin-left:.5rem}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem;transition:border-color .2s}
+.card:hover{border-color:#484f58}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem;flex-wrap:wrap}
+.card-title{font-size:1.05rem;font-weight:600;color:var(--text)}
+.badge{font-size:.7rem;font-weight:500;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0}
+.card-meta{font-size:.8rem;color:var(--muted);margin-bottom:.75rem}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.card-link{font-size:.85rem;color:var(--accent)}
+.copy-btn{background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;padding:4px 10px;font-size:.75rem;display:flex;align-items:center;gap:4px;transition:all .2s}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent)}
+.copy-btn.copied{border-color:var(--accent);color:var(--accent)}
+
+.insights{margin-top:.85rem;padding:.85rem 1rem;background:var(--surface2);border-radius:8px;border-left:3px solid var(--accent)}
+.insight-row{display:flex;gap:.5rem;margin-bottom:.45rem;font-size:.88rem}
+.insight-row:last-child{margin-bottom:0}
+.insight-tag{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.insight-text{color:#c9d1d9}
+
+.compact{list-style:none;padding:0}
+.compact li{padding:.6rem .85rem;margin-bottom:.35rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem}
+.compact li:hover{border-color:#484f58}
+.compact .c-title{flex:1}
+.compact .c-meta{color:var(--muted);font-size:.8rem;white-space:nowrap;display:flex;align-items:center;gap:.6rem}
+
+.footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border)}
+
+@media(max-width:600px){
+  .container{padding:1rem}
+  .card{padding:1rem}
+  .card-head{flex-direction:column;gap:.4rem}
+  .compact li{flex-direction:column;align-items:flex-start;gap:.3rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="./" class="back">← 所有简报</a>
+  <h1>Daily Brief 每日简报</h1>
+  <div class="date">2026-10-08 · 自动生成</div>
+</div>
+
+<div class="container">
+  <div class="stats">今日 9 篇新文章 · 来自 2 个源</div>
+  <div class="section"><div class="section-title">PyTorch DevLogs <span class="count">1 篇新文章</span></div><div class="card"><div class="card-head"><span class="card-title">Cross-stream memory management: wait_event instead of record_stream</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">CUDA 内存管理</span></div><div class="card-meta">2026-09-29</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">生产和消费张量的 CUDA stream 不同；过早释放会重用仍在读取的内存，而 record_stream 虽安全，却可能抬高峰值显存。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">在消费 stream 记录完成事件，暂时保留张量引用；生产 stream 先 wait_event，再释放旧引用，让内存复用由显式 stream 顺序控制。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">H100 示例中，该模式实现 0/50 次数据损坏，最多使用两块参数缓存，并维持通信与计算重叠；record_stream 则使用四块。</span></div></div><div class="card-foot"><a class="card-link" href="https://docs.pytorch.org/devlogs/eager/2026-09-29-cross-stream-memory-without-record-stream/">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Cross-stream memory management: wait_event instead of record_stream
+Source: PyTorch DevLogs
+Date: 2026-09-29
+URL: https://docs.pytorch.org/devlogs/eager/2026-09-29-cross-stream-memory-without-record-stream/
+
+Problem: 生产和消费张量的 CUDA stream 不同；过早释放会重用仍在读取的内存，而 record_stream 虽安全，却可能抬高峰值显存。
+Approach: 在消费 stream 记录完成事件，暂时保留张量引用；生产 stream 先 wait_event，再释放旧引用，让内存复用由显式 stream 顺序控制。
+Takeaway: H100 示例中，该模式实现 0/50 次数据损坏，最多使用两块参数缓存，并维持通信与计算重叠；record_stream 则使用四块。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div></div><div class="section"><div class="section-title">Anthropic Blog <span class="count">8 篇新文章</span></div><div class="card"><div class="card-head"><span class="card-title">Claude Haiku 5.5</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">模型发布</span></div><div class="card-meta">2026-10-07</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">摘要、分类、查询和子代理等高频任务需要兼顾响应速度、能力与调用成本。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">发布可调节推理力度的 Haiku 5.5，并针对常见的 10 万 token 以下请求降低价格；同步下调 Sonnet 5.5 的缓存读取价格。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">Haiku 5.5 已在 Claude Platform 和主要云平台提供；Anthropic 报告其平均任务成本较 Haiku 4.5 下降约 75%。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/claude-haiku-5-5">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Claude Haiku 5.5
+Source: Anthropic Blog
+Date: 2026-10-07
+URL: https://www.anthropic.com/claude-haiku-5-5
+
+Problem: 摘要、分类、查询和子代理等高频任务需要兼顾响应速度、能力与调用成本。
+Approach: 发布可调节推理力度的 Haiku 5.5，并针对常见的 10 万 token 以下请求降低价格；同步下调 Sonnet 5.5 的缓存读取价格。
+Takeaway: Haiku 5.5 已在 Claude Platform 和主要云平台提供；Anthropic 报告其平均任务成本较 Haiku 4.5 下降约 75%。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Expanding the Cyber Verification Program</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">安全与访问控制</span></div><div class="card-meta">2026-10-06</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">网络安全能力兼具防御和滥用风险；统一的保守限制可能阻碍获得授权的安全团队开展工作。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">按防御、授权红队和高风险系统专项测试设置三档申请资格、模型访问与安全控制，并对使用情况实施监测。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">分级访问让合格防御者可申请更适合其工作的能力，同时对高风险操作保留更严格的审核和限制。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/cyber-verification-program">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Expanding the Cyber Verification Program
+Source: Anthropic Blog
+Date: 2026-10-06
+URL: https://www.anthropic.com/news/cyber-verification-program
+
+Problem: 网络安全能力兼具防御和滥用风险；统一的保守限制可能阻碍获得授权的安全团队开展工作。
+Approach: 按防御、授权红队和高风险系统专项测试设置三档申请资格、模型访问与安全控制，并对使用情况实施监测。
+Takeaway: 分级访问让合格防御者可申请更适合其工作的能力，同时对高风险操作保留更严格的审核和限制。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">企业产品</span></div><div class="card-meta">2026-10-02</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">企业将 AI 原型推进到受治理的生产系统时，缺少既懂工程又熟悉业务流程的实施人才。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">学院通过线下实训、模拟企业部署考核和 12 周真实项目驻训，培养可独立交付 Claude 应用的工程师。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">首批学员已来自咨询、金融与医药企业；计划到 2027 年底培养 1 万名 Frontier Deployed Engineers。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/claude-frontier-academy">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap
+Source: Anthropic Blog
+Date: 2026-10-02
+URL: https://www.anthropic.com/news/claude-frontier-academy
+
+Problem: 企业将 AI 原型推进到受治理的生产系统时，缺少既懂工程又熟悉业务流程的实施人才。
+Approach: 学院通过线下实训、模拟企业部署考核和 12 周真实项目驻训，培养可独立交付 Claude 应用的工程师。
+Takeaway: 首批学员已来自咨询、金融与医药企业；计划到 2027 年底培养 1 万名 Frontier Deployed Engineers。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Barclays scales Claude to upgrade operations and improve client experience</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">企业应用</span></div><div class="card-meta">2026-10-01</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">大型受监管银行需要在严格治理下提升客服知识检索、邮件处理和软件开发效率。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">巴克莱在检索增强知识助手、邮件分类与路由、遗留系统现代化及 Claude Code 开发工作流中逐步部署 Claude。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">知识助手已处理逾 100 万次搜索；银行预计 2026 年底 Claude Code 覆盖一半开发人员，2027 年扩展到多数工程师。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/barclays-scales-claude">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Barclays scales Claude to upgrade operations and improve client experience
+Source: Anthropic Blog
+Date: 2026-10-01
+URL: https://www.anthropic.com/news/barclays-scales-claude
+
+Problem: 大型受监管银行需要在严格治理下提升客服知识检索、邮件处理和软件开发效率。
+Approach: 巴克莱在检索增强知识助手、邮件分类与路由、遗留系统现代化及 Claude Code 开发工作流中逐步部署 Claude。
+Takeaway: 知识助手已处理逾 100 万次搜索；银行预计 2026 年底 Claude Code 覆盖一半开发人员，2027 年扩展到多数工程师。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Claude Sonnet 5.5</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">模型发布</span></div><div class="card-meta">2026-09-28</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">日常编码、文档和设计任务需要接近高阶模型的质量，同时降低等待时间与单任务成本。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">升级 Sonnet 的编码、图像理解和协作能力，以更少 token 完成任务，并为增强的网络安全能力配套防护与回退机制。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">Anthropic 报告其输出速度提升逾 30%，多数任务成本最多下降 30%；复杂开放式工作仍更适合 Opus 5.5。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/claude-sonnet-5-5">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Claude Sonnet 5.5
+Source: Anthropic Blog
+Date: 2026-09-28
+URL: https://www.anthropic.com/claude-sonnet-5-5
+
+Problem: 日常编码、文档和设计任务需要接近高阶模型的质量，同时降低等待时间与单任务成本。
+Approach: 升级 Sonnet 的编码、图像理解和协作能力，以更少 token 完成任务，并为增强的网络安全能力配套防护与回退机制。
+Takeaway: Anthropic 报告其输出速度提升逾 30%，多数任务成本最多下降 30%；复杂开放式工作仍更适合 Opus 5.5。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Claude discovers a novel enzyme system with CRISPR-like repeats</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">科学研究</span></div><div class="card-meta">2026-09-23</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">海量基因组数据中可能存在未表征的分子系统，人工筛选和提出可实验验证的假设耗时。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">研究团队让约 950 个 Claude 代理搜索逆转录酶相关序列、筛选异常模式，再由科学家在实验室开展验证。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">团队将候选系统命名为 array-associated reverse transcriptases，并发布预印本；其功能及应用价值尚未确定。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Claude discovers a novel enzyme system with CRISPR-like repeats
+Source: Anthropic Blog
+Date: 2026-09-23
+URL: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
+
+Problem: 海量基因组数据中可能存在未表征的分子系统，人工筛选和提出可实验验证的假设耗时。
+Approach: 研究团队让约 950 个 Claude 代理搜索逆转录酶相关序列、筛选异常模式，再由科学家在实验室开展验证。
+Takeaway: 团队将候选系统命名为 array-associated reverse transcriptases，并发布预印本；其功能及应用价值尚未确定。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Claude Opus 5.5</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">模型发布</span></div><div class="card-meta">2026-09-22</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">复杂编码和知识工作要求持续判断能力，但高阶模型的成本、速度与安全风险限制实际使用。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">升级 Opus 模型并降低输入、输出和缓存读取价格，同时扩大外部评估、行为审计及高风险领域的防护措施。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">Anthropic 报告典型任务成本下降约 40%、输出速度提升逾 30%；对生物与网络安全高风险用途仍实行验证和限制。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/claude-opus-5-5">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Claude Opus 5.5
+Source: Anthropic Blog
+Date: 2026-09-22
+URL: https://www.anthropic.com/claude-opus-5-5
+
+Problem: 复杂编码和知识工作要求持续判断能力，但高阶模型的成本、速度与安全风险限制实际使用。
+Approach: 升级 Opus 模型并降低输入、输出和缓存读取价格，同时扩大外部评估、行为审计及高风险领域的防护措施。
+Takeaway: Anthropic 报告典型任务成本下降约 40%、输出速度提升逾 30%；对生物与网络安全高风险用途仍实行验证和限制。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">The situation report</span><span class="badge" style="background:rgba(188,140,255,.15);color:#bc8cff">公益应用</span></div><div class="card-meta">2026-09-19</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">疫情一线数据分散在社区记录、消息和演示文稿中，人工整理日报缓慢，影响资源调配和风险判断。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">世卫组织非洲区域团队用 Claude skill 提取各卫生区数据，与前一日报交叉核对并标记趋势变化，同时辅助分析和预测。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">报道中的态势报告制作时间由全天缩短至一小时以内；疫苗和防疫决策仍由公共卫生专家负责。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/features/ebola-response">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="The situation report
+Source: Anthropic Blog
+Date: 2026-09-19
+URL: https://www.anthropic.com/features/ebola-response
+
+Problem: 疫情一线数据分散在社区记录、消息和演示文稿中，人工整理日报缓慢，影响资源调配和风险判断。
+Approach: 世卫组织非洲区域团队用 Claude skill 提取各卫生区数据，与前一日报交叉核对并标记趋势变化，同时辅助分析和预测。
+Takeaway: 报道中的态势报告制作时间由全天缩短至一小时以内；疫苗和防疫决策仍由公共卫生专家负责。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div></div>
+</div>
+
+<div class="footer">
+  由 Claude Code Routine 自动生成 · 数据来源 <a href="https://docs.pytorch.org/devlogs/eager/2026-09-29-cross-stream-memory-without-record-stream/">PyTorch DevLogs</a> · <a href="https://www.anthropic.com/claude-haiku-5-5">Anthropic Blog</a>
+</div>
+
+<script>
+function copyCtx(btn){
+  const text=btn.getAttribute('data-ctx');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.classList.add('copied');
+    const orig=btn.innerHTML;
+    btn.innerHTML='<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Copied';
+    setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied')},1500);
+  });
+}
+</script>
+</body>
+</html>
