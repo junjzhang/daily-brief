@@ -1,9 +1,127 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-10-08",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
     "lang": "zh-CN"
   },
-  "entries": []
+  "entries": [
+    {
+      "source": "PyTorch DevLogs",
+      "url": "https://docs.pytorch.org/devlogs/eager/2026-09-29-cross-stream-memory-without-record-stream/",
+      "title": "Cross-stream memory management: wait_event instead of record_stream",
+      "date": "2026-09-29",
+      "category": "CUDA 内存管理",
+      "summary": "PyTorch 用保留引用与 CUDA wait_event 管理跨 stream 张量生命周期，在避免数据竞争的同时把流水线缓存数量固定为两块。",
+      "insights": {
+        "problem": "生产和消费张量的 CUDA stream 不同；过早释放会重用仍在读取的内存，而 record_stream 虽安全，却可能抬高峰值显存。",
+        "approach": "在消费 stream 记录完成事件，暂时保留张量引用；生产 stream 先 wait_event，再释放旧引用，让内存复用由显式 stream 顺序控制。",
+        "takeaway": "H100 示例中，该模式实现 0/50 次数据损坏，最多使用两块参数缓存，并维持通信与计算重叠；record_stream 则使用四块。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "title": "Claude Haiku 5.5",
+      "date": "2026-10-07",
+      "category": "模型发布",
+      "summary": "Claude Haiku 5.5 面向高频、低延迟任务，Anthropic 称其平均运行成本比 Haiku 4.5 低约 75%。",
+      "insights": {
+        "problem": "摘要、分类、查询和子代理等高频任务需要兼顾响应速度、能力与调用成本。",
+        "approach": "发布可调节推理力度的 Haiku 5.5，并针对常见的 10 万 token 以下请求降低价格；同步下调 Sonnet 5.5 的缓存读取价格。",
+        "takeaway": "Haiku 5.5 已在 Claude Platform 和主要云平台提供；Anthropic 报告其平均任务成本较 Haiku 4.5 下降约 75%。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "title": "Expanding the Cyber Verification Program",
+      "date": "2026-10-06",
+      "category": "安全与访问控制",
+      "summary": "Anthropic 扩展网络安全验证计划，以防御、红队和专项三档权限向符合条件的安全人员开放高级能力。",
+      "insights": {
+        "problem": "网络安全能力兼具防御和滥用风险；统一的保守限制可能阻碍获得授权的安全团队开展工作。",
+        "approach": "按防御、授权红队和高风险系统专项测试设置三档申请资格、模型访问与安全控制，并对使用情况实施监测。",
+        "takeaway": "分级访问让合格防御者可申请更适合其工作的能力，同时对高风险操作保留更严格的审核和限制。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "date": "2026-10-02",
+      "category": "企业产品",
+      "summary": "Anthropic 投入 1 亿美元建设 Claude Frontier Academy，目标是在 2027 年底前培训 1 万名企业前沿部署工程师。",
+      "insights": {
+        "problem": "企业将 AI 原型推进到受治理的生产系统时，缺少既懂工程又熟悉业务流程的实施人才。",
+        "approach": "学院通过线下实训、模拟企业部署考核和 12 周真实项目驻训，培养可独立交付 Claude 应用的工程师。",
+        "takeaway": "首批学员已来自咨询、金融与医药企业；计划到 2027 年底培养 1 万名 Frontier Deployed Engineers。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "date": "2026-10-01",
+      "category": "企业应用",
+      "summary": "巴克莱扩大 Claude 部署，已用知识助手支持逾 1.6 万名员工，并用模型处理约 12 万封日常业务邮件。",
+      "insights": {
+        "problem": "大型受监管银行需要在严格治理下提升客服知识检索、邮件处理和软件开发效率。",
+        "approach": "巴克莱在检索增强知识助手、邮件分类与路由、遗留系统现代化及 Claude Code 开发工作流中逐步部署 Claude。",
+        "takeaway": "知识助手已处理逾 100 万次搜索；银行预计 2026 年底 Claude Code 覆盖一半开发人员，2027 年扩展到多数工程师。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "title": "Claude Sonnet 5.5",
+      "date": "2026-09-28",
+      "category": "模型发布",
+      "summary": "Claude Sonnet 5.5 面向日常开发与知识工作，Anthropic 称其输出速度比 Sonnet 5 快逾 30%，多数任务成本最多降低 30%。",
+      "insights": {
+        "problem": "日常编码、文档和设计任务需要接近高阶模型的质量，同时降低等待时间与单任务成本。",
+        "approach": "升级 Sonnet 的编码、图像理解和协作能力，以更少 token 完成任务，并为增强的网络安全能力配套防护与回退机制。",
+        "takeaway": "Anthropic 报告其输出速度提升逾 30%，多数任务成本最多下降 30%；复杂开放式工作仍更适合 Opus 5.5。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "date": "2026-09-23",
+      "category": "科学研究",
+      "summary": "Anthropic 报告 Claude 在大规模 DNA 序列中发现与重复序列相关的新型逆转录酶系统；其生物学功能仍待确认。",
+      "insights": {
+        "problem": "海量基因组数据中可能存在未表征的分子系统，人工筛选和提出可实验验证的假设耗时。",
+        "approach": "研究团队让约 950 个 Claude 代理搜索逆转录酶相关序列、筛选异常模式，再由科学家在实验室开展验证。",
+        "takeaway": "团队将候选系统命名为 array-associated reverse transcriptases，并发布预印本；其功能及应用价值尚未确定。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "title": "Claude Opus 5.5",
+      "date": "2026-09-22",
+      "category": "模型发布",
+      "summary": "Claude Opus 5.5 聚焦复杂长任务；Anthropic 称典型工作负载成本比 Opus 5 低约 40%，并加强了安全评估。",
+      "insights": {
+        "problem": "复杂编码和知识工作要求持续判断能力，但高阶模型的成本、速度与安全风险限制实际使用。",
+        "approach": "升级 Opus 模型并降低输入、输出和缓存读取价格，同时扩大外部评估、行为审计及高风险领域的防护措施。",
+        "takeaway": "Anthropic 报告典型任务成本下降约 40%、输出速度提升逾 30%；对生物与网络安全高风险用途仍实行验证和限制。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/features/ebola-response",
+      "title": "The situation report",
+      "date": "2026-09-19",
+      "category": "公益应用",
+      "summary": "刚果（金）埃博拉疫情应对团队使用 Claude 汇总各地区病例与实验室数据，将态势报告制作时间从一天缩短到不足一小时。",
+      "insights": {
+        "problem": "疫情一线数据分散在社区记录、消息和演示文稿中，人工整理日报缓慢，影响资源调配和风险判断。",
+        "approach": "世卫组织非洲区域团队用 Claude skill 提取各卫生区数据，与前一日报交叉核对并标记趋势变化，同时辅助分析和预测。",
+        "takeaway": "报道中的态势报告制作时间由全天缩短至一小时以内；疫苗和防疫决策仍由公共卫生专家负责。"
+      }
+    }
+  ]
 }
