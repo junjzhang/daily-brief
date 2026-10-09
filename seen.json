@@ -1030,5 +1030,23 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-10-08",
     "date": "2026-09-19"
+  },
+  "https://www.anthropic.com/news/2026-usage-policy-update": {
+    "title": "2026 Usage Policy update",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-09",
+    "date": "2026-10-08"
+  },
+  "https://www.anthropic.com/news/genesis-mission-commitment": {
+    "title": "Building on our commitment to American scientific discovery",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-09",
+    "date": "2026-10-08"
+  },
+  "https://www.anthropic.com/news/anthropic-cyber-mission": {
+    "title": "Introducing the Anthropic Cyber Mission",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-09",
+    "date": "2026-10-08"
   }
 }
