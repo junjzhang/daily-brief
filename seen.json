@@ -1048,5 +1048,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-10-09",
     "date": "2026-10-08"
+  },
+  "https://www.anthropic.com/news/2026-us-midterms": {
+    "title": "Preparing for the 2026 US midterms",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-15",
+    "date": "2026-10-14"
+  },
+  "https://www.anthropic.com/news/singapore-office-opening": {
+    "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-15",
+    "date": "2026-10-14"
   }
 }
