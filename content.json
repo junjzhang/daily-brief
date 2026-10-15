@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-15",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,41 +8,28 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
-      "title": "2026 Usage Policy update",
-      "date": "2026-10-08",
-      "category": "政策与安全",
-      "summary": "Anthropic 更新 Claude 使用政策，细化欺骗性活动、高风险场景及自主物理操作等规则，新版于 11 月 12 日生效。",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "title": "Preparing for the 2026 US midterms",
+      "date": "2026-10-14",
+      "category": "安全与政策",
+      "summary": "Anthropic 更新美国中期选举防护措施，计划接入可信投票信息，并加强政治偏见评估与多步骤滥用检测。",
       "insights": {
-        "problem": "模型能执行更长、更自主的任务，旧政策对虚假账号、武器相关软件及高风险决策等情形的适用边界不够清晰。",
-        "approach": "整合欺骗性活动禁令，明确选举、武器、监控和高风险用途的要求，并为连接物理设备的自主操作增加人工监督与安全停机条件。",
-        "takeaway": "新版政策将于 2026 年 11 月 12 日生效；Anthropic 表示多数改动是澄清既有规则，高风险建议仍要求合格人员复核并告知受影响者。"
+        "problem": "选举期间，用户需要准确、公平的政治信息；分拆成多个看似无害请求的欺骗活动，也可能绕过单次请求的防护。",
+        "approach": "计划在 Claude.ai 接入 Democracy Works 的官方投票信息及最新选举结果；结合外部评估、红队测试和新增分类器，改进偏见与协调滥用检测。",
+        "takeaway": "Anthropic 表示已增强多步骤滥用防护，但外部评估仍发现不均衡的附加提醒等问题；官方投票信息功能计划在本月稍晚推出。"
       }
     },
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
-      "title": "Building on our commitment to American scientific discovery",
-      "date": "2026-10-08",
-      "category": "科学研究",
-      "summary": "Anthropic 承诺三年投入 1.5 亿美元支持美国 Genesis Mission，向科研机构提供 Claude、Claude Code、API 额度及技术支持。",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "date": "2026-10-14",
+      "category": "企业应用与安全合作",
+      "summary": "Anthropic 在新加坡设立亚太第五个办公室，并与政府签署合作备忘录，推进模型评估、安全研究及公共和私营部门的 AI 应用。",
       "insights": {
-        "problem": "科研机构在聚变、量子计算等复杂领域采用 AI 时，需要模型访问、经费和落地支持。",
-        "approach": "向参与 Genesis Mission 的 15 个以上机构提供资源，支持数百个研究项目，并与国家实验室合作开展培训、部署和技术支持。",
-        "takeaway": "这是一项为期三年的 1.5 亿美元承诺，覆盖 NASA、NIH、NSF 等机构参与的项目；具体科研成果仍有待后续验证。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
-      "title": "Introducing the Anthropic Cyber Mission",
-      "date": "2026-10-08",
-      "category": "网络安全",
-      "summary": "Anthropic 启动 Cyber Mission，为关键基础设施防护提供模型和专家支持，并向开源项目免费提供定期安全扫描。",
-      "insights": {
-        "problem": "关键基础设施与开源软件面临不断增长的漏洞风险，但发现、核实、排序和修复问题的防御资源不足。",
-        "approach": "通过 Critical Infrastructure Defense Program 向可信服务商提供模型、驻场工程师与威胁研究；通过 OSS Scanner 为自愿加入的开源项目定期生成漏洞报告。",
-        "takeaway": "两项计划已启动；OSS Scanner 报告未经人工预审，维护者仍需核验模型发现，关键基础设施修复也必须顾及运行安全。"
+        "problem": "政府与受监管企业扩大 AI 部署时，需要可靠的本地支持、模型安全评估以及符合数据处理要求的服务。",
+        "approach": "通过新加坡办公室及政府合作备忘录，开展模型测试、事件响应和 AI 技能交流；企业可通过 Amazon Bedrock 使用区域内推理。",
+        "takeaway": "办公室已开放并招聘；Anthropic 报告 GovTech 已有逾 1,500 名工程和技术人员采用 Claude Code，合作备忘录将继续推进安全评估与负责任应用。"
       }
     }
   ]
