@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,28 +8,15 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/2026-us-midterms",
-      "title": "Preparing for the 2026 US midterms",
-      "date": "2026-10-14",
-      "category": "安全与政策",
-      "summary": "Anthropic 更新美国中期选举防护措施，计划接入可信投票信息，并加强政治偏见评估与多步骤滥用检测。",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "title": "An update on independent evaluators",
+      "date": "2026-10-15",
+      "category": "安全评估与治理",
+      "summary": "Anthropic 开始向 METR 的六人团队提供接近内部风险评估人员的访问权限，并介绍独立评估者的三级访问与发表机制。",
       "insights": {
-        "problem": "选举期间，用户需要准确、公平的政治信息；分拆成多个看似无害请求的欺骗活动，也可能绕过单次请求的防护。",
-        "approach": "计划在 Claude.ai 接入 Democracy Works 的官方投票信息及最新选举结果；结合外部评估、红队测试和新增分类器，改进偏见与协调滥用检测。",
-        "takeaway": "Anthropic 表示已增强多步骤滥用防护，但外部评估仍发现不均衡的附加提醒等问题；官方投票信息功能计划在本月稍晚推出。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/singapore-office-opening",
-      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
-      "date": "2026-10-14",
-      "category": "企业应用与安全合作",
-      "summary": "Anthropic 在新加坡设立亚太第五个办公室，并与政府签署合作备忘录，推进模型评估、安全研究及公共和私营部门的 AI 应用。",
-      "insights": {
-        "problem": "政府与受监管企业扩大 AI 部署时，需要可靠的本地支持、模型安全评估以及符合数据处理要求的服务。",
-        "approach": "通过新加坡办公室及政府合作备忘录，开展模型测试、事件响应和 AI 技能交流；企业可通过 Amazon Bedrock 使用区域内推理。",
-        "takeaway": "办公室已开放并招聘；Anthropic 报告 GovTech 已有逾 1,500 名工程和技术人员采用 Claude Code，合作备忘录将继续推进安全评估与负责任应用。"
+        "problem": "外界难以掌握前沿模型的训练、安全措施和风险信息，而完整公开这些材料又可能泄露敏感信息，限制独立监督。",
+        "approach": "让六名 METR 评估人员使用公司硬件、办公空间和内部工具，并按三级机制逐步扩大其他评估者的访问与发表权；客户数据等明确类别仍受限制。",
+        "takeaway": "METR 可独立发表风险分析，Anthropic 不能否决发表，但可要求删除预先限定类别的信息；评估者可公开评论删改是否合理，其他合作方的权限目前更有限。"
       }
     }
   ]
