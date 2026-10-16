@@ -1060,5 +1060,11 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-10-15",
     "date": "2026-10-14"
+  },
+  "https://www.anthropic.com/news/an-update-on-independent-evaluators": {
+    "title": "An update on independent evaluators",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-16",
+    "date": "2026-10-15"
   }
 }

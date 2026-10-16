@@ -9,6 +9,14 @@
   },
   "briefs": [
     {
+      "date": "2026-10-16",
+      "file": "2026-10-16.html",
+      "new_count": 1,
+      "sources": [
+        "Anthropic Blog"
+      ]
+    },
+    {
       "date": "2026-10-15",
       "file": "2026-10-15.html",
       "new_count": 2,
