@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-20",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,15 +8,15 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-      "title": "An update on independent evaluators",
-      "date": "2026-10-15",
-      "category": "安全评估与治理",
-      "summary": "Anthropic 开始向 METR 的六人团队提供接近内部风险评估人员的访问权限，并介绍独立评估者的三级访问与发表机制。",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "title": "Investing in the public benefit",
+      "date": "2026-10-18",
+      "category": "公益与公司治理",
+      "summary": "Anthropic 宣布设立 Public Benefit Fund，拟经股东批准投入 5% 公司股份，并让公益持股可随公司估值增长而扩大。",
       "insights": {
-        "problem": "外界难以掌握前沿模型的训练、安全措施和风险信息，而完整公开这些材料又可能泄露敏感信息，限制独立监督。",
-        "approach": "让六名 METR 评估人员使用公司硬件、办公空间和内部工具，并按三级机制逐步扩大其他评估者的访问与发表权；客户数据等明确类别仍受限制。",
-        "takeaway": "METR 可独立发表风险分析，Anthropic 不能否决发表，但可要求删除预先限定类别的信息；评估者可公开评论删改是否合理，其他合作方的权限目前更有限。"
+        "problem": "AI 可能创造巨大经济价值，也可能冲击就业；部分公益目标需要比公司内部项目更灵活、更大规模的资金安排。",
+        "approach": "以全资 LLC 设立基金，拟经股东批准投入 5% 股份；公司估值每较设定基准增加 50%，董事会可酌情再增加 2% 股份。",
+        "takeaway": "基金可探索向非营利组织捐赠或向特定群体直接分配资源，所持股权不用于游说或政治捐赠；具体治理和估值门槛仍待后续公布。"
       }
     }
   ]
