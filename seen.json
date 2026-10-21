@@ -1072,5 +1072,29 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-10-20",
     "date": "2026-10-18"
+  },
+  "https://www.anthropic.com/news/distillation-defenses": {
+    "title": "Strengthening our defenses against distillation attacks",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-21",
+    "date": "2026-10-12"
+  },
+  "https://www.anthropic.com/institute/econ-scenarios": {
+    "title": "Scenarios for our economic future",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-21",
+    "date": "2026-09-09"
+  },
+  "https://www.anthropic.com/features/project-deal": {
+    "title": "Project Deal: our Claude-run marketplace experiment",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-21",
+    "date": "2026-04-24"
+  },
+  "https://www.anthropic.com/features/claude-on-mars": {
+    "title": "The first AI-planned drive on Mars",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-21",
+    "date": "2026-01-24"
   }
 }

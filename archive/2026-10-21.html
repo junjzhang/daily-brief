@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Brief 每日简报 — 2026-10-21</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0d1117;--surface:#161b22;--surface2:#1c2129;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--accent:#58a6ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1e2e 100%);border-bottom:1px solid var(--border);padding:2.5rem 1.5rem 2rem;text-align:center;position:relative}
+.header h1{font-size:1.6rem;font-weight:600;margin-bottom:.4rem}
+.header .date{color:var(--muted);font-size:.95rem}
+.header .back{position:absolute;left:1.5rem;top:1.5rem;color:var(--muted);font-size:.85rem}
+
+.container{max-width:800px;margin:0 auto;padding:1.5rem}
+
+.stats{text-align:center;padding:.6rem 1rem;margin-bottom:1.5rem;font-size:.9rem;font-weight:500;color:var(--accent);background:rgba(88,166,255,.08);border:1px solid rgba(88,166,255,.15);border-radius:8px}
+.stats-empty{color:var(--muted);background:var(--surface);border-color:var(--border)}
+
+.section{margin-bottom:2.5rem}
+.section-title{font-size:1.15rem;font-weight:600;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.count{background:var(--surface);color:var(--muted);font-size:.75rem;padding:2px 8px;border-radius:10px;margin-left:.5rem}
+
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:1rem;transition:border-color .2s}
+.card:hover{border-color:#484f58}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:.75rem;flex-wrap:wrap}
+.card-title{font-size:1.05rem;font-weight:600;color:var(--text)}
+.badge{font-size:.7rem;font-weight:500;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0}
+.card-meta{font-size:.8rem;color:var(--muted);margin-bottom:.75rem}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:.75rem}
+.card-link{font-size:.85rem;color:var(--accent)}
+.copy-btn{background:var(--surface2);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;padding:4px 10px;font-size:.75rem;display:flex;align-items:center;gap:4px;transition:all .2s}
+.copy-btn:hover{border-color:var(--accent);color:var(--accent)}
+.copy-btn.copied{border-color:var(--accent);color:var(--accent)}
+
+.insights{margin-top:.85rem;padding:.85rem 1rem;background:var(--surface2);border-radius:8px;border-left:3px solid var(--accent)}
+.insight-row{display:flex;gap:.5rem;margin-bottom:.45rem;font-size:.88rem}
+.insight-row:last-child{margin-bottom:0}
+.insight-tag{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.insight-text{color:#c9d1d9}
+
+.compact{list-style:none;padding:0}
+.compact li{padding:.6rem .85rem;margin-bottom:.35rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem}
+.compact li:hover{border-color:#484f58}
+.compact .c-title{flex:1}
+.compact .c-meta{color:var(--muted);font-size:.8rem;white-space:nowrap;display:flex;align-items:center;gap:.6rem}
+
+.footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border)}
+
+@media(max-width:600px){
+  .container{padding:1rem}
+  .card{padding:1rem}
+  .card-head{flex-direction:column;gap:.4rem}
+  .compact li{flex-direction:column;align-items:flex-start;gap:.3rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="./" class="back">← 所有简报</a>
+  <h1>Daily Brief 每日简报</h1>
+  <div class="date">2026-10-21 · 自动生成</div>
+</div>
+
+<div class="container">
+  <div class="stats">今日 4 篇新文章 · 来自 1 个源</div>
+  <div class="section"><div class="section-title">Anthropic Blog <span class="count">4 篇新文章</span></div><div class="card"><div class="card-head"><span class="card-title">Strengthening our defenses against distillation attacks</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">模型安全</span></div><div class="card-meta">2026-10-12</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">大规模虚假账号网络试图提取 Claude 的隐藏推理，用于复制模型能力，而复制者未必保留相应安全措施。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">限制受保护推理在会话、模型和组织间流转，部署两阶段提取检测分类器，并结合红队测试、限流和封禁应对反复尝试。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">Anthropic 报告自身平台的推理提取量下降约 10–100 倍；部分合法集成仍需调整，误拦截及被拦请求收费也是其承认的代价。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/news/distillation-defenses">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Strengthening our defenses against distillation attacks
+Source: Anthropic Blog
+Date: 2026-10-12
+URL: https://www.anthropic.com/news/distillation-defenses
+
+Problem: 大规模虚假账号网络试图提取 Claude 的隐藏推理，用于复制模型能力，而复制者未必保留相应安全措施。
+Approach: 限制受保护推理在会话、模型和组织间流转，部署两阶段提取检测分类器，并结合红队测试、限流和封禁应对反复尝试。
+Takeaway: Anthropic 报告自身平台的推理提取量下降约 10–100 倍；部分合法集成仍需调整，误拦截及被拦请求收费也是其承认的代价。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Scenarios for our economic future</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">AI 经济研究</span></div><div class="card-meta">2026-09-09</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">AI 对增长与就业的影响取决于多种不确定因素，单一预测难以解释能力提升和采用方式如何共同影响不同劳动者。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">把职业拆分为任务，模拟任务增强、自动化和新任务产生，并让用户调整能力、采用、自主性、生产率与转岗速度等参数。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">模型显示经济总量增长可能伴随知识劳动者工资停滞、转岗压力及资本份额上升；这些是条件情景，模型未覆盖政策应对、商业周期等因素。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/institute/econ-scenarios">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Scenarios for our economic future
+Source: Anthropic Blog
+Date: 2026-09-09
+URL: https://www.anthropic.com/institute/econ-scenarios
+
+Problem: AI 对增长与就业的影响取决于多种不确定因素，单一预测难以解释能力提升和采用方式如何共同影响不同劳动者。
+Approach: 把职业拆分为任务，模拟任务增强、自动化和新任务产生，并让用户调整能力、采用、自主性、生产率与转岗速度等参数。
+Takeaway: 模型显示经济总量增长可能伴随知识劳动者工资停滞、转岗压力及资本份额上升；这些是条件情景，模型未覆盖政策应对、商业周期等因素。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">Project Deal: our Claude-run marketplace experiment</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">代理研究</span></div><div class="card-meta">2026-04-24</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">代理能否准确代表人类偏好完成交易，以及不同代理能力会否造成用户难以察觉的市场劣势，仍需真实交易研究。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">访谈 69 名员工后为每人配置代理，在四个平行 Slack 市场中比较全 Opus 与 Opus、Haiku 混合环境，并调查参与者满意度。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">实际执行的一组交易总额逾 4,000 美元；更强模型在多项客观议价指标上占优，但参与者未明显感知差距，且结果来自自愿员工组成的小规模试验。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/features/project-deal">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="Project Deal: our Claude-run marketplace experiment
+Source: Anthropic Blog
+Date: 2026-04-24
+URL: https://www.anthropic.com/features/project-deal
+
+Problem: 代理能否准确代表人类偏好完成交易，以及不同代理能力会否造成用户难以察觉的市场劣势，仍需真实交易研究。
+Approach: 访谈 69 名员工后为每人配置代理，在四个平行 Slack 市场中比较全 Opus 与 Opus、Haiku 混合环境，并调查参与者满意度。
+Takeaway: 实际执行的一组交易总额逾 4,000 美元；更强模型在多项客观议价指标上占优，但参与者未明显感知差距，且结果来自自愿员工组成的小规模试验。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div><div class="card"><div class="card-head"><span class="card-title">The first AI-planned drive on Mars</span><span class="badge" style="background:rgba(63,185,80,.15);color:#3fb950">科学与代理应用</span></div><div class="card-meta">2026-01-24</div><div class="insights"><div class="insight-row"><span class="insight-tag" style="background:rgba(210,153,34,.15);color:#d29922">Problem</span><span class="insight-text">地火通信延迟使实时遥控不可行，人工逐段规划安全路线又耗时，需要在节省操作人力的同时保持可靠性。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(63,185,80,.15);color:#3fb950">Approach</span><span class="insight-text">为 Claude Code 提供驾驶经验和影像资料，让其生成 Rover Markup Language 路点指令，再通过覆盖逾 50 万变量的仿真与人工检查。</span></div><div class="insight-row"><span class="insight-tag" style="background:rgba(88,166,255,.15);color:#58a6ff">Takeaway</span><span class="insight-text">2025 年 12 月的两次驾驶成功完成约 400 米规划路线；工程师预计该方法可使规划时间减半，实际方案仍经过人工微调与安全验证。</span></div></div><div class="card-foot"><a class="card-link" href="https://www.anthropic.com/features/claude-on-mars">阅读原文 →</a><button class="copy-btn" onclick="copyCtx(this)" data-ctx="The first AI-planned drive on Mars
+Source: Anthropic Blog
+Date: 2026-01-24
+URL: https://www.anthropic.com/features/claude-on-mars
+
+Problem: 地火通信延迟使实时遥控不可行，人工逐段规划安全路线又耗时，需要在节省操作人力的同时保持可靠性。
+Approach: 为 Claude Code 提供驾驶经验和影像资料，让其生成 Rover Markup Language 路点指令，再通过覆盖逾 50 万变量的仿真与人工检查。
+Takeaway: 2025 年 12 月的两次驾驶成功完成约 400 米规划路线；工程师预计该方法可使规划时间减半，实际方案仍经过人工微调与安全验证。"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25zM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25z"/></svg> Copy</button></div></div></div>
+</div>
+
+<div class="footer">
+  由 Claude Code Routine 自动生成 · 数据来源 <a href="https://www.anthropic.com/news/distillation-defenses">Anthropic Blog</a>
+</div>
+
+<script>
+function copyCtx(btn){
+  const text=btn.getAttribute('data-ctx');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.classList.add('copied');
+    const orig=btn.innerHTML;
+    btn.innerHTML='<svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg> Copied';
+    setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('copied')},1500);
+  });
+}
+</script>
+</body>
+</html>
