@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,54 +8,15 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/distillation-defenses",
-      "title": "Strengthening our defenses against distillation attacks",
-      "date": "2026-10-12",
-      "category": "模型安全",
-      "summary": "Anthropic 介绍推理保护、两阶段分类器和账号治理措施，称其平台上被非法蒸馏者提取的推理 token 数量下降约 90%–99%。",
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "date": "2026-10-21",
+      "category": "公司治理与安全",
+      "summary": "物理学家 Christopher Stubbs 加入 Anthropic 长期利益信托，为其长期公益治理带来科学研究、可重复性及国家安全方面的经验。",
       "insights": {
-        "problem": "大规模虚假账号网络试图提取 Claude 的隐藏推理，用于复制模型能力，而复制者未必保留相应安全措施。",
-        "approach": "限制受保护推理在会话、模型和组织间流转，部署两阶段提取检测分类器，并结合红队测试、限流和封禁应对反复尝试。",
-        "takeaway": "Anthropic 报告自身平台的推理提取量下降约 10–100 倍；部分合法集成仍需调整，误拦截及被拦请求收费也是其承认的代价。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/institute/econ-scenarios",
-      "title": "Scenarios for our economic future",
-      "date": "2026-09-09",
-      "category": "AI 经济研究",
-      "summary": "Anthropic 发布经济情景探索器，将 AI 能力、采用速度和任务自动化等假设映射为 2030 年美国增长、工资与就业的可能变化。",
-      "insights": {
-        "problem": "AI 对增长与就业的影响取决于多种不确定因素，单一预测难以解释能力提升和采用方式如何共同影响不同劳动者。",
-        "approach": "把职业拆分为任务，模拟任务增强、自动化和新任务产生，并让用户调整能力、采用、自主性、生产率与转岗速度等参数。",
-        "takeaway": "模型显示经济总量增长可能伴随知识劳动者工资停滞、转岗压力及资本份额上升；这些是条件情景，模型未覆盖政策应对、商业周期等因素。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/features/project-deal",
-      "title": "Project Deal: our Claude-run marketplace experiment",
-      "date": "2026-04-24",
-      "category": "代理研究",
-      "summary": "Project Deal 让 Claude 代理代表员工买卖物品，实际市场达成 186 笔交易；平行实验显示模型能力差异会影响议价结果。",
-      "insights": {
-        "problem": "代理能否准确代表人类偏好完成交易，以及不同代理能力会否造成用户难以察觉的市场劣势，仍需真实交易研究。",
-        "approach": "访谈 69 名员工后为每人配置代理，在四个平行 Slack 市场中比较全 Opus 与 Opus、Haiku 混合环境，并调查参与者满意度。",
-        "takeaway": "实际执行的一组交易总额逾 4,000 美元；更强模型在多项客观议价指标上占优，但参与者未明显感知差距，且结果来自自愿员工组成的小规模试验。"
-      }
-    },
-    {
-      "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/features/claude-on-mars",
-      "title": "The first AI-planned drive on Mars",
-      "date": "2026-01-24",
-      "category": "科学与代理应用",
-      "summary": "NASA JPL 使用 Claude Code 辅助规划毅力号约 400 米火星行驶路线，经过仿真和工程师复核后成功执行。",
-      "insights": {
-        "problem": "地火通信延迟使实时遥控不可行，人工逐段规划安全路线又耗时，需要在节省操作人力的同时保持可靠性。",
-        "approach": "为 Claude Code 提供驾驶经验和影像资料，让其生成 Rover Markup Language 路点指令，再通过覆盖逾 50 万变量的仿真与人工检查。",
-        "takeaway": "2025 年 12 月的两次驾驶成功完成约 400 米规划路线；工程师预计该方法可使规划时间减半，实际方案仍经过人工微调与安全验证。"
+        "problem": "前沿 AI 公司需要在商业增长与长期公益目标之间保持平衡，并对技术风险和社会影响进行独立监督。",
+        "approach": "长期利益信托吸纳曾任哈佛科学学院院长的 Stubbs；信托独立于公司管理层和投资者，可任命多数董事并就关键决策提供建议。",
+        "takeaway": "Stubbs 成为该信托首位物理学家，加入现有三位受托人；信托通过董事任命权和关键决策建议参与长期公益治理。"
       }
     }
   ]
