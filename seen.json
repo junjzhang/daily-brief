@@ -1102,5 +1102,17 @@
     "source": "Anthropic Blog",
     "first_seen": "2026-10-22",
     "date": "2026-10-21"
+  },
+  "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation": {
+    "title": "Donating Agent Skills to the Agentic AI Foundation",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-23",
+    "date": "2026-10-22"
+  },
+  "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences": {
+    "title": "Open call for guest investigators in the life sciences",
+    "source": "Anthropic Blog",
+    "first_seen": "2026-10-23",
+    "date": "2026-10-22"
   }
 }
