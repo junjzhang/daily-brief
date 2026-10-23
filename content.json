@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "site": {
     "title": "Daily Brief",
     "description": "LLM-powered daily digest",
@@ -8,15 +8,28 @@
   "entries": [
     {
       "source": "Anthropic Blog",
-      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-      "date": "2026-10-21",
-      "category": "公司治理与安全",
-      "summary": "物理学家 Christopher Stubbs 加入 Anthropic 长期利益信托，为其长期公益治理带来科学研究、可重复性及国家安全方面的经验。",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "date": "2026-10-22",
+      "category": "开放标准与代理生态",
+      "summary": "Anthropic 将 Agent Skills 标准及名称、标识、GitHub 组织和域名捐赠给 Agentic AI Foundation，推进跨代理平台的中立治理。",
       "insights": {
-        "problem": "前沿 AI 公司需要在商业增长与长期公益目标之间保持平衡，并对技术风险和社会影响进行独立监督。",
-        "approach": "长期利益信托吸纳曾任哈佛科学学院院长的 Stubbs；信托独立于公司管理层和投资者，可任命多数董事并就关键决策提供建议。",
-        "takeaway": "Stubbs 成为该信托首位物理学家，加入现有三位受托人；信托通过董事任命权和关键决策建议参与长期公益治理。"
+        "problem": "代理执行专业业务任务需要可复用的流程知识，而技能格式若依赖单一厂商，会限制跨平台复用和社区参与。",
+        "approach": "以包含 SKILL.md、脚本和参考资料的文件夹承载技能，并将标准交由 Linux Foundation 旗下 AAIF 托管，由多家公司工程师以个人身份共同维护。",
+        "takeaway": "使用或贡献 Agent Skills 无需加入 AAIF；后续拟建立版本发布、正式提案流程及技能编写和安装的安全指南。"
+      }
+    },
+    {
+      "source": "Anthropic Blog",
+      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "title": "Open call for guest investigators in the life sciences",
+      "date": "2026-10-22",
+      "category": "生命科学研究合作",
+      "summary": "Anthropic 面向学术、非营利和政府实验室征集生命科学合作项目，提供 8–12 周研究协作及免费模型运行支持。",
+      "insights": {
+        "problem": "生命科学研究者希望用前沿模型研究重要问题，但需要与模型和工具开发者直接合作，形成可进一步验证的初步成果。",
+        "approach": "邀请课题负责人及团队提交能在 8–12 周内产出分析、工具或公开资源的项目，由 Anthropic 研究人员免费运行模型及研究框架，并合作发表成果、开放配套代码与数据。",
+        "takeaway": "研究者保留自身数据及独立后续研究的权利；申请材料仅应包含公开信息，申请窗口预计约两周，初步结果仍可能需要更长期验证。"
       }
     }
   ]
